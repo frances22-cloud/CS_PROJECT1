@@ -1,0 +1,30 @@
+article, aside, figure, figcaption, hgroup, footer, header, nav, section, video, object {
+    display: block;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.wrap {
+    margin: 0 auto;
+    width: 1170px;
+    text-align: left;
+    position: relative;
+    max-width: 96%;
+}
+body {
+    font: 14px/1.42 'Raleway',Arial,Helvetica,sans-serif;
+    text-align: center;
+    color: #444;
+    background: #DECEB9 url(../images/bgr/body.jpg) 0 0 repeat;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+}
+html {
+    overflow-y: scroll;
+    -webkit-text-size-adjust: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: #FF7A73;
+}
