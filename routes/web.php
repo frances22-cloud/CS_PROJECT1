@@ -14,7 +14,7 @@ use App\Http\Controllers\EmailingController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
@@ -31,5 +31,8 @@ Route::middleware('auth')->group(function () {
 Route::prefix('emails')->group(function (){
     Route::post('reset-password',[EmailingController::class,'resetPassword'])->name('password.email');
 });
+
+Route::view('addRecipe', 'addrecipe');
+
 
 require __DIR__.'/auth.php';

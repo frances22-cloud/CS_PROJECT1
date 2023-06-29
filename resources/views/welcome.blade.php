@@ -32,7 +32,7 @@
                 </div>
             @endif
             <section>
-            <h1>This is the home page</h1><br>
+            <h1>This is the FranDen Dietries page</h1><br>
             </section>
 
 <footer>
