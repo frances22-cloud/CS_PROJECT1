@@ -14,6 +14,11 @@ class HomeController extends Controller
    return view ('home.recipes');
 }
 
+   public function addRecipe(){
+      return view('addrecipe');
+     }
+
+
    public function redirect(){
 
       $usertype=Auth::user()->usertype;

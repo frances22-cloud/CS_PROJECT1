@@ -44,4 +44,6 @@ Route::prefix('emails')->group(function (){
 });
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
+Route::view('addRecipe', 'home/addrecipe');
+
 require __DIR__.'/auth.php';
