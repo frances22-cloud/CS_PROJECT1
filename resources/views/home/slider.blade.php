@@ -1,53 +1,96 @@
-<section class="page-top-recipe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="pt-recipe-item large-item">
-                        <div class="pt-recipe-img set-bg" data-setbg="home/img/recipe-3.jpg">
-                            <i class="fa fa-plus"></i>
-                        </div>
-                        <div class="pt-recipe-text">
-                            <span>March 10, 2019</span>
-                            <h3>Cannellini Aglio e Olio with Salmon</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 order-lg-1">
-                    <div class="pt-recipe-item">
-                        <div class="pt-recipe-img set-bg" data-setbg="home/img/recipe-1.jpg">
-                            <i class="fa fa-plus"></i>
-                        </div>
-                        <div class="pt-recipe-text">
-                            <h4>Raw Vegan Carrot Cake Bites with Avocado</h4>
-                        </div>
-                    </div>
-                    <div class="pt-recipe-item">
-                        <div class="pt-recipe-img set-bg" data-setbg="home/img/recipe-2.jpg">
-                            <i class="fa fa-plus"></i>
-                        </div>
-                        <div class="pt-recipe-text">
-                            <h4>One Pot Weeknight Lasagna Soup Recipe</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 order-lg-3">
-                    <div class="pt-recipe-item">
-                        <div class="pt-recipe-img set-bg" data-setbg="home/img/recipe-4.jpg">
-                            <i class="fa fa-plus"></i>
-                        </div>
-                        <div class="pt-recipe-text">
-                            <h4>Beef Burger with French Fries and Salad</h4>
-                        </div>
-                    </div>
-                    <div class="pt-recipe-item">
-                        <div class="pt-recipe-img set-bg" data-setbg="home/img/recipe-5.jpg">
-                            <i class="fa fa-plus"></i>
-                        </div>
-                        <div class="pt-recipe-text">
-                            <h4>Raspberry Pancakes with Honey and Butter</h4>
-                        </div>
-                    </div>
-                </div>
+  <!-- slider section -->
+  <section class="slider_section ">
+            <div class="slider_bg_box">
+               <img src="home/img/p1.jpg" alt="" style>
             </div>
-        </div>
-    </section>
+            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container ">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-6 ">
+                              <div class="detail-box">
+                                 <h1>
+                                    <span>
+                                   Healthy Nutritious diet
+                                    </span>
+                                    <br>
+                                    Options for your Postnatal journey
+                                 </h1>
+                                 <p>
+                                   Browse for recipes based on your prefered categories
+                                    and live healty to throught your postnatal journey
+                                 </p>
+                                 <div class="btn-box">
+                                    <a href="" class="btn1">
+                                   Browse Now
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item ">
+                     <div class="container ">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-6 ">
+                              <div class="detail-box">
+                                 <h1>
+                                 <span>
+                                   Healthy Nutritious diet
+                                    </span>
+                                    <br>
+                                    Options for your Postnatal journey
+                                 </h1>
+                                 <p>
+                                   Browse for recipes based on your prefered categories
+                                    and live healty to throught your postnatal journey
+                                 </p>
+                                 <div class="btn-box">
+                                    <a href="" class="btn1">
+                                   Browse Now
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container ">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-6 ">
+                              <div class="detail-box">
+                                 <h1>
+                                 <span>
+                                   Healthy Nutritious diet
+                                    </span>
+                                    <br>
+                                    Options for your Postnatal journey
+                                 </h1>
+                                 <p>
+                                   Browse for recipes based on your prefered categories
+                                    and live healty to throught your postnatal journey
+                                 </p>
+                                 <div class="btn-box">
+                                    <a href="" class="btn1">
+                                   Browse Now
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="container">
+                  <ol class="carousel-indicators">
+                     <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                     <li data-target="#customCarousel1" data-slide-to="1"></li>
+                     <li data-target="#customCarousel1" data-slide-to="2"></li>
+                  </ol>
+               </div>
+            </div>
+         </section>
+         <!-- end slider section -->

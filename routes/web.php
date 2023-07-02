@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmailingController;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 
 
 
@@ -14,8 +15,12 @@ Route::get('/', function () {
 });
 Route::controller(HomeController::class)->group(function(){
     Route::get('/userpage','Index');
- 
-    
+    Route::get('/recipes','Recipe');
+
+});
+Route::controller(AdminController::class)->group(function(){
+    Route::get('/recipe_category','View_category');
+
 });
 Route::get('/',[HomeController::class,'Index']);
 

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="home/css/style.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
 </head>
 
 <body>
@@ -33,130 +34,99 @@
     <!-- Page Top Recipe Section Begin -->
     @include('home.slider')
     <!-- Page Top Recipe Section End -->
-
-    <!-- Top Recipe Section Begin -->
-    <section class="top-recipe spad">
-        <div class="section-title">
-            <h5>Top Recipes this Week</h5>
-        </div>
-        <div class="container po-relative">
-            <div class="plus-icon">
-                <i class="fa fa-plus"></i>
+ <!-- product section -->
+ <section class="product_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h2>
+                 All <span>Recipes</span>
+               </h2>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="top-recipe-item large-item">
-                        <div class="top-recipe-img set-bg" data-setbg="home/img/top-recipe/recipe-1.jpg">
-                            <i class="fa fa-plus"></i>
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="" class="option1">
+                          Add To Favourites
+                           </a>
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
                         </div>
-                        <div class="top-recipe-text">
-                            <div class="cat-name">Desert</div>
-                            <a href="#">
-                                <h4>One Pot Weeknight Lasagna Soup Recipe</h4>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore.</p>
+                     </div>
+                     <div class="img-box">
+                        <img src="home/img/about-right.jpg" alt="">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                         Chicken soup
+                        </h5>
+                       <a class="btn btn-secondary" href=""> <i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="" class="option1">
+                           Add To Favourites
+                           </a>
+                           <a href="" class="option2">
+                          View Recipe
+                           </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="top-recipe-item">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="top-recipe-img set-bg" data-setbg="home/img/top-recipe/recipe-2.jpg">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="top-recipe-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <a href="#">
-                                        <h4>One Pot Weeknight Lasagna Soup Recipe</h4>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="home/img/recipe-2.jpg" alt="">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                          Name of recipe
+                        </h5>
+                     <a class="btn btn-secondary" href= ""> <i class="fa fa-thumbs-up" aria-hidden="true"></i></a> 
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="" class="option1">
+                           Add To Favourites
+                           </a>
+                           <a href="" class="option2">
+                         View Recipe
+                           </a>
                         </div>
-                    </div>
-                    <div class="top-recipe-item">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="top-recipe-img set-bg" data-setbg="home/img/top-recipe/recipe-3.jpg">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="top-recipe-text">
-                                    <div class="cat-name">Meat lover</div>
-                                    <a href="#">
-                                        <h4>Veggie soup with Mushrooms</h4>
-                                    </a>
-                                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="top-recipe-item">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="top-recipe-img set-bg" data-setbg="home/img/top-recipe/recipe-4.jpg">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="top-recipe-text">
-                                    <div class="cat-name">Desert</div>
-                                    <a href="#">
-                                        <h4>Caramel Ice Cream with Berries</h4>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="top-recipe-item">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="top-recipe-img set-bg" data-setbg="home/img/top-recipe/recipe-5.jpg">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="top-recipe-text">
-                                    <div class="cat-name">Desert</div>
-                                    <a href="#">
-                                        <h4>Freash Octopuse with lime juice</h4>
-                                    </a>
-                                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                     </div>
+                     <div class="img-box">
+                        <img src="home/img/recipe-3.jpg" alt="">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                          Name of Recipe
+                        </h5>
+                      <a class="btn btn-secondary" href=""> <i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                     </div>
+                  </div>
+               </div>
+               
+                  </div>
+               </div>
+               
+                     
+      </section>
     <!-- Top Recipe Section End -->
 
     <!-- Categories Filter Section Begin -->
-    <div class="categories-filter-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="filter-item">
-                        <ul>
-                            <li class="active" data-filter="*">Vegetarian</li>
-                            <li data-filter=".mostpopular">Most popular</li>
-                            <li data-filter=".meatlover">Meat Lover</li>
-                            <li data-filter=".glutenfree">Gluten Free</li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="product_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h2>
+                Most <span>Popular Recipes</span>
+               </h2>
             </div>
             <div class="cf-filter" id="category-filter">
                 <div class="cf-item mix all mostpopular">
@@ -165,6 +135,14 @@
                     </div>
                     <div class="cf-item-text">
                         <h5>Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+                        <div class="options">
+                         <!--  <a href="" class="option1">
+                          Add To Favourites
+                           </a>-->
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
+                        </div>
                     </div>
                 </div>
                 <div class="cf-item mix all mostpopular">
@@ -173,6 +151,14 @@
                     </div>
                     <div class="cf-item-text">
                         <h5>Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+                        <div class="options">
+                          <!-- <a href="" class="option1">
+                          Add To Favourites
+                           </a>-->
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
+                        </div>
                     </div>
                 </div>
                 <div class="cf-item mix all meatlover mostpopular">
@@ -181,6 +167,14 @@
                     </div>
                     <div class="cf-item-text">
                         <h5>Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+                        <div class="options">
+                          <!-- <a href="" class="option1">
+                          Add To Favourites
+                           </a>-->
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
+                        </div>
                     </div>
                 </div>
                 <div class="cf-item mix all meatlover">
@@ -189,6 +183,14 @@
                     </div>
                     <div class="cf-item-text">
                         <h5>Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+                        <div class="options">
+                          <!-- <a href="" class="option1">
+                          Add To Favourites
+                           </a>-->
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
+                        </div>
                     </div>
                 </div>
                 <div class="cf-item mix all meatlover glutenfree">
@@ -197,6 +199,14 @@
                     </div>
                     <div class="cf-item-text">
                         <h5>Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+                        <div class="options">
+                         <!--  <a href="" class="option1">
+                          Add To Favourites
+                           </a>-->
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,13 +215,12 @@
     <!-- Categories Filter Section End -->
 
     <!-- Feature Recipe Section Begin -->
-    <section class="feature-recipe">
-        <div class="section-title">
-            <h5>Featured Recipes</h5>
-        </div>
-        <div class="container po-relative">
-            <div class="plus-icon">
-                <i class="fa fa-plus"></i>
+    <section class="product_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h2>
+                Featured <span>Recipes</span>
+               </h2>
             </div>
             <div class="row">
                 <div class="col-lg-6">
@@ -223,6 +232,14 @@
                             <h4>Sunday Brunch: Spaghetti and Eggs Recipe</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p>
+                                <div class="options">
+                          <!-- <a href="" class="option1">
+                          Add To Favourites
+                           </a>-->
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -235,6 +252,14 @@
                             <h4>Sunday Brunch: Spaghetti and Eggs Recipe</h4>
                             <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                <div class="options">
+                          <!-- <a href="" class="option1">
+                          Add To Favourites
+                           </a>-->
+                           <a href="" class="option2">
+                           View Recipe
+                           </a>
+                        </div>
                         </div>
                     </div>
                 </div>

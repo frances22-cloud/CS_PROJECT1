@@ -7,17 +7,18 @@
     <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yummy | Template</title>
+    <title>Project1</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
 </head>
 
 <body>
@@ -30,13 +31,13 @@
     <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
-                <a href="./index.html"><img src="img/little-logo.png" alt=""></a>
+                <a href="{{('userpage')}}"><h3>FranDen Dietries</h3></a>
             </div>
             <div class="nav-menu">
                 <nav class="main-menu mobile-menu">
                     <ul>
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a>
+                        <li class="active"><a href="{{('userpage')}}">Home</a></li>
+                        <li><a href="#">categories</a>
                             <ul class="sub-menu">
                                 <li><a href="about-me.html">About Me</a></li>
                                 <li><a href="categories.html">Categories</a></li>
@@ -60,7 +61,7 @@
     <!-- Header End -->
 
     <!-- Hero Search Section Begin -->
-    <div class="hero-search set-bg" data-setbg="img/search-bg.jpg">
+    <div class="hero-search set-bg" data-setbg="home/img/search-bg.jpg">
         <div class="container">
             <div class="filter-table">
                 <form action="#" class="filter-search">
@@ -69,13 +70,13 @@
                         <option value="">Category</option>
                     </select>
                     <select id="tag">
-                        <option value="">Tags</option>
+                        <option value="">Add Recipe</option>
                     </select>
                     <button type="submit">Search</button>
                 </form>
             </div>
         </div>
-    </div>
+    </div>--
     <!-- Hero Search Section End -->
 
     <!-- Single Recipe Section Begin -->
@@ -91,7 +92,7 @@
                         <li>Spicy</li>
                     </ul>
                 </div>
-                <img src="img/recipe-single.jpg" alt="">
+                <img src="home/img/recipe-single.jpg" alt="">
             </div>
         </div>
         <div class="container">
@@ -99,7 +100,7 @@
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                            <img src="img/intro-img.jpg" alt="">
+                            <img src="home/img/intro-img.jpg" alt="">
                             <h2>Chipotle Sweet Potato Noodle with Roasted Corn</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
@@ -259,7 +260,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-item">
-                        <a href="#"><img src="img/cat-feature/small-7.jpg" alt=""></a>
+                        <a href="#"><img src="home/img/cat-feature/small-7.jpg" alt=""></a>
                         <div class="similar-text">
                             <div class="cat-name">Vegan</div>
                             <h6>Italian Tiramisu with Coffe</h6>
@@ -268,7 +269,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-item">
-                        <a href="#"><img src="img/cat-feature/small-6.jpg" alt=""></a>
+                        <a href="#"><img src="home/img/cat-feature/small-6.jpg" alt=""></a>
                         <div class="similar-text">
                             <div class="cat-name">Vegan</div>
                             <h6>Dry Cookies with Corn</h6>
@@ -277,7 +278,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-item">
-                        <a href="#"><img src="img/cat-feature/small-5.jpg" alt=""></a>
+                        <a href="#"><img src="home/img/cat-feature/small-5.jpg" alt=""></a>
                         <div class="similar-text">
                             <div class="cat-name">Vegan</div>
                             <h6>Asparagus with Pork Loin and Vegetables</h6>
@@ -286,7 +287,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="similar-item">
-                        <a href="#"><img src="img/cat-feature/small-4.jpg" alt=""></a>
+                        <a href="#"><img src="home/img/cat-feature/small-4.jpg" alt=""></a>
                         <div class="similar-text">
                             <div class="cat-name">Vegan</div>
                             <h6>Smoked Salmon mini Sandwiches with Onion</h6>
@@ -299,66 +300,86 @@
     <!-- Similar Recipe Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section">
-        <div class="container">
+         <footer>
+         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="fs-left">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="img/footer-logo.png" alt="">
-                            </a>
+               <div class="col-md-4">
+                   <div class="full">
+                      <div class="logo_footer">
+                        <a href="#"><h2>FranDen Dietries</h2></a>
+                      </div>
+                      <div class="information_f">
+                        <p><strong>ADDRESS:</strong> FranDen Dietries, CS_project1, Computer Science</p>
+                        <p><strong>TELEPHONE:</strong> +254-707637187</p>
+                        <p><strong>EMAIL:</strong> FranDen@gmail.com</p>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="row">
+                  <div class="col-md-7">
+                     <div class="row">
+                        <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Menu</h3>
+                        <ul>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Recipes</a></li>
+                           <li><a href="#">Forum</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Account</h3>
+                        <ul>
+                           <li><a href="#">Featured Recipes</a></li>
+                           <li><a href="#">Popular</a></li>
+                           <li><a href="#">Favourites</a></li>
+                           <li><a href="#">Testimonials</a></li>
+                           <li><a href="{{('login')}}">Login</a></li>
+                           <li><a href="{{('register')}}">Register</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                     </div>
+                  </div>     
+                  <div class="col-md-5">
+                     <div class="widget_menu">
+                        <h3>Newsletter</h3>
+                        <div class="information_f">
+                          <p>Subscribe by our newsletter and get update protidin.</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <form action="#" class="subscribe-form">
-                        <h3>Subscribe to our newsletter</h3>
-                        <input type="email" placeholder="Your e-mail">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <div class="social-links">
-                        <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
-                        <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
-                        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-                        <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-                        <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
-                    </div>
-                </div>
+                        <div class="form_sub">
+                           <form>
+                              <fieldset>
+                                 <div class="field">
+                                    <input type="email" placeholder="Enter Your Mail" name="email" />
+                                    <input type="submit" value="Subscribe" />
+                                 </div>
+                              </fieldset>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright-text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-    <!-- Search model -->
-	<div class="search-model">
-		<div class="h-100 d-flex align-items-center justify-content-center">
-			<div class="search-close-switch">+</div>
-			<form class="search-model-form">
-				<input type="text" id="search-input" placeholder="Search here.....">
-			</form>
-		</div>
-	</div>
+         </div>
+      </footer>
+      <!-- footer end -->
 	<!-- Search model end -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="home/js/jquery-3.3.1.min.js"></script>
+    <script src="home/js/bootstrap.min.js"></script>
+    <script src="home/js/jquery.slicknav.js"></script>
+    <script src="home/js/jquery.nice-select.min.js"></script>
+    <script src="home/js/mixitup.min.js"></script>
+    <script src="home/js/main.js"></script>
 </body>
 
 </html>

@@ -1,37 +1,72 @@
-<footer class="footer-section">
-        <div class="container">
+      <!-- footer start -->
+      <footer>
+         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="fs-left">
-                      
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <form action="#" class="subscribe-form">
-                        <h3>Subscribe to our newsletter</h3>
-                        <input type="email" placeholder="Your e-mail">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <div class="social-links">
-                        <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
-                        <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
-                        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-                        <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-                        <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
-                    </div>
-                </div>
+               <div class="col-md-4">
+                   <div class="full">
+                      <div class="logo_footer">
+                        <a href="#"><h2>FranDen Dietries</h2></a>
+                      </div>
+                      <div class="information_f">
+                        <p><strong>ADDRESS:</strong> FranDen Dietries, CS_project1, Computer Science</p>
+                        <p><strong>TELEPHONE:</strong> +254-707637187</p>
+                        <p><strong>EMAIL:</strong> FranDen@gmail.com</p>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="row">
+                  <div class="col-md-7">
+                     <div class="row">
+                        <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Menu</h3>
+                        <ul>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Recipes</a></li>
+                           <li><a href="#">Forum</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Account</h3>
+                        <ul>
+                           <li><a href="#">Featured Recipes</a></li>
+                           <li><a href="#">Popular</a></li>
+                           <li><a href="#">Favourites</a></li>
+                           <li><a href="#">Testimonials</a></li>
+                           <li><a href="{{('login')}}">Login</a></li>
+                           <li><a href="{{('register')}}">Register</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                     </div>
+                  </div>     
+                  <div class="col-md-5">
+                     <div class="widget_menu">
+                        <h3>Newsletter</h3>
+                        <div class="information_f">
+                          <p>Subscribe by our newsletter and get update protidin.</p>
+                        </div>
+                        <div class="form_sub">
+                           <form>
+                              <fieldset>
+                                 <div class="field">
+                                    <input type="email" placeholder="Enter Your Mail" name="email" />
+                                    <input type="submit" value="Subscribe" />
+                                 </div>
+                              </fieldset>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright-text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script>FranDen Dietries All rights reserved <i class="fa fa-heart-o" aria-hidden="true">
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+         </div>
+      </footer>
+      <!-- footer end -->

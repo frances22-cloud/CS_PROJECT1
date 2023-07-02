@@ -10,6 +10,9 @@ class HomeController extends Controller
    public function Index(){
     return view('home.userpage');
    }
+   public function Recipe(){
+   return view ('home.recipes');
+}
 
    public function addRecipe(){
       return view('addrecipe');
