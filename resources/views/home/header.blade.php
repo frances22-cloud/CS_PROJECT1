@@ -15,7 +15,7 @@
                                 <li><a href="about-me.html">About Us</a></li>
                                 <li><a href="categories.html">Categories</a></li>
                                 <li><a href="recipe.html">Recipe</a></li>
-                                <li><a href="blog.html">forum</a></li>
+                                <li><a href="blog.html">Forum</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 
                          </ul>
