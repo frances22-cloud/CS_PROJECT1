@@ -16,13 +16,23 @@ Route::get('/', function () {
 Route::controller(HomeController::class)->group(function(){
     Route::get('/userpage','Index');
     Route::get('/recipes','Recipe');
+    Route::get('/addrecipe', 'AddRecipe');
 
 });
 Route::controller(AdminController::class)->group(function(){
     Route::get('/recipe_category','View_category');
+    Route::post('/add_category','add_category');
+    Route::get('/delete_category/{id}','delete_category');
+    Route::get('/view_recipe','view_recipe');
+    Route::post('/add_recipe','add_recipe');
+    Route::get('/show_recipe','show_recipe');
+    Route::get('/delete_recipe/{id}','delete_recipe');
+    Route::get('/update_recipe/{id}','update_recipe');
+    Route::post('/update_recipe_confirm/{id}','update_recipe_confirm');
 
 });
 Route::get('/',[HomeController::class,'Index']);
+
 
 //admin
 Route::prefix('admin')->middleware('auth')->group(function(){
@@ -44,6 +54,6 @@ Route::prefix('emails')->group(function (){
 });
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
-Route::view('addRecipe', 'home/addrecipe');
+
 
 require __DIR__.'/auth.php';

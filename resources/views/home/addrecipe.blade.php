@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home/css/addrecipe.css">
+	<link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
     <title>FranDen Dietries</title>
 </head>
 <body>
@@ -14,8 +20,8 @@
 			<!--breadcrumbs-->
 			<nav class="breadcrumbs">
 				<ul>
-					<li><a href="index.html" title="Home">Home</a></li>
-					<li>Submit a recipe</li>
+			 <li><a href="index.html" title="Home">Home</a></li>
+			 <li>Submit a recipe</li>
 				</ul>
 			</nav>
 			<!--//breadcrumbs-->
@@ -60,7 +66,7 @@
 									<div class="large"><input type="text" placeholder="Ingredient" /></div>
 									<div class="small"><input type="text" placeholder="Quantity" /></div>
 									<div class="third"><select><option selected="selected">Select a category</option></select></div>
-									<button class="remove">-</button>
+									<button class="remove"></button>
 								</div>
 								<div class="f-row full">
 									<button class="add">Add an ingredient</button>

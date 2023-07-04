@@ -39,14 +39,14 @@
                         <li class="active"><a href="{{('userpage')}}">Home</a></li>
                         <li><a href="#">categories</a>
                             <ul class="sub-menu">
-                                <li><a href="about-me.html">About Me</a></li>
-                                <li><a href="categories.html">Categories</a></li>
-                                <li><a href="recipe.html">Recipe</a></li>
+                                <li><a href="about-me.html">Quick and Easy</a></li>
+                                <li><a href="categories.html">Immune Boosting</a></li>
+                                <li><a href="recipe.html">Postnatal Recovery:</a></li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </li>
-                        <li><a href="recipe.html">Recipes</a></li>
+                        <li><a href="{{('addrecipe')}}">Recipes</a></li>
                         <li><a href="categories.html">Best Of</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -70,7 +70,7 @@
                         <option value="">Category</option>
                     </select>
                     <select id="tag">
-                        <option value="">Add Recipe</option>
+                        <option value=""><a href="{{('addrecipe')}}"></a>Add Recipe</option>
                     </select>
                     <button type="submit">Search</button>
                 </form>
