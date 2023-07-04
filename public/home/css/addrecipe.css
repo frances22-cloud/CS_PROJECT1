@@ -121,7 +121,7 @@ input[type=text] {
 }
 
 ::placeholder {
-    color: #101112;
+    color: rgb(131, 145, 160);
 }
 
 textarea {

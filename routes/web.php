@@ -6,29 +6,30 @@ use App\Http\Controllers\EmailingController;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\RecipeController;
 
 
 
 Route::get('/', function () {
     return view('welcome');
-
 });
-Route::controller(HomeController::class)->group(function(){
-    Route::get('/userpage','Index');
-    Route::get('/recipes','Recipe');
-
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/homepage', 'Index');
+    Route::get('/userpage', 'userIndex');
+    Route::get('/recipes', 'Recipe');
+    Route::get('/addrecipe', 'addRecipe');
 });
-Route::controller(AdminController::class)->group(function(){
-    Route::get('/recipe_category','View_category');
 
+Route::controller(AdminController::class)->group(function () {
+    Route::get('/recipe_category', 'View_category');
 });
-Route::get('/',[HomeController::class,'Index']);
+
+Route::get('/', [HomeController::class, 'Index']);
 
 //admin
-Route::prefix('admin')->middleware('auth')->group(function(){
-
-
+Route::prefix('admin')->middleware('auth')->group(function () {
 });
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -39,11 +40,22 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::prefix('emails')->group(function (){
- Route::post('reset-password',[EmailingController::class,'resetPassword'])->name('password.email');
+Route::prefix('emails')->group(function () {
+    Route::post('reset-password', [EmailingController::class, 'resetPassword'])->name('password.email');
 });
+
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
-Route::view('addRecipe', 'home/addrecipe');
+Route::get('logout', [HomeController::class, 'perform']);
 
-require __DIR__.'/auth.php';
+Route::post('addrecipe', [RecipeController::class, 'store']);
+
+/*Route::middleware('recipes')->group(function () {
+    Route::get('addrecipe', [RecipeController::class, 'create'])
+                ->name('addrecipe');
+
+    Route::post('addrecipe', [RecipeController::class, 'store']);
+});*/
+
+
+require __DIR__ . '/auth.php';
