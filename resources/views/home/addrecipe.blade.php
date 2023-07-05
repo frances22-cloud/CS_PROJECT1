@@ -73,7 +73,7 @@
 									<button class="remove">-</button>
 								</div>
 								<div class="f-row full">
-									<button class="add">Add</button>
+									<button class="add">Add a step</button>
 								</div>
 							</section>-->
 

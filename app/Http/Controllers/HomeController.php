@@ -1,25 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-   public function Index()
-   {
-      return view('home.homepage');
+   public function Index(){
+    return view('home.userpage');
    }
-   public function userIndex()
-   {
-      return view('home.userpage');
-   }
-   public function Recipe()
-   {
-      return view('home.recipes');
-   }
+   public function Recipe(){
+   return view ('home.recipes');
+}
 
    public function addRecipe()
    {
@@ -32,7 +25,8 @@ class HomeController extends Controller
       $usertype = Auth::user()->usertype;
       if ($usertype == '1') {
          return view('admin.home');
-      } else {
+      }else
+      {
          return view('dashboard');
       }
    }
@@ -43,5 +37,4 @@ class HomeController extends Controller
 
         return redirect('/homepage');
     }
-
 }
