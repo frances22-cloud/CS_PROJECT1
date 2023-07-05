@@ -38,7 +38,6 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/recipes', 'Recipe');
     Route::get('/addrecipe', 'addRecipe');
 });
->>>>>>> cfebb4fcd2bf6db133d82915c7fc912021090ba9
 
 Route::controller(AdminController::class)->group(function () {
     Route::get('/recipe_category', 'View_category');
