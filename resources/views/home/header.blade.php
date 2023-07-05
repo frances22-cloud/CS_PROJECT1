@@ -10,6 +10,16 @@
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li class="active"><a href="#">Home</a></li>
+                        <li><a href="{{('recipes')}}">Recipe categories</a>
+                            <ul class="sub-menu">
+                                <li><a href="{{('recipes')}}">Meals</a></li>
+                                <li><a href="categories.html">Drinks</a></li>
+                                <li><a href="recipe.html">Salads</a></li>
+                                <li><a href="blog.html">forum</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                
+                         </ul>
+                        </li>
                         <li><a href="recipe.html">Forum</a></li>
                         <li><a href="categories.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
