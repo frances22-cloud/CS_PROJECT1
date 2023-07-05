@@ -12,12 +12,13 @@ use App\Http\Controllers\AdminController;
 Route::get('/', function () {
     return view('welcome');
 
+
 });
 
 Route::controller(HomeController::class)->group(function(){
     Route::get('/userpage','Index');
     Route::get('/recipes','Recipe');
-    Route::get('/addrecipe', 'AddRecipe');
+    Route::get('/addrecipe', 'addRecipe');
 
 });
 Route::controller(AdminController::class)->group(function(){
@@ -42,6 +43,11 @@ Route::controller(HomeController::class)->group(function () {
 Route::controller(AdminController::class)->group(function () {
     Route::get('/recipe_category', 'View_category');
 });
+
+
+
+
+//Route::get('logout', [HomeController::class],'perform');
 
 
 

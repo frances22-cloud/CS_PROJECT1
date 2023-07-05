@@ -53,8 +53,17 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li class="active"><a href="{{('dashboard')}}">Home</a></li>
-        
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Recipe categories</a>
+                <ul class="sub-menu">
+                    <li><a href="{{('recipes')}}">Meals</a></li>
+                    <li><a href="categories.html">Drinks</a></li>
+                    <li><a href="recipe.html">Salads</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Forum</a></li>
+            <li><a href="{{('addrecipe') }}">Add Recipe</a></li>
+            <li><a href="{{('logout') }}">Logout</a></li>
         </ul>
     </nav>
     <script src="home/js/header.js"></script>

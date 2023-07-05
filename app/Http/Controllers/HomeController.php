@@ -35,6 +35,6 @@ class HomeController extends Controller
     {
         Auth::logout();
 
-        return redirect('/homepage');
+        return redirect('userpage');
     }
 }

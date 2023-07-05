@@ -40,11 +40,8 @@
 									<div class="third"><input type="text" placeholder="Difficulty" /></div>
 								</div>
 								<div class="f-row">
-									<div class="third">
-										<select>
-											<option selected="selected">Select a category</option>
-										</select>
-									</div>
+									<div class="third"><input type="text" placeholder="Serves how many people?" /></div>
+									<div class="third"><select><option selected="selected">Select a category</option></select></div>
 								</div>
 							</section>
 							
