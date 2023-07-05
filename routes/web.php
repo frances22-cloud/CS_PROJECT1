@@ -33,6 +33,9 @@ Route::controller(AdminController::class)->group(function(){
 });
 Route::get('/',[HomeController::class,'Index']);
 
+//Route::get('logout', [HomeController::class],'perform');
+
+
 
 //admin
 Route::prefix('admin')->middleware('auth')->group(function(){
@@ -53,6 +56,9 @@ Route::prefix('emails')->group(function (){
  Route::post('reset-password',[EmailingController::class,'resetPassword'])->name('password.email');
 });
 Route::get('/redirect', [HomeController::class, 'redirect']);
+
+Route::get('/logout', [HomeController::class, 'perform']);
+
 
 
 
