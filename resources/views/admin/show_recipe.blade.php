@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>FranDen Dietries</title>
+    <title>Corona Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -23,17 +23,28 @@
     <!-- End layout styles -->
     <link rel="shortcut icon" href="admin/assets/images/favicon.png" />
     <style>
-        .div_center{
-            text-align:center;
-            padding-top: 40px;
-        }
-        .center{
-            margin:auto;
-            text-align:center;
-            width:50%;
-            margin-top:30px;
-            border:3px solid grey;
-        }
+ .center{
+  margin:auto;
+  width:50%;
+  border:1px solid white;
+  text-align:center;
+  margin-top:40px;
+}
+ .font_size{
+    font-size:20px;
+    text-align:center;
+    padding-top:20px;
+ }
+ .img_size{
+    width:100px;
+    height:100px;
+ }
+ .th_color{
+    background:skyblue;
+ }
+ .th_design{
+    padding:30px;
+ }
     </style>
   </head>
   <body>
@@ -43,41 +54,60 @@
       <!-- partial -->
       @include('admin.header')
         <!-- partial -->
-        <!--@include('admin.body')-->
-        <div class="main-panel">
+       <!-- @include('admin.body')-->
+
+       <div class="main-panel">
           <div class="content-wrapper">
-           @if(session()->has('message'))
+          @if(session()->has('message'))
            <div class="alert alert-success">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
             {{session()->get('message')}}
 
            </div>
            @endif
-            <div class ="div_center">
-                <h2>Add category</h2>
-                <form action="{{url('/add_category')}}" method="post">
-                    @csrf
-                    <input type="text" name="recipe_category" placeholder="Enter category name">
-                    <input type="submit" class="btn btn-primary" name="submit" value="Add category">
-                </form>
-            </div>
-            <table class="center">
-                <tr>
-                    <td>S/N</td>
-                    <td>Category name</td>
-                    <td>Action</td>
-                </tr>
-                @foreach($data as $data)
-                <tr>
-                    <td>{{$data->id}}</td>
-                    <td>{{$data->category_name}}</td>
-                    <td>
-                <a onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-danger" href="{{url('delete_category', $data->id)}}">Delete</a>
-                    </td></tr>
-                @endforeach
-            </table>
-     </div>
-     </div>
+            <h2 class="font_size">All recipes</h2>
+        <table class="center">
+      <tr class="th_color">
+	    <th class="th_design" >S/N</th>
+        <th class="th_design">Title</th>
+        <th class="th_design" >Image</th>
+        <th class="th_design">Description</th>
+       <!-- <th class="th_design" >Category</th>-->
+        <th class="th_design" >Ingredients</th>      
+        <th class="th_design">Intructions</th>
+       <th  class="th_design">Prep time</th>
+       <!-- <th class="th_design">Nutrients</th>-->
+		<th class="th_design" colspan='2'>Actions</th>
+    </tr>
+
+    @foreach($tbl_recipes as $tbl_recipes)
+    <tr>
+    <td>{{$tbl_recipes->id}}</td>
+    <td>{{$tbl_recipes->title}}</td>
+    <td>
+        <img class="img_size" src="/tbl_recipes/{{$tbl_recipes->image}}" alt="">
+    </td>
+    <td >{{$tbl_recipes->description}}</td>
+   <!--- <td >{{$tbl_recipes->category}}</td>-->
+    <td >{{$tbl_recipes->ingredients}}</td>
+    <td >{{$tbl_recipes->prep_instructions}}</td>
+    <td >{{$tbl_recipes->prep_time}}</td>
+    <!---<td >{{$tbl_recipes->Nutritional_info}}</td>-->
+    <td>
+        <a onclick="return confirm('Are you sure you want to delete this?')" class="bt btn-danger" href="{{url('delete_recipe',$tbl_recipes->id)}}">Delete</a>
+    </td>
+    <td>
+        <a class="btn btn-success" href="{{url('update_recipe',$tbl_recipes->id)}}">Edit</a>
+    </td>
+    </tr>
+    @endforeach
+    
+    </table>
+</div>
+</div>
+
+
+
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="admin/assets/vendors/js/vendor.bundle.base.js"></script>
