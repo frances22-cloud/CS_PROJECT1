@@ -28,8 +28,6 @@ html {
     -webkit-overflow-scrolling: touch;
     -webkit-tap-highlight-color: #FF7A73;
 }
-<<<<<<< HEAD
-=======
 
 .navbar {
     background-color: #7d8d9d;
@@ -169,4 +167,3 @@ input[type=submit] {
     opacity: 0.9;
     border-radius: 25px;
 }
->>>>>>> cfebb4fcd2bf6db133d82915c7fc912021090ba9

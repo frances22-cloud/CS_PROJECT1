@@ -1,5 +1,18 @@
-      <!-- footer start -->
-      <footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+
+   <title>Document</title>
+</head>
+<body>
+   <!-- footer start -->
+   <footer>
          <div class="container">
             <div class="row">
                <div class="col-md-4">
@@ -70,3 +83,11 @@
          </div>
       </footer>
       <!-- footer end -->
+</body>
+</html>   
+      
+      
+      
+      
+      
+      

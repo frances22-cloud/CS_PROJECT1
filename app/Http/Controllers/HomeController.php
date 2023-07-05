@@ -21,16 +21,6 @@ class HomeController extends Controller
       return view('home.recipes');
    }
 
-<<<<<<< HEAD
-   public function AddRecipe(){
-      return view('home.addrecipe');
-     }
-
-   public function redirect(){
-
-      $usertype=Auth::user()->usertype;
-      if($usertype=='1'){
-=======
    public function addRecipe()
    {
       return view('home.addrecipe');
@@ -41,7 +31,6 @@ class HomeController extends Controller
 
       $usertype = Auth::user()->usertype;
       if ($usertype == '1') {
->>>>>>> cfebb4fcd2bf6db133d82915c7fc912021090ba9
          return view('admin.home');
       } else {
          return view('dashboard');

@@ -13,7 +13,7 @@ use App\Http\Controllers\RecipeController;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
+
 Route::controller(HomeController::class)->group(function(){
     Route::get('/userpage','Index');
     Route::get('/recipes','Recipe');
@@ -30,14 +30,8 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/delete_recipe/{id}','delete_recipe');
     Route::get('/update_recipe/{id}','update_recipe');
     Route::post('/update_recipe_confirm/{id}','update_recipe_confirm');
-=======
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/homepage', 'Index');
-    Route::get('/userpage', 'userIndex');
-    Route::get('/recipes', 'Recipe');
-    Route::get('/addrecipe', 'addRecipe');
 });
->>>>>>> cfebb4fcd2bf6db133d82915c7fc912021090ba9
+
 
 Route::controller(AdminController::class)->group(function () {
     Route::get('/recipe_category', 'View_category');
@@ -66,11 +60,9 @@ Route::prefix('emails')->group(function () {
 
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
-<<<<<<< HEAD
 
-=======
 Route::get('logout', [HomeController::class, 'perform']);
->>>>>>> cfebb4fcd2bf6db133d82915c7fc912021090ba9
+
 
 Route::post('addrecipe', [RecipeController::class, 'store']);
 
