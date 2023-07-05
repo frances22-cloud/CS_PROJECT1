@@ -13,18 +13,12 @@
     <title>FranDen Dietries</title>
 </head>
 <body>
+@include('home.header3')
     <!--main-->
 	<main class="main" role="main">
 		<!--wrap-->
 		<div class="wrap clearfix">
-			<!--breadcrumbs-->
-			<nav class="breadcrumbs">
-				<ul>
-			 <li><a href="index.html" title="Home">Home</a></li>
-			 <li>Submit a recipe</li>
-				</ul>
-			</nav>
-			<!--//breadcrumbs-->
+	
 			
 			<!--row-->
 			<div class="row">
