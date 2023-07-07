@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="home/css/style.css" type="text/css">
     <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+    <link rel="stylesheet" href="home/css/header.css" type="text/css">
 </head>
 
 <body>
@@ -25,10 +26,34 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
+    
+    <nav>
+        <div class="logo" style="display: flex;align-items: center;">
+            <span style="color:#01939c; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">FRANDEN DIETRIES</span>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Recipe categories</a>
+                <ul class="sub-menu">
+                    <li><a href="{{('recipes')}}">Meals</a></li>
+                    <li><a href="categories.html">Drinks</a></li>
+                    <li><a href="recipe.html">Salads</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Forum</a></li>
+            <li><a href="{{('addrecipe') }}">Add Recipe</a></li>
+            <li><a href="{{('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
 
-    <!-- Header Section Begin -->
+    <!-- Header Section Begin
    @include('home.header2')
-    <!-- Header End -->
+     Header End -->
 
     <!-- Page Top Recipe Section Begin -->
     @include('home.slider')
@@ -289,6 +314,7 @@
     <script src="home/js/jquery.nice-select.min.js"></script>
     <script src="homejs/mixitup.min.js"></script>
     <script src="home/js/main.js"></script>
+    <script src="home/js/header.js"></script>
 </body>
 
 </html>

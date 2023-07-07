@@ -33,12 +33,6 @@ Route::controller(AdminController::class)->group(function(){
     Route::post('/update_recipe_confirm/{id}','update_recipe_confirm');
 });
 
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/homepage', 'Index');
-    Route::get('/userpage', 'userIndex');
-    Route::get('/recipes', 'Recipe');
-    Route::get('/addrecipe', 'addRecipe');
-});
 
 Route::controller(AdminController::class)->group(function () {
     Route::get('/recipe_category', 'View_category');
@@ -76,6 +70,8 @@ Route::get('/redirect', [HomeController::class, 'redirect']);
 
 
 Route::get('logout', [HomeController::class, 'perform']);
+
+Route::get('/contact', [HomeController::class, 'Contact']);
 
 
 Route::post('addrecipe', [RecipeController::class, 'store']);
