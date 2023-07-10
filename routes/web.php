@@ -32,6 +32,9 @@ Route::controller(AdminController::class)->group(function(){
 Route::get('/',[HomeController::class,'Index']);
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
+//Route::get('logout', [HomeController::class],'perform');
+
+
 
 //admin
 Route::prefix('admin')->middleware('auth')->group(function(){
@@ -74,6 +77,9 @@ Route::controller(CategoryController::class)->group(function(){
     Route::post('/add_comment','add_comment');
     
 });
+
+Route::get('/logout', [HomeController::class, 'perform']);
+
 
 
 
