@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
-<base href="/public">
     <meta charset="UTF-8">
-    <meta name="description" content="Yoga Studio Template">
-    <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <title>Project1</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+<!-- Css Styles -->
+<link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/style.css" type="text/css">
+<link rel="stylesheet" href="home/css/style2.css" type="text/css">
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Header Section Begin -->
-    <header class="header-section-other">
+       <!-- Header Section Begin -->
+       <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
                 <a href="{{('userpage')}}"><h3>FranDen Dietries</h3></a>
@@ -62,24 +52,14 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
- <section class="single-page-recipe spad">
-        <div class="recipe-top">
-            <div class="container-fluid">
-                <div class="recipe-title">
-                    <h2>All Recipes</h2>
-                    
-                </div>
-                
-            </div>
-        </div>
+ <section class="single-page-recipe spad">            
         <div class="container">
             <div class="row">
-           
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                            <img src="home/img/recipe-single.jpg" alt="">
-                            <h2>Fresh Onion chicken noodles</h2>
+                        <img src="home/img/img2.jpg" alt="">
+                            <h2>Pan Fried Eggs With Lenticels And Tomatoes</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -87,7 +67,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="reviews">4.9 from 25 reviews</div>
+                            <div class="reviews">12 from 25 reviews</div>
                             <div class="recipe-time">
                                 <ul>
                                     <li>Prep time: <span>10 min</span></li>
@@ -103,21 +83,26 @@
                             </div>
                             <div class="list-item">
                                 <h5>Ingredients</h5>
-
+                                
+                                <div class="dressing-list">
                                     <ul>
-                                        <li>1 brick of frozen udon</li>
-                                        <li>1/2 cup kimchi, plus a bit of kimchi juice</li>
-                                        <li>1 tablespoon of butter</li>
-                                        <li>1 sac of mentaiko</li>
-                                        <li>sliced green onions and nori, to finish</li>
+                                        <li>3 large eggs</li>
+                                        <li>1/4 teaspoon salt</li>
+                                        <li>1/4 teaspoon black pepper</li>
+                                        <li>1/2 teaspoon fish sauce </li>
+                                        <li>2-3 scallion stalks, cut into 2-inch long pieces</li>
+                                        <li>1 small onion, thinly sliced (or half a medium onion)</li>
+                                        <li>2 medium tomatoes, cut into wedges (or 3 large tomatoes)</li>
+                                        <li>cooking oil</li>
+                                        <li>Leafy Lenticels</li>
                                     </ul>
-
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="nutrition-fact">
                         <div class="nutri-title">
-                            <h6>Nutrition Facts</h6>
+                            <h6>Nutritional Facts</h6>
                             <span>Serves 4</span>
                         </div>
                         <ul>
@@ -131,14 +116,47 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Quick and affordable ingredient. Suitable for milk boosting during low milk count</p>
-                           
+                            <p>This omelet with tomatoes and onions is made with simple ingredients,
+                            but you will be surprised at how good it tastes.Eggs are fried into an omelet with<br>
+                             browned spots to enhance the flavors.The recipe is vegetarian adaptable.!.</p>
+                            
                         </div>
                         <div class="instruction-list">
                             <h3>Instructions</h3>
                             <ul>
                                 <li>
-         
+                                    <span>01.</span>
+                                    In a bowl, add eggs, salt, pepper and fish sauce. Beat well.
+                                </li>
+                                <li>
+                                    <span>02.</span>
+                                    Place a pan over medium heat and add oil. Once the oil is hot, add onions.
+                                     Stir and cook until fragrant (about 40-60 seconds).
+                                </li>
+                                <li>
+                                    <span>03.</span>
+                                    Add tomato wedges, stir to distribute evenly in the pan and cook 
+                                    for a minute until onions start to brown lightly and tomatoes just start to soften.
+                                </li>
+                                <li>
+                                    <span>04.</span>
+                                    Add scallions and give everything in the pan a stir to distribute evenly. Then pour beaten eggs into the pan.
+                                </li>
+                                <li>
+                                    <span>05.</span>
+                                    Let the omelet cook for about 10-15 seconds and then push the edges slightly 
+                                    towards the center to let the uncooked eggs flow out.
+                                     Drizzle a bit more oil around the edges if needed.
+                                </li>
+                                <li>
+                                    <span>06.</span>
+                                    Cook for about 2 minutes until the bottom of the omelet has browned spots.
+                                     Don't let it brown too much or the omelet will be dry. Flip (you can divide into quarters so that it will be easy to flip) 
+                                    and cook the other side briefly (about 30 seconds or so). Remove from the heat.
+                                </li>
+                                <li>
+                                    <span>07.</span>
+                                    Transfer to a serving plate and serve hot with steamed rice and some fish sauce (or soy sauce) on the side.
                                 </li>
                             </ul>
                         </div>
@@ -146,11 +164,10 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <!-- Single Recipe Section End -->
-                
+
     <!-- Similar Recipe Section Begin -->
     <section class="similar-recipe spad">
         <div class="container">
@@ -196,8 +213,10 @@
     </section>
     <!-- Similar Recipe Section End -->
 
-    <!-- Footer Section Begin -->
-         <footer>
+
+
+          <!-- footer start -->
+          <footer>
          <div class="container">
             <div class="row">
                <div class="col-md-4">
@@ -266,17 +285,8 @@
                </div>
             </div>
          </div>
+         
       </footer>
       <!-- footer end -->
-	<!-- Search model end -->
-
-    <!-- Js Plugins -->
-    <script src="home/js/jquery-3.3.1.min.js"></script>
-    <script src="home/js/bootstrap.min.js"></script>
-    <script src="home/js/jquery.slicknav.js"></script>
-    <script src="home/js/jquery.nice-select.min.js"></script>
-    <script src="home/js/mixitup.min.js"></script>
-    <script src="home/js/main.js"></script>
 </body>
-
 </html>

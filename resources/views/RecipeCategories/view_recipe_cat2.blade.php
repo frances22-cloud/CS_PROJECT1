@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
-<base href="/public">
     <meta charset="UTF-8">
-    <meta name="description" content="Yoga Studio Template">
-    <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <title>Project1</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+<!-- Css Styles -->
+<link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/style.css" type="text/css">
+<link rel="stylesheet" href="home/css/style2.css" type="text/css">
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Header Section Begin -->
-    <header class="header-section-other">
+       <!-- Header Section Begin -->
+       <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
                 <a href="{{('userpage')}}"><h3>FranDen Dietries</h3></a>
@@ -62,24 +52,14 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
- <section class="single-page-recipe spad">
-        <div class="recipe-top">
-            <div class="container-fluid">
-                <div class="recipe-title">
-                    <h2>All Recipes</h2>
-                    
-                </div>
-                
-            </div>
-        </div>
+ <section class="single-page-recipe spad">            
         <div class="container">
             <div class="row">
-           
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                            <img src="home/img/recipe-single.jpg" alt="">
-                            <h2>Fresh Onion chicken noodles</h2>
+                        <img src="home/img/img7.jpg" alt="">
+                            <h2>Broccoli Fried Rice With Turmeric-Tahini Sauce</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -90,8 +70,9 @@
                             <div class="reviews">4.9 from 25 reviews</div>
                             <div class="recipe-time">
                                 <ul>
-                                    <li>Prep time: <span>10 min</span></li>
-                                    <li>Cook time: <span>10 min</span></li>
+                                    <li>Prep time: <span> 15minutes</span></li>
+                                    <li>Cook time: <span> 15minutes </span></li>
+                                   <li> Total Time: <span>  30minutes </span></li>
                                     <li>Yield: <span>5</span></li>
                                 </ul>
                             </div>
@@ -103,27 +84,35 @@
                             </div>
                             <div class="list-item">
                                 <h5>Ingredients</h5>
-
+                                
+                                <div class="dressing-list">
                                     <ul>
-                                        <li>1 brick of frozen udon</li>
-                                        <li>1/2 cup kimchi, plus a bit of kimchi juice</li>
-                                        <li>1 tablespoon of butter</li>
-                                        <li>1 sac of mentaiko</li>
-                                        <li>sliced green onions and nori, to finish</li>
+                                        <li>3 Tbsp. lower-sodium soy sauce or tamari</li>
+                                        <li>3 garlic cloves minced</li>
+                                        <li>½ tsp. granulated sugar</li>
+                                        <li>Pinch of chili flakes</li>
+                                        <li>2 Tbsp. extra-virgin olive oil</li>
+                                        <li>1 medium head of broccoli, stemmed and chopped into florets</li>
+                                        <li>1 bunch scallions (green onion) greens sliced into 1 inch pieces</li>
+                                        <li>3 large eggs whisked </li>
+                                        <li>1 Tbsp. rice vinegar</li>
+                                        <li>1 tsp. granulated sugar</li>
+                                        <li>¾ tsp. ground turmeric</li>
+                                        <li>½ tsp. grated or minced fresh ginger</li>
                                     </ul>
-
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="nutrition-fact">
                         <div class="nutri-title">
-                            <h6>Nutrition Facts</h6>
+                            <h6>Nutritional Facts</h6>
                             <span>Serves 4</span>
                         </div>
                         <ul>
                             <li>Total Fat : 20.4g</li>
                             <li>Cholesterol : 2%</li>
-                            <li>Chalories: 345</li>
+                            <li> Calories: 364kcal</li>
                         </ul>
                     </div>
                 </div>
@@ -131,26 +120,58 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Quick and affordable ingredient. Suitable for milk boosting during low milk count</p>
-                           
+                            <p>30 minute broccoli fried rice with turmeric-tahini sauce revamps a takeout
+                                 classic with an extra dose of veggies for a healthy, one-pan meal..</p>
+                            
                         </div>
                         <div class="instruction-list">
                             <h3>Instructions</h3>
                             <ul>
                                 <li>
-         
+                                    <span>01.</span>
+                                    Combine soy sauce, garlic, sugar, and chili flakes in a small bowl; stir and set aside.
                                 </li>
+                                <li>
+                                    <span>02.</span>
+                                    Heat 1 Tbsp. of the oil in a large skillet over medium-high. Once hot, add broccoli; cover and cook 5 minutes,
+                                     uncovering occasionally to stir, under crisp-tender. Add green onion
+                                      and season with a pinch of salt; cook 1 to 2 more minutes, 
+                                    uncovered, until soft. Transfer veggies to a bowl.
+                                </li>
+                                <li>
+                                    <span>03.</span>
+                                    Heat remaining 1 Tbsp. oil in pan. Pour in whisked eggs and cook, stirring constantly, 
+                                    with a rubber spatula for 30 to 45 seconds, until just cooked through. 
+                                    Add cooked rice and soy sauce mixture; stir well to combine. Cook, undisturbed, 
+                                    until rice is slightly crisped on one side, about 3 minutes.
+                                </li>
+                                <li>
+                                    <span>04.</span>
+                                    Return broccoli and green onion to pan, and stir in edamame. Toss well to combine; turn off heat.
+                                </li>
+                                <li>
+                                    <span>05.</span>
+                                    Prepare Turmeric-Tahini Sauce by combining tahini, vinegar, sugar, turmeric, sesame oil, ginger,
+                                     and salt in a bowl; stir with a whisk. Gradually whisk in up to 2 ½ Tbsp. 
+                                    warm water to reach desired consistency
+                                </li>
+                                <li>
+                                    <span>06.</span>
+                                    Divide fried rice evenly into 4 bowls and drizzle with Turmeric-Tahini Sauce. F
+                                    inely chop the leftover whites of the green onion and sprinkle overtop as garnish, if desired.
+                                     Top with toasted sesame seeds and/or chili oil.
+                                </li>
+                            
                             </ul>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <!-- Single Recipe Section End -->
-                
+
     <!-- Similar Recipe Section Begin -->
     <section class="similar-recipe spad">
         <div class="container">
@@ -196,8 +217,10 @@
     </section>
     <!-- Similar Recipe Section End -->
 
-    <!-- Footer Section Begin -->
-         <footer>
+
+
+          <!-- footer start -->
+          <footer>
          <div class="container">
             <div class="row">
                <div class="col-md-4">
@@ -266,17 +289,8 @@
                </div>
             </div>
          </div>
+         
       </footer>
       <!-- footer end -->
-	<!-- Search model end -->
-
-    <!-- Js Plugins -->
-    <script src="home/js/jquery-3.3.1.min.js"></script>
-    <script src="home/js/bootstrap.min.js"></script>
-    <script src="home/js/jquery.slicknav.js"></script>
-    <script src="home/js/jquery.nice-select.min.js"></script>
-    <script src="home/js/mixitup.min.js"></script>
-    <script src="home/js/main.js"></script>
 </body>
-
 </html>

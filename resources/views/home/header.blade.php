@@ -1,7 +1,7 @@
 <header class="header-section">
         <div class="container">
             <div class="logo">
-                <a href="./index.html"><h1>FranDen Dietries</h1></a>
+                <a href=""><h1>FranDen Dietries</h1></a>
                 
             </div>
             <div class="nav-right search-switch"> <i class="fa fa-search"></i>
@@ -10,19 +10,19 @@
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="{{('recipes')}}">Recipe categories</a>
-                            <ul class="sub-menu">
-                                <li><a href="{{('recipes')}}">Meals</a></li>
-                                <li><a href="categories.html">Drinks</a></li>
-                                <li><a href="recipe.html">Salads</a></li>
-                                <li><a href="blog.html">forum</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{{('recipes')}}">Recipe</a>
+                         <ul class="sub-menu">
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
                                 
                          </ul>
                         </li>
-                        <li><a href="recipe.html">Forum</a></li>
-                        <li><a href="categories.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="{{('about')}}">About Us</a></li>
+                        <li><a href="{{('contact')}}">Contact</a></li>
                         @if (Route::has('login'))
                         @auth
                         <x-app-layout>

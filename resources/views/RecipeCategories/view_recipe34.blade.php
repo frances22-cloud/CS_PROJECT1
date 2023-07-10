@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
-<base href="/public">
     <meta charset="UTF-8">
-    <meta name="description" content="Yoga Studio Template">
-    <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <title>Project1</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+<!-- Css Styles -->
+<link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/style.css" type="text/css">
+<link rel="stylesheet" href="home/css/style2.css" type="text/css">
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Header Section Begin -->
-    <header class="header-section-other">
+       <!-- Header Section Begin -->
+       <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
                 <a href="{{('userpage')}}"><h3>FranDen Dietries</h3></a>
@@ -62,24 +52,14 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
- <section class="single-page-recipe spad">
-        <div class="recipe-top">
-            <div class="container-fluid">
-                <div class="recipe-title">
-                    <h2>All Recipes</h2>
-                    
-                </div>
-                
-            </div>
-        </div>
+ <section class="single-page-recipe spad">            
         <div class="container">
             <div class="row">
-           
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                            <img src="home/img/recipe-single.jpg" alt="">
-                            <h2>Fresh Onion chicken noodles</h2>
+                        <img src="home/img/d.webp" alt="">
+                            <h2>Easy, Lazy Chicken Soup With Beans And Greens</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -87,11 +67,12 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="reviews">4.9 from 25 reviews</div>
+                            <div class="reviews">6 from 25 reviews</div>
                             <div class="recipe-time">
                                 <ul>
-                                    <li>Prep time: <span>10 min</span></li>
-                                    <li>Cook time: <span>10 min</span></li>
+                                    <li>Prep time: <span>30 mins</span></li>
+                                    <li>Cook time: <span>30 mins hour</span></li>
+                                    <li> Total Cook time: <span>1hour 30 mins</span></li>
                                     <li>Yield: <span>5</span></li>
                                 </ul>
                             </div>
@@ -103,27 +84,34 @@
                             </div>
                             <div class="list-item">
                                 <h5>Ingredients</h5>
-
+                                
+                                <div class="dressing-list">
                                     <ul>
-                                        <li>1 brick of frozen udon</li>
-                                        <li>1/2 cup kimchi, plus a bit of kimchi juice</li>
-                                        <li>1 tablespoon of butter</li>
-                                        <li>1 sac of mentaiko</li>
-                                        <li>sliced green onions and nori, to finish</li>
+                                        <li>4 celery ribs, quartered</li>
+                                        <li>1 yellow onion, quartered</li>
+                                        <li>1 garlic head, halved crosswise</li>
+                                        <li>Zest of 1 lemon, finely grated</li>
+                                        <li>½ teaspoon black peppercorns</li>
+                                        <li>One 3- to 4-pound chickent</li>
+                                        <li>One 14-ounce can cannellini beans, drained and rinsed</li>
+                                        <li>5 ounces baby spinach</li>
+                                        <li>Kosher salt and freshly ground black pepper</li>
+                                        <li>1 bunch fresh dill</li>
+                
                                     </ul>
-
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="nutrition-fact">
                         <div class="nutri-title">
-                            <h6>Nutrition Facts</h6>
-                            <span>Serves 4</span>
+                            <h6>Nutritional Facts</h6>
+                            <span>Serves 2</span>
                         </div>
                         <ul>
-                            <li>Total Fat : 20.4g</li>
-                            <li>Cholesterol : 2%</li>
-                            <li>Chalories: 345</li>
+                            <li>CALORIES:408 21G FAT </li>
+                            <li>CARBOHYDRATES:22G</li>
+                            <li>PROTEIN: 32G  SUGARS:2G</li>
                         </ul>
                     </div>
                 </div>
@@ -131,26 +119,40 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Quick and affordable ingredient. Suitable for milk boosting during low milk count</p>
-                           
+                            <p>This marinated white bean and tomato salad  fits our ideal: It’s less than ten ingredients, can be made in 
+                                advance and doubled for a crowd, plus, it’s vegetarian and gluten free.</p>
+                            
                         </div>
                         <div class="instruction-list">
                             <h3>Instructions</h3>
                             <ul>
                                 <li>
-         
+                              <span>01.</span>
+                              In a large Dutch oven or stockpot, add the celery, onion, garlic, peppercorns and chicken. 
+                              Add enough water to cover completely; bring to a boil over medium heat. 
+                              Reduce the heat to maintain a gentle simmer and cook, skimming the surface occasionally for impurities, until the
+                               chicken is fully cooked and falling off the bone, 55 minutes to 1 hour.
                                 </li>
-                            </ul>
+                                <li>
+                                    <span>02.</span>
+                                    Transfer the chicken to a plate. Using a fine mesh strainer, strain the stock into a clean 
+                                    saucepan and keep warm over medium-low heat. Remove the chicken from the bone and shred with a fork. 
+                                    If you have more meat (or stock) than you would like to serve, you can freeze it for another use.
+                                <li>
+                                    <span>03.</span>
+                                    Whisk the miso into the stock and add the cannellini beans,
+                                     spinach and shredded chicken. Season to taste with salt and pepper. 
+                                    Divide among bowls and garnish with dill before serving.</li>
+
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <!-- Single Recipe Section End -->
-                
+
     <!-- Similar Recipe Section Begin -->
     <section class="similar-recipe spad">
         <div class="container">
@@ -196,8 +198,10 @@
     </section>
     <!-- Similar Recipe Section End -->
 
-    <!-- Footer Section Begin -->
-         <footer>
+
+
+          <!-- footer start -->
+          <footer>
          <div class="container">
             <div class="row">
                <div class="col-md-4">
@@ -266,17 +270,8 @@
                </div>
             </div>
          </div>
+         
       </footer>
       <!-- footer end -->
-	<!-- Search model end -->
-
-    <!-- Js Plugins -->
-    <script src="home/js/jquery-3.3.1.min.js"></script>
-    <script src="home/js/bootstrap.min.js"></script>
-    <script src="home/js/jquery.slicknav.js"></script>
-    <script src="home/js/jquery.nice-select.min.js"></script>
-    <script src="home/js/mixitup.min.js"></script>
-    <script src="home/js/main.js"></script>
 </body>
-
 </html>

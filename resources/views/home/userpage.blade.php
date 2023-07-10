@@ -43,6 +43,7 @@
                </h2>
             </div>
             <div class="row">
+        
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
@@ -114,6 +115,7 @@
                </div>
                
                   </div>
+                
                </div>
                
                      
@@ -271,7 +273,7 @@
     <!-- Footer Section Begin -->
     @include('home.footer')
     <!-- Footer Section End -->
-
+    @include('home.recipes')
     <!-- Search model -->
 	<div class="search-model">
 		<div class="h-100 d-flex align-items-center justify-content-center">

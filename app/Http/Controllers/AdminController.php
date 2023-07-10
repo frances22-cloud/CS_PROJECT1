@@ -29,7 +29,7 @@ class AdminController extends Controller
         $recipe_category=recipe_category::all();
         return view('admin.recipes',compact('recipe_category'));
     }
-    //function to add recipe to database
+    //function to add recipe to database by admin
     public function add_recipe(Request $request){
         $tbl_recipes= new tbl_recipes;
         $tbl_recipes->title=$request->title;

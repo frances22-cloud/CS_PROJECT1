@@ -2,18 +2,22 @@
 <html lang="zxx">
 
 <head>
-<base href="/public">
     <meta charset="UTF-8">
     <meta name="description" content="Yoga Studio Template">
     <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project1</title>
+    <title>FranDen Dietries</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
+    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style.css" type="text/css">
     <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
@@ -32,24 +36,19 @@
     <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
-                <a href="{{('userpage')}}"><h3>FranDen Dietries</h3></a>
+                <a href="./index.html"><img src="home/img/little-logo.png" alt=""></a>
             </div>
             <div class="nav-menu">
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li class="active"><a href="{{('userpage')}}">Home</a></li>
-                        <li><a href="#">categories</a>
-                            <ul class="sub-menu">
-                                <li><a href="{{('recipe_cat1')}}">Quick and Easy</a></li>
-                                <li><a href="{{('recipe_cat2')}}">Immune Boosting</a></li>
-                                <li><a href="{{('recipe_cat3')}}">Postnatal Recovery</a></li>
-                                <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
-                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
-                            </ul>
+                      
+                                <li><a href="{{('about')}}">About us</a></li>
+                                <li><a href="{{('')}}">Categories</a></li>
+                                <li><a href="{{('recipes')}}}">Recipes</a></li>
+                                <li><a href="{{('contact')}}">Contact</a></li>
                         </li>
-                        <li><a href="{{('addrecipe')}}">Add Recipes</a></li>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="{{('contact')}}}">Contact</a></li>
+        
                     </ul>
                 </nav>
                 <div class="nav-right search-switch">
@@ -61,96 +60,102 @@
     </header>
     <!-- Header End -->
 
- <!-- Single Recipe Section Begin -->
- <section class="single-page-recipe spad">
-        <div class="recipe-top">
-            <div class="container-fluid">
-                <div class="recipe-title">
-                    <h2>All Recipes</h2>
-                    
-                </div>
-                
-            </div>
+    <!-- Hero Search Section Begin -->
+    <div class="hero-search set-bg" data-setbg="home/img/search-bg.jpg">
+        <div class="container">
+          <!--  <div class="filter-table">
+                <form action="#" class="filter-search">
+                    <input type="text" placeholder="Search recipe">
+                    <select id="category">
+                        <option value="">Category</option>
+                    </select>
+                    <select id="tag">
+                        <option value="">Tags</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </div>-->
         </div>
+    </div>
+    <!-- Hero Search Section End -->
+
+    <!-- About Me Section Begin -->
+    <section class="about-me spad">
         <div class="container">
             <div class="row">
-           
-                <div class="col-lg-5">
-                    <div class="ingredients-item">
-                        <div class="intro-item">
-                            <img src="home/img/recipe-single.jpg" alt="">
-                            <h2>Fresh Onion chicken noodles</h2>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="reviews">4.9 from 25 reviews</div>
-                            <div class="recipe-time">
-                                <ul>
-                                    <li>Prep time: <span>10 min</span></li>
-                                    <li>Cook time: <span>10 min</span></li>
-                                    <li>Yield: <span>5</span></li>
-                                </ul>
-                            </div>
+                <div class="col-lg-8">
+                    <div class="about-left">
+                        <img src="home/img/about-me.jpg" alt="">
+                        <div class="about-title">
+                
+                            <h4>FranDen Dietriesis a web based application that caters for postantal mothers <br>
+                            It has a wide range of recipe categories with a variety of nutrients<br> 
+                             that support the postnatal journey of these moms. Within the website is a community forum that is help mothers to 
+                            <br> interact with others who share experiences about their postnatal journey.</h4>
                         </div>
-                        <div class="ingredient-list">
-                            <div class="recipe-btn">
-                                <a href="#">Print Recipe</a>
-                                <a href="#" class="black-btn">Pin Recipe</a>
-                            </div>
-                            <div class="list-item">
-                                <h5>Ingredients</h5>
-
-                                    <ul>
-                                        <li>1 brick of frozen udon</li>
-                                        <li>1/2 cup kimchi, plus a bit of kimchi juice</li>
-                                        <li>1 tablespoon of butter</li>
-                                        <li>1 sac of mentaiko</li>
-                                        <li>sliced green onions and nori, to finish</li>
-                                    </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nutrition-fact">
-                        <div class="nutri-title">
-                            <h6>Nutrition Facts</h6>
-                            <span>Serves 4</span>
-                        </div>
-                        <ul>
-                            <li>Total Fat : 20.4g</li>
-                            <li>Cholesterol : 2%</li>
-                            <li>Chalories: 345</li>
-                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="recipe-right">
-                        <div class="recipe-desc">
-                            <h3>Description</h3>
-                            <p>Quick and affordable ingredient. Suitable for milk boosting during low milk count</p>
-                           
+                <div class="col-lg-4">
+                    <div class="about-right">
+                        <div class="sidebar">
+                            <div class="sidebar-item">
+                                <a href="#"><img src="home/img/cat-feature/small-1.jpg" alt=""></a>
+                                <div class="sidebar-item-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <h6>One Pot Weeknight Lasagna Soup Recipe</h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <a href="#"><img src="home/img/cat-feature/small-2.jpg" alt=""></a>
+                                <div class="sidebar-item-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <h6>Lava Cake with a Tone of Chocolate</h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <a href="#"><img src="home/img/cat-feature/small-3.jpg" alt=""></a>
+                                <div class="sidebar-item-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <h6>One Pot Weeknight Lasagna Soup Recipe</h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <a href="#"><img src="home/img/cat-feature/small-4.jpg" alt=""></a>
+                                <div class="sidebar-item-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <h6>Smoked Salmon mini Sandwiches with Onion</h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <a href="#"><img src="home/img/cat-feature/small-5.jpg" alt=""></a>
+                                <div class="sidebar-item-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <h6>Asparagus with Pork Loin and Vegetables</h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <a href="#"><img src="home/img/cat-feature/small-6.jpg" alt=""></a>
+                                <div class="sidebar-item-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <h6>Dry Cookies with Corn</h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <a href="#"><img src="home/img/cat-feature/small-7.jpg" alt=""></a>
+                                <div class="sidebar-item-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <h6>Italian Tiramisu with Coffe</h6>
+                                </div>
+                            </div>
                         </div>
-                        <div class="instruction-list">
-                            <h3>Instructions</h3>
-                            <ul>
-                                <li>
-         
-                                </li>
-                            </ul>
-                        </div>
-                        </div>
+    
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
-    <!-- Single Recipe Section End -->
-                
+    <!-- About Me Section End -->
+
     <!-- Similar Recipe Section Begin -->
     <section class="similar-recipe spad">
         <div class="container">
@@ -197,6 +202,7 @@
     <!-- Similar Recipe Section End -->
 
     <!-- Footer Section Begin -->
+         <!-- footer start -->
          <footer>
          <div class="container">
             <div class="row">
@@ -268,6 +274,17 @@
          </div>
       </footer>
       <!-- footer end -->
+    <!-- Footer Section End -->
+
+    <!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
 	<!-- Search model end -->
 
     <!-- Js Plugins -->

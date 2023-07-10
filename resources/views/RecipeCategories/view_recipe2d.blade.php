@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
-<base href="/public">
     <meta charset="UTF-8">
-    <meta name="description" content="Yoga Studio Template">
-    <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <title>Project1</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style.css" type="text/css">
-    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+<!-- Css Styles -->
+<link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="home/css/style.css" type="text/css">
+<link rel="stylesheet" href="home/css/style2.css" type="text/css">
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Header Section Begin -->
-    <header class="header-section-other">
+       <!-- Header Section Begin -->
+       <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
                 <a href="{{('userpage')}}"><h3>FranDen Dietries</h3></a>
@@ -62,24 +52,14 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
- <section class="single-page-recipe spad">
-        <div class="recipe-top">
-            <div class="container-fluid">
-                <div class="recipe-title">
-                    <h2>All Recipes</h2>
-                    
-                </div>
-                
-            </div>
-        </div>
+ <section class="single-page-recipe spad">            
         <div class="container">
             <div class="row">
-           
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                            <img src="home/img/recipe-single.jpg" alt="">
-                            <h2>Fresh Onion chicken noodles</h2>
+                        <img src="home/img/p8.jpg" alt="">
+                            <h2>Spicy Peanut Cauliflower Stir-Fry</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -90,8 +70,9 @@
                             <div class="reviews">4.9 from 25 reviews</div>
                             <div class="recipe-time">
                                 <ul>
-                                    <li>Prep time: <span>10 min</span></li>
-                                    <li>Cook time: <span>10 min</span></li>
+                                    <li>Prep time: <span>15 min</span></li>
+                                    <li>Cook time: <span>15 min</span></li>
+                                    <li>Total time: <span>30 mins</span></li>
                                     <li>Yield: <span>5</span></li>
                                 </ul>
                             </div>
@@ -103,27 +84,33 @@
                             </div>
                             <div class="list-item">
                                 <h5>Ingredients</h5>
-
+                                
+                                <div class="dressing-list">
                                     <ul>
-                                        <li>1 brick of frozen udon</li>
-                                        <li>1/2 cup kimchi, plus a bit of kimchi juice</li>
-                                        <li>1 tablespoon of butter</li>
-                                        <li>1 sac of mentaiko</li>
-                                        <li>sliced green onions and nori, to finish</li>
+                                        <li>1 cup jasmine rice</li>
+                                        <li>1 head cauliflower, cut into florets</li>
+                                        <li>3 tablespoons vegetable oil</li>
+                                        <li>1/4 cup salted roasted peanut</li>
+                                        <li>1 cup snow peas (about 4 ounces), trimmed</li>
+                                        <li>1 yellow bell pepper, roughly chopped</li>
+                                        <li>2 tablespoons chopped peeled fresh ginger</li>
+                                        <li>1/3 cup sweet Thai chili sauce </li>
+                                        <li>11/2 teaspoons low-sodium soy sauce </li>
+                                        
                                     </ul>
-
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="nutrition-fact">
                         <div class="nutri-title">
-                            <h6>Nutrition Facts</h6>
+                            <h6>Nutritional Facts</h6>
                             <span>Serves 4</span>
                         </div>
                         <ul>
-                            <li>Total Fat : 20.4g</li>
-                            <li>Cholesterol : 2%</li>
-                            <li>Chalories: 345</li>
+                            <li>Total Fat : 21g</li>
+                            <li>Cholesterol :175mg | Proteins:39g| Sodium:930g </li>
+                            <li>Calories: 401  |Sugar:5g  |Saturated fat:4g</li>
                         </ul>
                     </div>
                 </div>
@@ -131,26 +118,49 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Quick and affordable ingredient. Suitable for milk boosting during low milk count</p>
-                           
+                            <p>This vegan dinner comes together super fast but is also very hearty. 
+                                Toasting the peanuts in oil not only flavors the oil, it makes the nuts extra toasty and crisp.
+                                 Broiling the cauliflower before adding to the skillet 
+                                cooks out some of the water in the vegetable so the stir-fry stays nice and crisp-tender.</p>
+                            
                         </div>
                         <div class="instruction-list">
                             <h3>Instructions</h3>
                             <ul>
                                 <li>
-         
+                                    <span>01.</span>
+                                    Preheat the broiler. Cook the rice as the label directs. Meanwhile, toss the cauliflower with 2 tablespoons vegetable oil
+                                     and a generous pinch each of salt and pepper; spread on a rimmed baking sheet. Broil, stirring occasionally, 
+                                    until lightly charred and tender, about 10 minutes.
                                 </li>
+                                <li>
+                                    <span>02.</span>
+                                    Heat the remaining 1 tablespoon vegetable oil in a large nonstick skillet over high heat. Add the peanuts and cook, 
+                                    stirring, until lightly toasted, about 1 minute. 
+                                    Remove to a small bowl with a slotted spoon and season with salt and pepper.
+                                </li>
+                                <li>
+                                    <span>03.</span>
+                                    Add the snow peas, bell pepper and ginger to the skillet. Cook, stirring occasionally, until crisp-tender, 
+                                    1 to 2 minutes. Add the scallions (white and green parts) and cauliflower; toss.
+                                     Add the chili sauce and soy sauce and continue to cook, 
+                                    stirring often, until the vegetables are glazed, about 2 minutes.
+                                </li>
+                                <li>
+                                    <span>04.</span>
+                                    Fluff the rice with a fork; top each serving with the stir-fry, toasted peanuts and cilantro.
+                                </li>
+                                
                             </ul>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <!-- Single Recipe Section End -->
-                
+
     <!-- Similar Recipe Section Begin -->
     <section class="similar-recipe spad">
         <div class="container">
@@ -196,8 +206,10 @@
     </section>
     <!-- Similar Recipe Section End -->
 
-    <!-- Footer Section Begin -->
-         <footer>
+
+
+          <!-- footer start -->
+          <footer>
          <div class="container">
             <div class="row">
                <div class="col-md-4">
@@ -266,17 +278,8 @@
                </div>
             </div>
          </div>
+         
       </footer>
       <!-- footer end -->
-	<!-- Search model end -->
-
-    <!-- Js Plugins -->
-    <script src="home/js/jquery-3.3.1.min.js"></script>
-    <script src="home/js/bootstrap.min.js"></script>
-    <script src="home/js/jquery.slicknav.js"></script>
-    <script src="home/js/jquery.nice-select.min.js"></script>
-    <script src="home/js/mixitup.min.js"></script>
-    <script src="home/js/main.js"></script>
 </body>
-
 </html>

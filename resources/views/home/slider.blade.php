@@ -73,11 +73,11 @@
                                    Browse for recipes based on your prefered categories
                                     and live healty to throught your postnatal journey
                                  </p>
-                                 <div class="btn-box">
+                                <!-- <div class="btn-box">
                                     <a href="" class="btn1">
                                    Browse Now
                                     </a>
-                                 </div>
+                                 </div>-->
                               </div>
                            </div>
                         </div>
