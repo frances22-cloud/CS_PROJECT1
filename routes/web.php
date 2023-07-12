@@ -82,11 +82,13 @@ Route::controller(CategoryController::class)->group(function(){
 Route::get('/logout', [HomeController::class, 'perform']);
 
 Route::controller(ForumController::class)->group(function(){
-    Route::get('/forumpage','Forum');
+    Route::get('/forumpage','Index');
+    Route::get('/topicspage','Forum');
     Route::get('/chats','Chats');
     Route::get('/addtopic', 'Topics');
 
     Route::post('/add_topic','add_topic');
+    Route::post('/add_chat','add_chat');
    
 });
 

@@ -5,18 +5,36 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Forum_topics;
+use App\Models\Chat;
 
 class ForumController extends Controller
 {
-   public function Forum()
+   public function Index()
    {
       $data=Forum_topics::all();
       return view('forum.forumpage', compact('data'));
    }
 
-   public function Chats()
+   public function Forum()
    {
-      return view('forum.chats');
+      $data=Forum_topics::all();
+      return view('forum.topicspage', compact('data'));
+   }
+
+   public function Chats()
+   {    
+      $chats=Chat::orderBy('created_at', 'asc')->get();
+      return view('forum.chats', compact('chats'));
+   }
+
+   public function add_chat(Request $request)
+   {
+      $chat = new Chat();
+      $chat->message = $request->message;
+
+      $chat->save();
+
+      return redirect()->back()->with('success', 'Topic created successfully.');
    }
 
    public function Topics()

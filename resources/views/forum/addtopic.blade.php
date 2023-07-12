@@ -74,7 +74,7 @@
                                 </div>
                                 <br>
 
-                                <button class="backbtn"><a href="{{('forumpage') }}">Back</a></button>
+                                <button class="backbtn"><a href="{{('topicspage') }}">Back</a></button>
 
                             </form>
 
