@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Models\recipe_category;
 use App\Models\tbl_recipes;
 use App\Models\User;
+use App\Models\Forum_topics;
 
 class AdminController extends Controller
 {
@@ -50,7 +51,7 @@ class AdminController extends Controller
         return redirect()->back()->with('message','Recipe added succefully');
       
     }
-    //function to show recipes
+    //function to show recipes in a table
     public function show_recipe()
     {
         $tbl_recipes=tbl_recipes::all();
@@ -102,7 +103,8 @@ class AdminController extends Controller
     }
     public function ForumTopics()
     {
-        return view('admin.forum_topics');
+        $data=Forum_topics::all();
+        return view('admin.forum_topics',compact('data'));
     }
 
     public function perform() //admin logout

@@ -40,12 +40,12 @@
                                 <li><a href="{{('recipe_cat1')}}">Quick and Easy</a></li>
                                 <li><a href="{{('recipe_cat2')}}">Immune Boosting</a></li>
                                 <li><a href="{{('recipe_cat3')}}">Postnatal Recovery</a></li>
-                                <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
-                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
+                                <!-- <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
+                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li> -->
                             </ul>
                         </li>
                         <li><a href="{{('useraddrecipe')}}">Add Recipes</a></li>
-                        <li><a href="">Forum</a></li>
+                        <li><a href="{{('forumpage')}}}">Forum</a></li>
                         <li><a href="{{('contact')}}}">Contact</a></li>
                     </ul>
                 </nav>

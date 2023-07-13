@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-md navbar-light border-bottom p-0 ps-5">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <span class="text-main-color fw-bold fs-3">FranDen Dietries</span>
+                <span class="text-main-color fw-bold fs-3">FranDen Dietries Community Forum</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

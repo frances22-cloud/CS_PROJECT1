@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-
 use App\Models\Forum_topics;
 use App\Models\Chat;
 use App\Models\Post;
@@ -38,7 +37,7 @@ class ForumController extends Controller
 
       $chat->save();
 
-      return redirect()->back()->with('success', 'Topic created successfully.');
+      return redirect()->back()->with('message', 'Chat added successfully.');
    }
 
    public function Topics()

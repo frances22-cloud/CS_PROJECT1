@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\comment;
 use App\Models\reply;
+use App\Models\addrecipe;
+use App\Models\recipe_category;
 
 class CategoryController extends Controller
 {
@@ -25,7 +27,7 @@ class CategoryController extends Controller
     return view('RecipeCategories.recipe_cat4');
 }
 
-// Function for view recipe cat1
+// Function for view recipe and comment section cat1
    public function ViewCat1(){
     $comment=comment::all();
     $reply=reply::all();
@@ -109,4 +111,32 @@ public function add_reply(Request $request)
         return redirect ('login');
     }  
 }
+   //Function to add recipes to database
+   public function useradd(Request $request)
+   {
+     $addrecipe=new addrecipe;
+     $addrecipe->recipeName=$request->recipeName;
+     $addrecipe->userName=$request->userName;
+     $addrecipe->description=$request->description;
+     $addrecipe->ingredients=$request->ingredients;
+     $addrecipe->instructions=$request->instructions;
+     $addrecipe->prepTime=$request->prepTime;
+     $addrecipe->cookTime=$request->cookTime;
+     $addrecipe->totalTime=$request->totalTime;
+     $addrecipe->nutritional_fact=$request->nutritional_fact;
+     $addrecipe->totalTime=$request->totalTime;
+
+      $image=$request->image;
+
+     if($image)
+{
+        $imagename=time().'.'.$image->getClientOriginalExtension();
+        $request->image->move('addrecipes',$imagename);
+        $tbl_recipes->image= $imagename;
+    }
+
+     $addrecipe->save();
+     return redirect()->back('message','Recipe added successfully');
+     //return view('home.useraddrecipe');
+   }
 }
