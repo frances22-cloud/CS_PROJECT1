@@ -57,10 +57,10 @@
                             <td>{{$data->name}}</td>
                             <td>{{$data->topic_title}}</td>
                             <td>{{$data->topic_message}}</td>
-                            <td><a href="details.php" class="more">Details</a></td>
-
+                            @endforeach
+                            
                         </tr>
-                        @endforeach
+                        
                     </tbody>
                 </table>
             </div>

@@ -22,7 +22,7 @@
        <header class="header-section">
         <div class="container">
             <div class="logo">
-                <a href="{{('userpage')}}l"><h1 style="text-align:center; color:black; padding:30px font-size:30px">FranDen Dietries</h1></a>
+                <a href="{{('userpage')}}l"><h1 style="text-align:center; color:black; padding:30px; font-size:30px">FranDen Dietries</h1></a>
             </div>
             <div class="nav-menu">
                 <nav class="main-menu mobile-menu">

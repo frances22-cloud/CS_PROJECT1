@@ -104,10 +104,18 @@ Route::controller(ForumController::class)->group(function(){
     Route::get('/topicspage','Forum');
     Route::get('/chats','Chats');
     Route::get('/addtopic', 'Topics');
+    Route::get('/comments', 'Comments');
+
+    Route::get('/posts', 'Posts');
 
     Route::post('/add_topic','add_topic');
     Route::post('/add_chat','add_chat');
-   
+    Route::post('/add_comment','add_comment');
+    Route::post('/add_reply','add_reply');
+
+    Route::post('/show_comment','show_comment');
+    Route::post('/show_reply','show_reply');
+    
 });
 
 /*Route::middleware('recipes')->group(function () {
