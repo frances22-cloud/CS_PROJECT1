@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ForumController;
 
 
 Route::controller(HomeController::class)->group(function(){
@@ -80,7 +81,23 @@ Route::controller(CategoryController::class)->group(function(){
 
 Route::get('/logout', [HomeController::class, 'perform']);
 
+Route::controller(ForumController::class)->group(function(){
+    Route::get('/forumpage','Index');
+    Route::get('/topicspage','Forum');
+    Route::get('/chats','Chats');
+    Route::get('/addtopic', 'Topics');
 
+    Route::post('/add_topic','add_topic');
+    Route::post('/add_chat','add_chat');
+   
+});
+
+/*Route::middleware('recipes')->group(function () {
+    Route::get('addrecipe', [RecipeController::class, 'create'])
+                ->name('addrecipe');
+
+    Route::post('addrecipe', [RecipeController::class, 'store']);
+});*/
 
 
 require __DIR__.'/auth.php';

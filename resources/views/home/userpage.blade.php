@@ -23,9 +23,9 @@
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
+    <!--<div id="preloder">
         <div class="loader"></div>
-    </div>
+    </div>-->
 
     <!-- Header Section Begin -->
    @include('home.header')
@@ -273,7 +273,7 @@
     <!-- Footer Section Begin -->
     @include('home.footer')
     <!-- Footer Section End -->
-    @include('home.recipes')
+ 
     <!-- Search model -->
 	<div class="search-model">
 		<div class="h-100 d-flex align-items-center justify-content-center">
