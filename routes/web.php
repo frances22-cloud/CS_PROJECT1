@@ -2,19 +2,23 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 use App\Http\Controllers\EmailingController;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RecipeController;
 
 
 Route::controller(HomeController::class)->group(function(){
     Route::get('/userpage','Index');
-    Route::get('/recipes','Recipe');
-    Route::get('/addrecipe', 'AddRecipe');
     Route::get('/about', 'About');
     Route::get('/contact', 'Contact');
+    Route::get('/searchRecipes', 'searchRecipes');
+   // Route:get('/dashboard', 'Recipe');
+   
+    
 
 });
 Route::controller(AdminController::class)->group(function(){
@@ -27,12 +31,18 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/delete_recipe/{id}','delete_recipe');
     Route::get('/update_recipe/{id}','update_recipe');
     Route::post('/update_recipe_confirm/{id}','update_recipe_confirm');
+    Route::post('/Addrecipe','Addrecipe');
+    Route::get('/forum_topics','ForumTopics');
+    Route::get('/userdata','showuser');
 
 });
 Route::get('/',[HomeController::class,'Index']);
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
-//Route::get('logout', [HomeController::class],'perform');
+//Route::get('/redirect', [HomeController::class, 'redirect'])->middleware('auth','verified');
+
+Route::get('logout', [HomeController::class],'perform');
+Route::Post('/useraddrecipe', [HomeController::class],'useradd');
 
 
 
@@ -75,10 +85,20 @@ Route::controller(CategoryController::class)->group(function(){
     Route::get('/view_recipe33','View_recipe33');
     Route::get('/view_recipe34','View_recipe34');
     Route::post('/add_comment','add_comment');
+    Route::post('/add_reply','add_reply');
     
 });
+Route::controller(RecipeController::class)->group(function(){
+    Route::get('/dashboard', 'useradd');
+    Route::post('/useradd', 'useradd');
+
+});
+// Route::post('/RecipeCategories/{view_recipe_cat1}/favorite', [RecipeController::class, 'favorite'])->name('view_recipe_cat1.favorite');
+// Route::post('/RecipeCategories/{view_recipe_cat1}/unfavorite', [RecipeController::class, 'unfavorite'])->name('view_recipe_cat1.unfavorite');
 
 Route::get('/logout', [HomeController::class, 'perform']);
+
+Route::get('/logout', [AdminController::class, 'perform']);
 
 
 

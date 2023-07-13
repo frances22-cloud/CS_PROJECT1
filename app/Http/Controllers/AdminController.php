@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\recipe_category;
 use App\Models\tbl_recipes;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -83,7 +84,7 @@ class AdminController extends Controller
         $tbl_recipes->Nutritional_info=$request->Nutritional_info;
 
         $image=$request->image;
-if($image)
+     if($image)
 {
         $imagename=time().'.'.$image->getClientOriginalExtension();
         $request->image->move('tbl_recipes',$imagename);
@@ -93,5 +94,21 @@ if($image)
         $tbl_recipes->save();
         return redirect()->back()->with('message','Recipe updated succefully');
       
+    }
+    public function showuser()
+    {
+        $users = User::all();
+        return view('admin.userdata', compact('users'));
+    }
+    public function ForumTopics()
+    {
+        return view('admin.forum_topics');
+    }
+
+    public function perform() //admin logout
+    {
+        //Auth::logout();
+
+        return redirect('userpage');
     }
 }

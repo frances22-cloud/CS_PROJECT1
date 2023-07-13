@@ -24,9 +24,7 @@
                     </div>
                   </div>
                 </a>
-                <div class="dropdown-divider"></div>
-            
-             
+                <div class="dropdown-divider"></div> 
           </li>
           
           <li class="nav-item menu-items">
@@ -58,7 +56,7 @@
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">Favourite Recipes</span>
-              <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <i class="fa-solid fa-heart"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
@@ -73,64 +71,37 @@
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">Comments</span>
-              <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <i class="fa-solid fa-messages"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="">Delete comment</a></li>
                 <li class="nav-item"> <a class="nav-link" href="">Show comment</a></li>
-               
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('recipe_category')}}">
               <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
+              <i class="fa-light fa-pot-food"></i>
               </span>
               <span class="menu-title">Recipe Categories</span>
             </a>
           </li>
-         <!-- <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/tables/basic-table.html">
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('userdata')}}">
               <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
+              <i class="fa-solid fa-users"></i>
               </span>
-             <span class="menu-title">Tables</span>
+              <span class="menu-title">Users</span>
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/charts/chartjs.html">
+            <a class="nav-link" href="{{url('forum_topics')}}">
               <span class="menu-icon">
-                <i class="mdi mdi-chart-bar"></i>
+              <i class="fa-solid fa-users"></i>
               </span>
-              <span class="menu-title">Charts</span>
+              <span class="menu-title">Forum Topics</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-contacts"></i>
-              </span>
-              <span class="menu-title">Icons</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <span class="menu-icon">
-                <i class="mdi mdi-security"></i>
-              </span>
-              <span class="menu-title">Login/Register</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-              
-                <li class="nav-item"> <a class="nav-link" href="{{url('login')}}"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{url('register')}}"> Register </a></li>
-              </ul>
-            </div>
-          </li>-->
-        
         </ul>
       </nav>

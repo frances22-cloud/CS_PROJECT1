@@ -1,36 +1,46 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use App\Models\Recipe;
+use App\Models\addrecipe;
 
 class RecipeController extends Controller
 {
-    
-    public function store(Request $request)
+    //Function to add recipes to database
+    public function useradd(Request $request)
     {
-        $request->validate([
-            'title' => 'required|max:255',
-            'preptime' => 'required',
-            'cooktime' => 'required',
-            'difficulty' => 'required',
-            'description' => 'required',
-            'ingredients' => 'required',
-            'instructions' => 'required',
-        ]);
+      $addrecipe=new addrecipe;
+      $addrecipe->recipeName=$request->recipeName;
+      $addrecipe->userName=$request->userName;
+      $addrecipe->description=$request->description;
+      $addrecipe->ingredients=$request->ingredients;
+      $addrecipe->instructions=$request->instructions;
+      $addrecipe->prepTime=$request->prepTime;
+      $addrecipe->cookTime=$request->cookTime;
+      $addrecipe->totalTime=$request->totalTime;
+      $addrecipe->nutritional_fact=$request->nutritional_fact;
+      $addrecipe->totalTime=$request->totalTime;
+      $image=$request->image;
 
-        Recipe::create([
-            'title' => $request->title,
-            'preptime' => $request->preptime,
-            'cooktime' => $request->cooktime,
-            'difficulty' => $request->difficulty,
-            'description' => $request->description,
-            'ingredients' => $request->ingredients,
-            'instructions' => $request->instructions,
-        ]);
+      if($image)
+ {
+         $imagename=time().'.'.$image->getClientOriginalExtension();
+         $request->image->move('addrecipes',$imagename);
+         $tbl_recipes->image= $imagename;
+     }
 
-        return redirect()->route('home.addrecipe')
-            ->with('success', 'Recipe created successfully.');
+      $addrecipe->save();
+      return redirect()->back();
+      //return view('home.useraddrecipe');
+    }
+    public function Recipe(){
+        return view ('dashboard');
+    }
+    public function favourites(Request $request, Recipe $view_recipe_cat1)
+    {
+        $user = Auth::user();
+        $user->favourites()->attach($view_recipe_cat1);
+
+        return response()->json(['success' => true]);
     }
 }

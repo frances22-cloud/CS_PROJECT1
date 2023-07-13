@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\comment;
+use App\Models\reply;
 
 class CategoryController extends Controller
 {
@@ -26,7 +27,10 @@ class CategoryController extends Controller
 
 // Function for view recipe cat1
    public function ViewCat1(){
-   return view('RecipeCategories.view_recipe_cat1');
+    $comment=comment::all();
+    $reply=reply::all();
+   return view('RecipeCategories.view_recipe_cat1',compact('comment','comment'));
+   return view('RecipeCategories.view_recipe_cat1',compact('reply','reply'));
 }
 public function ViewCat2()
 {
@@ -81,11 +85,28 @@ $comment->name=Auth::user()->name;
 $comment->user_id=Auth::user()->id;
 $comment->comment=$request->comment;
 $comment->save();
-return redirect()->back()->with('message','comment added successfully');
+return redirect()->back();
 
 }
 else{
     return redirect('login');
 }
+}
+public function add_reply(Request $request)
+{
+    if(Auth::id())
+    {
+        $reply=new reply();
+        $reply->name=Auth::user()->name;
+        $reply->user_id=Auth::user()->id;
+        $reply->comment_id=$request->commentId;
+        $reply->reply=$request->reply;
+        $reply->save();
+        return redirect()->back();
+
+    } else
+    {
+        return redirect ('login');
+    }  
 }
 }

@@ -80,7 +80,7 @@
                         <div class="ingredient-list">
                             <div class="recipe-btn">
                                 <a href="#">Print Recipe</a>
-                                <a href="#" class="black-btn">Pin Recipe</a>
+                                <a href="#" class="black-btn">Save</a>
                             </div>
                             <div class="list-item">
                                 <h5>Ingredients</h5>

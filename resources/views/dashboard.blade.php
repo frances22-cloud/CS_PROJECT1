@@ -35,7 +35,7 @@
     @include('home.slider')
     <!-- Page Top Recipe Section End -->
  <!-- product section -->
- <section class="product_section layout_padding">
+ <!--<section class="product_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
@@ -117,7 +117,7 @@
                </div>
                
                      
-      </section>
+      </section>-->
     <!-- Top Recipe Section End -->
 
     <!-- Categories Filter Section Begin -->
@@ -125,7 +125,7 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                Most <span>Popular Recipes</span>
+                <span>Recipes</span>
                </h2>
             </div>
             <div class="cf-filter" id="category-filter">

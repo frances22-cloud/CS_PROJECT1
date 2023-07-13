@@ -54,7 +54,7 @@
       <!-- partial -->
       @include('admin.header')
         <!-- partial -->
-       <!-- @include('admin.body')-->
+        @include('admin.body')
 
        <div class="main-panel">
           <div class="content-wrapper">
@@ -65,39 +65,27 @@
 
            </div>
            @endif
-            <h2 class="font_size">All recipes</h2>
+            <h2 class="font_size">All Users</h2>
         <table class="center">
        <tr class="th_color">
 	     <th class="th_design" >S/N</th>
-        <th class="th_design">Title</th>
-        <th class="th_design" >Image</th>
-        <th class="th_design">Description</th>
-       <!-- <th class="th_design" >Category</th>-->
-        <th class="th_design" >Ingredients</th>      
-        <th class="th_design">Intructions</th>
-       <th  class="th_design">Prep time</th>
-       <!-- <th class="th_design">Nutrients</th>-->
+        <th class="th_design">UserName</th>
+        <th class="th_design" >Eamil</th>
+    <!-- <th class="th_design" >Password</th>-->
+      
 		<th class="th_design" colspan='2'>Actions</th>
     </tr>
 
-    @foreach($tbl_recipes as $tbl_recipes)
+    @foreach($users as $users)
     <tr>
-    <td>{{$tbl_recipes->id}}</td>
-    <td>{{$tbl_recipes->title}}</td>
-    <td>
-        <img class="img_size" src="/tbl_recipes/{{$tbl_recipes->image}}" alt="">
-    </td>
-    <td >{{$tbl_recipes->description}}</td>
-   <!--- <td >{{$tbl_recipes->category}}</td>-->
-    <td >{{$tbl_recipes->ingredients}}</td>
-    <td >{{$tbl_recipes->prep_instructions}}</td>
-    <td >{{$tbl_recipes->prep_time}}</td>
-    <!---<td >{{$tbl_recipes->Nutritional_info}}</td>-->
-    <td>
-        <a onclick="return confirm('Are you sure you want to delete this?')" class="bt btn-danger" href="{{url('delete_recipe',$tbl_recipes->id)}}">Delete</a>
+    <td>{{$users->id}}</td>
+    <td>{{$users->name}}</td>
+    <td>{{$users->email}}</td>
+   <!-- <td>{{$users->password}}</td>-->
+     <td><a onclick="return confirm('Are you sure you want to delete this?')" class="bt btn-danger" href="">Delete</a>
     </td>
     <td>
-        <a class="btn btn-success" href="{{url('update_recipe',$tbl_recipes->id)}}">Edit</a>
+        <a class="btn btn-success" href="">Edit</a>
     </td>
     </tr>
     @endforeach
@@ -105,8 +93,6 @@
     </table>
 </div>
 </div>
-
-
 
     <!-- container-scroller -->
     <!-- plugins:js -->

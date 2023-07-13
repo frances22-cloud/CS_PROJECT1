@@ -44,7 +44,7 @@
                                 <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{('addrecipe')}}">Add Recipes</a></li>
+                        <li><a href="{{('useraddrecipe')}}">Add Recipes</a></li>
                         <li><a href="">Forum</a></li>
                         <li><a href="{{('contact')}}}">Contact</a></li>
                     </ul>
@@ -76,7 +76,7 @@
                             <p>Tender chicken, pillowy dumplings and a richly flavored broth combine to create a hearty soup that comes 
                             together in less than an hour, but tastes like it took all day to make.</p>
                                 <div class="options">
-                          <a href="" class="option1">
+                          <a href="{{('')}}" class="option1">
                           Add To Favourites
                            </a>
                            <a href="{{('view_recipe_cat1')}}" class="option2">

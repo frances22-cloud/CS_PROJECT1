@@ -142,7 +142,7 @@
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Log out</p>
+                      <p class="preview-subject mb-1"><a href="{{('logout') }}">Log out</a></p>
                     </div>
                   </a>
               </li>

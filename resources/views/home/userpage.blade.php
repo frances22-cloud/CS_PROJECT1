@@ -11,7 +11,6 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-
     <!-- Css Styles -->
     <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
@@ -19,13 +18,14 @@
     <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="home/css/style.css" type="text/css">
     <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+    
 </head>
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
+   <!-- <div id="preloder">
         <div class="loader"></div>
-    </div>
+    </div>-->
 
     <!-- Header Section Begin -->
    @include('home.header')
@@ -273,7 +273,7 @@
     <!-- Footer Section Begin -->
     @include('home.footer')
     <!-- Footer Section End -->
-    @include('home.recipes')
+
     <!-- Search model -->
 	<div class="search-model">
 		<div class="h-100 d-flex align-items-center justify-content-center">
@@ -293,5 +293,4 @@
     <script src="homejs/mixitup.min.js"></script>
     <script src="home/js/main.js"></script>
 </body>
-
 </html>
