@@ -1,7 +1,7 @@
 # CS_PROJECT1
 Computer Science project 1 2023
 
-## Project's Title
+## Project Title
 A Web Based Recipe Application and a Community Forum for Postnatal Mothers
 
 ## Project Description
