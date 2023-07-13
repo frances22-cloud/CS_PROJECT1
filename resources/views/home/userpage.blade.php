@@ -23,11 +23,7 @@
 
 <body>
     <!-- Page Preloder -->
-<<<<<<< HEAD
-   <!-- <div id="preloder">
-=======
     <!--<div id="preloder">
->>>>>>> 5a6124c96a571629ce7b2a17d555c8f177198e6d
         <div class="loader"></div>
     </div>-->
 

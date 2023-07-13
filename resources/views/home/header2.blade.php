@@ -15,8 +15,8 @@
                 <!--<li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
                 <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>-->
                 </ul>
-                <li><a href="{{('more')}}">More Recipes</a></li>
-            <li><a href="#">Forum</a></li>
+            <li><a href="{{('more')}}">More Recipes</a></li>
+            <li><a href="{{('forumpage')}}">Forum</a></li>
             <li><a href="{{('useraddrecipe')}}">Add Recipe</a></li>
             <li><a href="{{('logout') }}">Logout</a></li>
         </ul>

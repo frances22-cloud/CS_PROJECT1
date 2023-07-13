@@ -29,7 +29,7 @@
 
         <div class="container">
 
-            <h2 class="mb-5">Forums</h2>
+            <h1 style="color:purple;" class="mb-5">Welcome to this forum,Click the Add button to create a topic of discussion</h1>
 
             <button><a href="{{('addtopic') }}"><i class="fa fa-plus" aria-hidden="true"></i> Create New Topic</a></button>
             <button><a href="{{('forumpage') }}"><i class="fa fa-plus" aria-hidden="true"></i> Back</a></button>
@@ -40,7 +40,7 @@
                     <thead>
                         <tr>
 
-                            <th scope="col">Number</th>
+                            <th scope="col">S/N</th>
                             <th scope="col">Creator</th>
                             <th scope="col">Topics</th>
                             <th scope="col">Posts</th>
@@ -50,15 +50,12 @@
                     </thead>
                     <tbody>
                         <tr scope="row">
-
                             @foreach($data as $data)
-
                             <td>{{$data->id}}</td>
                             <td>{{$data->name}}</td>
                             <td>{{$data->topic_title}}</td>
                             <td>{{$data->topic_message}}</td>
                             <td><a href="details.php" class="more">Details</a></td>
-
                         </tr>
                         @endforeach
                     </tbody>

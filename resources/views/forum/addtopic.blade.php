@@ -41,7 +41,7 @@
                         </div>
                         <div class="col-md-6">
 
-                            @if(session()->has('success'))
+                            @if(session()->has('message'))
                             <div class="alert alert-success">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
                                 {{session()->get('message')}}

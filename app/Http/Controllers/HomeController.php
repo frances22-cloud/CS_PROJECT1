@@ -22,9 +22,9 @@ class HomeController extends Controller
    return view ('home.recipes', compact('tbl_recipes'));
 }
 
-   public function AddRecipe(){
-      return view('home.addrecipe');
-     }
+   // public function AddRecipe(){
+   //    return view('home.addrecipe');
+   //   }
      public function About(){
       return view('home.about');
      }
@@ -47,9 +47,13 @@ class HomeController extends Controller
        
          return view('admin.home');
       }
-      else
+      else if ($usertype=='0')
       {
          return view('dashboard');
+      }
+      else
+      {
+         return redirect ()->back();
       }
    }
 
@@ -60,7 +64,7 @@ class HomeController extends Controller
         return redirect('userpage');
     }
     //search recipes section
-    public function searchRecipes(){
+   public function searchRecipes(){
       return view('home.more');
     }
 }

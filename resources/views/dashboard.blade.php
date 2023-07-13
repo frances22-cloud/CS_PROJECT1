@@ -34,92 +34,11 @@
     <!-- Page Top Recipe Section Begin -->
     @include('home.slider')
     <!-- Page Top Recipe Section End -->
- <!-- product section -->
- <!--<section class="product_section layout_padding">
-         <div class="container">
-            <div class="heading_container heading_center">
-               <h2>
-                 All <span>Recipes</span>
-               </h2>
-            </div>
-            <div class="row">
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                          Add To Favourites
-                           </a>
-                           <a href="" class="option2">
-                           View Recipe
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="home/img/about-right.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                         Chicken soup
-                        </h5>
-                       <a class="btn btn-secondary" href=""> <i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Favourites
-                           </a>
-                           <a href="" class="option2">
-                          View Recipe
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="home/img/recipe-2.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                          Name of recipe
-                        </h5>
-                     <a class="btn btn-secondary" href= ""> <i class="fa fa-thumbs-up" aria-hidden="true"></i></a> 
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Favourites
-                           </a>
-                           <a href="" class="option2">
-                         View Recipe
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="home/img/recipe-3.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                          Name of Recipe
-                        </h5>
-                      <a class="btn btn-secondary" href=""> <i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                     </div>
-                  </div>
-               </div>
+ 
                
                   </div>
                </div>
-               
-                     
-      </section>-->
-    <!-- Top Recipe Section End -->
-
+    
     <!-- Categories Filter Section Begin -->
     <div class="product_section layout_padding">
          <div class="container">

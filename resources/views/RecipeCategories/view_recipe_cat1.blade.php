@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <title>Project1</title>
 
 <!-- Google Font -->
@@ -35,12 +34,12 @@
                                 <li><a href="{{('recipe_cat1')}}">Quick and Easy</a></li>
                                 <li><a href="{{('recipe_cat2')}}">Immune Boosting</a></li>
                                 <li><a href="{{('recipe_cat3')}}">Postnatal Recovery</a></li>
-                                <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
-                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
+                                <!-- <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
+                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li> -->
                             </ul>
                         </li>
-                        <li><a href="{{('addrecipe')}}">Add Recipes</a></li>
-                        <li><a href="">Forum</a></li>
+                        <li><a href="{{('useraddrecipe')}}">Add Recipes</a></li>
+                        <li><a href="{{('forumpage')}}">Forum</a></li>
                         <li><a href="{{('contact')}}}">Contact</a></li>
                         <li><a href="{{('logout') }}">Logout</a></li>
                     </ul>
@@ -335,6 +334,7 @@ function reply_close(caller){
     $('.replyDiv').hide();
 }
 </script>
+<script>
 $(document).ready(function() {
     $('.favorites-button').click(function() {
         var recipeId = $(this).data('recipe-id');
@@ -358,6 +358,7 @@ $(document).ready(function() {
     }
 });
 </script>
+
 <script src="home/js/app.js"></script>
     <script src="home/js/jquery-3.3.1.min.js"></script>
     <script src="home/js/bootstrap.min.js"></script>

@@ -98,7 +98,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('forum_topics')}}">
               <span class="menu-icon">
-              <i class="fa-solid fa-users"></i>
+              <i class="fa-sharp fa-solid fa-blog"></i>
               </span>
               <span class="menu-title">Forum Topics</span>
             </a>

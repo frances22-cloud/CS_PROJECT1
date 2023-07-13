@@ -65,7 +65,8 @@
 
            </div>
            @endif
-            <h2 class="font_size">All recipes</h2>
+           <!-- Recipes table -->
+       <h2 class="font_size">All recipes</h2>
         <table class="center">
        <tr class="th_color">
 	     <th class="th_design" >S/N</th>

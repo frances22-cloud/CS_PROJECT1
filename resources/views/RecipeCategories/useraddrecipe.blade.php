@@ -17,7 +17,18 @@
     
 </head>
 <body>
-    <h3 style="text-align:center; color:black;">ADD NEW RECIPES </h3>
+   <!-- Display success message when recipe is added to db -->
+<div class="main-panel">
+          <div class="content-wrapper">
+          @if(session()->has('message'))
+           <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+            {{session()->get('message')}}
+
+           </div>
+           @endif
+
+ <h3 style="text-align:center; color:black;">ADD NEW RECIPES </h3>
 <form action="{{ url('useradd') }}" method="POST" enctype="multipart/form-data">
   @csrf
 

@@ -87,11 +87,14 @@ Route::controller(CategoryController::class)->group(function(){
     Route::get('/view_recipe34','View_recipe34');
     Route::post('/add_comment','add_comment');
     Route::post('/add_reply','add_reply');
+    //Route::get('/useradd', 'useradd');
+    Route::post('/useradd', 'useradd');
     
 });
+
+//Recipe controller here
 Route::controller(RecipeController::class)->group(function(){
-    Route::get('/dashboard', 'useradd');
-    Route::post('/useradd', 'useradd');
+   
 
 });
 // Route::post('/RecipeCategories/{view_recipe_cat1}/favorite', [RecipeController::class, 'favorite'])->name('view_recipe_cat1.favorite');
