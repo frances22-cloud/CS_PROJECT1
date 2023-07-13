@@ -1,13 +1,13 @@
 # CS_PROJECT1
 Computer Science project 1 2023
 
-#Project's Title
+# Project's Title
 A Web Based Recipe Application and a Community Forum for Postnatal Mothers
 
 # Project Description
  This project is a recipe  application targeting mainly postantal mothers and also includes a community forumm that allow them to engage into conversations with others. The user is able to register and login into the application so that data such as their favorite recipes can be saved with their user id. The main function of the application is the recipe search feature and the forum discussions involved by the various postnatal mothers. The users can view the rcipes plus all the instructions, ingedients etc.
 
- #How to Install and Run the Project
+ # How to Install and Run the Project
  1.Fork the repository
  2.Clone the project
  3.Go to the folder application using cd command on your terminal
@@ -23,7 +23,7 @@ A Web Based Recipe Application and a Community Forum for Postnatal Mothers
 # Collaborators
 Denise Ndirangu https://github.com/denisendirangu/CS_PROJECT1
 
-#Programing languages
+# Programing languages
 1.php
 2.Javascript
 3.Html
