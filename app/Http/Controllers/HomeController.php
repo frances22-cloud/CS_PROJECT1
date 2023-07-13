@@ -16,6 +16,15 @@ class HomeController extends Controller
      
     return view('home.userpage');
    }
+   
+   public function Recipe(){
+      $tbl_recipes=tbl_recipes::all();
+   return view ('home.recipes', compact('tbl_recipes'));
+}
+
+   public function AddRecipe(){
+      return view('home.addrecipe');
+     }
      public function About(){
       return view('home.about');
      }

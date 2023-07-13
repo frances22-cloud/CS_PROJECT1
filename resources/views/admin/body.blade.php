@@ -86,7 +86,7 @@
                     <div class="row">
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0"></h3>
+                          <h3 class="mb-0">to be added</h3>
                           
                         </div>
                       </div>
