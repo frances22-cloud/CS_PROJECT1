@@ -1,4 +1,4 @@
-# CS_PROJECT1
+# Postnatal Recipes Project
 Computer Science project 1 2023
 
 ## Project Title
