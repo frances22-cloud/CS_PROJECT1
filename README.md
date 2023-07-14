@@ -1,10 +1,6 @@
 # Postnatal Recipes Project
-Computer Science project 1 2023
-
-## Project Title
-A Web Based Recipe Application and a Community Forum for Postnatal Mothers
-
 ## Project Description
+
  This project is a recipe  application targeting mainly postantal mothers and also includes a community forum to allow them engage in conversations with others. The user is able to register and login into the application so that data such as their favorite recipes can be saved with their user id. The main function of the application is the recipe search feature and the forum discussions involved by the various postnatal mothers. The users can view the rcipes plus all the instructions, ingedients etc.
 
  ## How to Install and Run the Project
