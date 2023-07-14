@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project1</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
-<!-- Css Styles -->
-<link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
-<link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
-<link rel="stylesheet" href="home/css/style.css" type="text/css">
-<link rel="stylesheet" href="home/css/style2.css" type="text/css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
- integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
-       <!-- Header Section Begin -->
-       <header class="header-section-other">
+    <!-- Header Section Begin -->
+    <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
-                <a href="{{('userpage')}}"><h3>FranDen Dietries</h3></a>
+                <a href="{{('userpage')}}">
+                    <h3>FranDen Dietries</h3>
+                </a>
             </div>
             <div class="nav-menu">
                 <nav class="main-menu mobile-menu">
@@ -53,42 +56,42 @@
     </header>
     <!-- Header End -->
 
- <!-- Single Recipe Section Begin -->
- <section class="single-page-recipe spad">            
+    <!-- Single Recipe Section Begin -->
+    <section class="single-page-recipe spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
                             < <img src="home/img/img1.jpg" alt="">
-                            <h2>Instant Port Chicken Wings</h2>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="reviews">4.9 from 25 reviews</div>
-                            <div class="recipe-time">
-                                <ul>
-                                    <li>Prep time: <span>10 min</span></li>
-                                    <li>Cook time: <span>10 min</span></li>
-                                    <li>Yield: <span>5</span></li>
-                                </ul>
-                            </div>
+                                <h2>Instant Port Chicken Wings</h2>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="reviews">4.9 from 25 reviews</div>
+                                <div class="recipe-time">
+                                    <ul>
+                                        <li>Prep time: <span>10 min</span></li>
+                                        <li>Cook time: <span>10 min</span></li>
+                                        <li>Yield: <span>5</span></li>
+                                    </ul>
+                                </div>
                         </div>
                         <div class="ingredient-list">
-                        <div class="recipe-btn">
-                            <h3></h3>
-                            
-                        <a href="#">Print Recipe</a>
-                        <a  href="#" class="black-btn">Favourite </a>
-                        </div>
-                            
+                            <div class="recipe-btn">
+                                <h3></h3>
+
+                                <a href="#">Print Recipe</a>
+                                <a href="#" class="black-btn">Favourite </a>
+                            </div>
+
                             <div class="list-item">
-                             <h5>Ingredients</h5>
-                            <div class="dressing-list">
+                                <h5>Ingredients</h5>
+                                <div class="dressing-list">
                                     <ul>
                                         <li>2 teaspoons Italian seasoning</li>
                                         <li>1 teaspoon garlic powder</li>
@@ -118,10 +121,10 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Juicy, flavorful Instant Pot Chicken Breasts, ready in just 30 minutes and are perfect for lunch or dinner! 
+                            <p>Juicy, flavorful Instant Pot Chicken Breasts, ready in just 30 minutes and are perfect for lunch or dinner!
                                 Cook from fresh or frozen! They are so versatile and can be incorporated into your favourite dish or served as is,
-                                 paired with your favourite sides you can't go wrong!.</p>
-                            
+                                paired with your favourite sides you can't go wrong!.</p>
+
                         </div>
                         <div class="instruction-list">
                             <h3>Instructions</h3>
@@ -136,14 +139,14 @@
                                 </li>
                                 <li>
                                     <span>03.</span>
-                                    Set the Instant Pot to the Saute setting and add the olive oil to heat.Set the Instant 
+                                    Set the Instant Pot to the Saute setting and add the olive oil to heat.Set the Instant
                                     Pot to the Sauté setting and add the olive oil to heat. When the olive
-                                     oil is hot add the chicken breasts and sear on all sides. 
+                                    oil is hot add the chicken breasts and sear on all sides.
                                     You might have to do this in 2 batches. Remove the chicken from the Instant Pot and set aside..
                                 </li>
                                 <li>
                                     <span>04.</span>
-                                    Pour the chicken broth into the Instant Pot, then place the trivet inside. 
+                                    Pour the chicken broth into the Instant Pot, then place the trivet inside.
                                     Place the chicken on top of the trivet and close the Instant Pot lid.
                                 </li>
                                 <li>
@@ -156,53 +159,53 @@
                                 </li>
                                 <li>
                                     <span>07.</span>
-                                    Open the lid and transfer the chicken to a cutting board or serving platter. 
+                                    Open the lid and transfer the chicken to a cutting board or serving platter.
                                     Let the chicken rest for 5 minutes before slicing it or serving.
                                 </li>
                             </ul>
-                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <!-- Single Recipe Section End -->
 
-        <!--Comments and reply  section starts-->
-<div style="text-align:cnter; padding-bottom:30px;">
-    <h1 style="font-size:30px; text-align:center; padding-top:20px; padding-bottom=20px;">Leave Comments</h1>
-    <form action="{{url('add_comment')}}" method="post" style="text-align:center;">
-    @csrf
-        <textarea style="height:150px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
-        <br>
-        <input type="submit" class="btn btn-primary" value="comment">
-    </form>
-</div>
-<div style="padding-left:20%;">
-    <h1 style="font-size:20px; padding-bottom:20px;">All comments</h1>
-    @foreach($comment as $comment)
-    <div>
-        <b>{{$comment->name}}</b>
-        <p>{{$comment->comment}}</p>
-        <a href="javascript::void(0);" onClick="reply(this)" data-Commentid="{{$comment->id}}">Reply</a>
+    <!--Comments and reply  section starts-->
+    <div style="text-align:cnter; padding-bottom:30px;">
+        <h1 style="font-size:30px; text-align:center; padding-top:20px; padding-bottom:20px;">Leave Comments</h1>
+        <form action="{{url('add_comment')}}" method="post" style="text-align:center;">
+            @csrf
+            <textarea style="height:150px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
+            <br>
+            <input type="submit" class="btn btn-primary" value="comment">
+        </form>
     </div>
-    @endforeach
-    <!--Reply text-box-->
-    <form action="{{url('add_reply')}}" method="post">
-        @csrf
-    <div style="display:none;" class="replyDiv">
-    <input type="text" id="commentId" name="commentId" hidden="">
-    <textarea style="height:100px; width:500px;" name="reply" placeholder="Write your reply here"></textarea>
-    <br>
-    <button type="submit" class="btn btn-warning">Reply</button>
-    <a href="javascript::void(0);" class="btn" onClick="reply_close(this)">close</a>
-    </form>
-</div>
+    <div style="padding-left:20%;">
+        <h1 style="font-size:20px; padding-bottom:20px;">All comments</h1>
+        @foreach($comment as $comment)
+        <div>
+            <b>{{$comment->name}}</b>
+            <p>{{$comment->comment}}</p>
+            <a href="javascript::void(0);" onClick="reply(this)" data-Commentid="{{$comment->id}}">Reply</a>
+        </div>
+        @endforeach
+        <!--Reply text-box-->
+        <form action="{{url('add_reply')}}" method="post">
+            @csrf
+            <div style="display:none;" class="replyDiv">
+                <input type="text" id="commentId" name="commentId" hidden="">
+                <textarea style="height:100px; width:500px;" name="reply" placeholder="Write your reply here"></textarea>
+                <br>
+                <button type="submit" class="btn btn-warning">Reply</button>
+                <a href="javascript::void(0);" class="btn" onClick="reply_close(this)">close</a>
+        </form>
+    </div>
 
-</div>
+    </div>
 
-        <!--Comments and reply section ends-->
+    <!--Comments and reply section ends-->
 
     <!-- Similar Recipe Section Begin -->
     <section class="similar-recipe spad">
@@ -250,74 +253,76 @@
     <!-- Similar Recipe Section End -->
 
 
-          <!-- footer start -->
-          <footer>
-         <div class="container">
+    <!-- footer start -->
+    <footer>
+        <div class="container">
             <div class="row">
-               <div class="col-md-4">
-                   <div class="full">
-                      <div class="logo_footer">
-                        <a href="#"><h2>FranDen Dietries</h2></a>
-                      </div>
-                      <div class="information_f">
-                        <p><strong>ADDRESS:</strong> FranDen Dietries, CS_project1, Computer Science</p>
-                        <p><strong>TELEPHONE:</strong> +254-707637187</p>
-                        <p><strong>EMAIL:</strong> FranDen@gmail.com</p>
-                      </div>
-                   </div>
-               </div>
-               <div class="col-md-8">
-                  <div class="row">
-                  <div class="col-md-7">
-                     <div class="row">
-                        <div class="col-md-6">
-                     <div class="widget_menu">
-                        <h3>Menu</h3>
-                        <ul>
-                           <li><a href="#">Home</a></li>
-                           <li><a href="#">About</a></li>
-                           <li><a href="#">Recipes</a></li>
-                           <li><a href="#">Forum</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Contact</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="widget_menu">
-                        <h3>Account</h3>
-                        <ul>
-                           <li><a href="#">Featured Recipes</a></li>
-                           <li><a href="#">Popular</a></li>
-                           <li><a href="#">Favourites</a></li>
-                           <li><a href="#">Testimonials</a></li>
-                           <li><a href="{{('login')}}">Login</a></li>
-                           <li><a href="{{('register')}}">Register</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                     </div>
-                  </div>     
-                  <div class="col-md-5">
-                     <div class="widget_menu">
-                        <h3>Newsletter</h3>
+                <div class="col-md-4">
+                    <div class="full">
+                        <div class="logo_footer">
+                            <a href="#">
+                                <h2>FranDen Dietries</h2>
+                            </a>
+                        </div>
                         <div class="information_f">
-                          <p>Subscribe by our newsletter and get update protidin.</p>
+                            <p><strong>ADDRESS:</strong> FranDen Dietries, CS_project1, Computer Science</p>
+                            <p><strong>TELEPHONE:</strong> +254-707637187</p>
+                            <p><strong>EMAIL:</strong> FranDen@gmail.com</p>
                         </div>
-                        <div class="form_sub">
-                           <form>
-                              <fieldset>
-                                 <div class="field">
-                                    <input type="email" placeholder="Enter Your Mail" name="email" />
-                                    <input type="submit" value="Subscribe" />
-                                 </div>
-                              </fieldset>
-                           </form>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="widget_menu">
+                                        <h3>Menu</h3>
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Recipes</a></li>
+                                            <li><a href="#">Forum</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="widget_menu">
+                                        <h3>Account</h3>
+                                        <ul>
+                                            <li><a href="#">Featured Recipes</a></li>
+                                            <li><a href="#">Popular</a></li>
+                                            <li><a href="#">Favourites</a></li>
+                                            <li><a href="#">Testimonials</a></li>
+                                            <li><a href="{{('login')}}">Login</a></li>
+                                            <li><a href="{{('register')}}">Register</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  </div>
-               </div>
+                        <div class="col-md-5">
+                            <div class="widget_menu">
+                                <h3>Newsletter</h3>
+                                <div class="information_f">
+                                    <p>Subscribe by our newsletter and get update protidin.</p>
+                                </div>
+                                <div class="form_sub">
+                                    <form>
+                                        <fieldset>
+                                            <div class="field">
+                                                <input type="email" placeholder="Enter Your Mail" name="email" />
+                                                <input type="submit" value="Subscribe" />
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
          </div>
          
@@ -337,24 +342,24 @@ function reply_close(caller){
 <script>
 $(document).ready(function() {
     $('.favorites-button').click(function() {
-        var recipeId = $(this).data('recipe-id');
-        favourites(recipeId);
+    var recipeId = $(this).data('recipe-id');
+    favourites(recipeId);
     });
     function favouriesavorites(recipeId) {
-        $.ajax({
-            url: '/view_recipe_cat1/' + recipeId + '/favorites',
-            type: 'POST',
-            dataType: 'json',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            success: function(response) {
-                // Handle success response, such as updating UI or displaying a success message
-            },
-            error: function(xhr, status, error) {
-                // Handle error response, such as displaying an error message
-            }
-        });
+    $.ajax({
+    url: '/view_recipe_cat1/' + recipeId + '/favorites',
+    type: 'POST',
+    dataType: 'json',
+    headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    },
+    success: function(response) {
+    // Handle success response, such as updating UI or displaying a success message
+    },
+    error: function(xhr, status, error) {
+    // Handle error response, such as displaying an error message
+    }
+    });
     }
 });
 </script>
@@ -367,4 +372,5 @@ $(document).ready(function() {
     <script src="homejs/mixitup.min.js"></script>
     <script src="home/js/main.js"></script>
 </body>
+
 </html>

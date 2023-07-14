@@ -47,7 +47,7 @@
     </nav>
     <div class="bg-light pt-4">
         <div class="container mb-5">
-            <div class="col" style="float: right; padding: 30px;">
+            <div class="col" style="float: right; padding: 30px; width: 30%">
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between">
                         <div class="col text-center border-end hover-dark">
@@ -82,14 +82,14 @@
                                 <path d="M0 0h24v24H0V0z" fill="none" />
                                 <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z" />
                             </svg>
-                            <span><a href="{{('topicspage') }}" style="text-decoration: none; color: black;">Topics</a></span>
+                            <span><a href="{{('topicspage')}}" style="text-decoration: none; color: black;">Topics</a></span>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="row" style="grid-template-columns: auto, auto;">
+            <div class="row" style="grid-template-columns: auto;">
 
-                <div class="col-7" style="float: left;">
+                <div class="col-7" style="float: left; width: 100%">
                     <div class="bg-white border-gray">
                         <div class="row">
                             <div class="col">
@@ -127,31 +127,37 @@
                                 {{$data->topic_message}}
                             </div>
                         </div>
+                        
 
                         <div class="post-footer p-2">
+
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="left-button post-button bg-second-color border-0 text-black p-1">
                                     <img src="forum/mainpage/src/up.png" width="20" class="ms-2">
-                                    15
+                                    <a href="">0</a>
                                 </button>
                                 <button type="button" class="right-button post-button bg-second-color border-0 text-black p-1">
                                     <img src="forum/mainpage/src/down.png" width="20" class="me-2">
-
+                                    <a href="">0</a>
                                 </button>
                             </div>
+                            
+
+
                             <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
                                 <img src="forum/mainpage/src/refresh.png" width="20" class="">
                                 1
                             </button>
                             <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
+                                <a href="{{('comments') }}" style="text-decoration: none; color: black;">
                                 <img src="forum/mainpage/src/comment.png" width="25" class="p-1">
-                                123
+                                0</a>
                             </button>
                         </div>
                     </div>
+                    @endforeach
 
                 </div>
-                @endforeach
 
             </div>
         </div>
