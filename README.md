@@ -9,10 +9,10 @@ A Web Based Recipe Application and a Community Forum for Postnatal Mothers
 
  ## How to Install and Run the Project
  - Fork the repository
- - Clone the project
+ - Clone the project:Git clone
  - Go to the application folder using cd command on your terminal
  - Run composer install.
- - Copy .env.example file to .env on the root folde.
+ - Copy .env.example file to .env on the root folder.
  - Open your .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD 
  if any)field correspond to your configuration. 
 - Run php artisan key:generate
