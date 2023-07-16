@@ -28,10 +28,8 @@
                 <nav class="main-menu mobile-menu">
             <ul class="nav-links">
             <li class="active"><a href="#">Home</a></li>
-            <li class=""><a href="{{('login') }}">Recipes</a></li>
             <li class=""><a href="{{('about') }}">About Us</a></li>
             <li class=""><a href="{{('contact') }}">Contact</a></li>
-            <li><a href="">Forum</a></li>
             <li><a class="btn btn-primary" href="{{('login') }}">Login</a></li>
             <li><a class="btn btn-success" href="{{('register') }}">Register</a></li>
              </ul>
