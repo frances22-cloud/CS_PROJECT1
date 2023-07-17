@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Project1</title>
+    <title>Cat2View</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Css Styles -->
 <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
@@ -52,14 +54,15 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
+ <div id="reipepackage">
  <section class="single-page-recipe spad">            
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                        <img src="home/img/img7.jpg" alt="">
-                            <h2>Broccoli Fried Rice With Turmeric-Tahini Sauce</h2>
+                        <img src="home/img/beef.webp" alt="">
+                            <h2>Coconut fried beef</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -70,16 +73,16 @@
                             <div class="reviews">4.9 from 25 reviews</div>
                             <div class="recipe-time">
                                 <ul>
-                                    <li>Prep time: <span> 15minutes</span></li>
-                                    <li>Cook time: <span> 15minutes </span></li>
-                                   <li> Total Time: <span>  30minutes </span></li>
-                                    <li>Yield: <span>5</span></li>
+                                    <li>Prep time: <span>10 minutes</span></li>
+                                    <li>Cook time: <span>1 hour </span></li>
+                                   <li> Total Time: <span>1 hour 10minutes </span></li>
+                                    <li>Yield: <span>4</span></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="ingredient-list">
                             <div class="recipe-btn">
-                                <a href="#">Print Recipe</a>
+                            <a onclick="download_pdf()" href="#">Download</a>
                                 <a href="#" class="black-btn">Save</a>
                             </div>
                             <div class="list-item">
@@ -87,18 +90,15 @@
                                 
                                 <div class="dressing-list">
                                     <ul>
-                                        <li>3 Tbsp. lower-sodium soy sauce or tamari</li>
-                                        <li>3 garlic cloves minced</li>
-                                        <li>½ tsp. granulated sugar</li>
-                                        <li>Pinch of chili flakes</li>
-                                        <li>2 Tbsp. extra-virgin olive oil</li>
-                                        <li>1 medium head of broccoli, stemmed and chopped into florets</li>
-                                        <li>1 bunch scallions (green onion) greens sliced into 1 inch pieces</li>
-                                        <li>3 large eggs whisked </li>
-                                        <li>1 Tbsp. rice vinegar</li>
-                                        <li>1 tsp. granulated sugar</li>
-                                        <li>¾ tsp. ground turmeric</li>
-                                        <li>½ tsp. grated or minced fresh ginger</li>
+                                        <li>3 tablespoon Coconut Oil</li>
+                                        <li>3-4 tablespoon Coconut Slices</li>
+                                        <li>2 Slit Green Chilies</li>
+                                        <li>15 Peeled and Sliced Red Pearl Onions or 1 Large Sliced Onion</li>
+                                        <li>3 Garlic Cloves Chopped</li>
+                                        <li>½ inch Freshly Chopped Ginger</li>
+                                        <li>15-20 Curry Leaves</li>
+                                        <li>1 teaspoon Black Pepper Crushed</li>
+                                        <li>1 teaspoon White Wine Vinegar</li>
                                     </ul>
                                 </div>
                             </div>
@@ -110,9 +110,9 @@
                             <span>Serves 4</span>
                         </div>
                         <ul>
-                            <li>Total Fat : 20.4g</li>
-                            <li>Cholesterol : 2%</li>
-                            <li> Calories: 364kcal</li>
+                            <li>Calories: 520kcal Carbohydrates: 25g Protein: 29g</li>
+                            <li>Potassium: 749mg Fiber: 7g Sugar: 9g Vitamin A: 1158IU</li>
+                            <li> Vitamin C: 172mg Calcium: 106mg Iron: 4mg</li>
                         </ul>
                     </div>
                 </div>
@@ -120,8 +120,8 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>30 minute broccoli fried rice with turmeric-tahini sauce revamps a takeout
-                                 classic with an extra dose of veggies for a healthy, one-pan meal..</p>
+                            <p>This Kenyan stew made with beef is the ultimate comfort food. It consists of meltingly tender 
+                            chunks of beef braised in a tomato-coconut broth with garlic, onions, potatoes, carrots, herbs,and spices.</p>
                             
                         </div>
                         <div class="instruction-list">
@@ -129,39 +129,41 @@
                             <ul>
                                 <li>
                                     <span>01.</span>
-                                    Combine soy sauce, garlic, sugar, and chili flakes in a small bowl; stir and set aside.
+                                In a frying pan on medium heat, add the coconut oil, and once warm, add the coconut slivers.
+                                Mix frequently, as these can overcook very quickly.
                                 </li>
                                 <li>
                                     <span>02.</span>
-                                    Heat 1 Tbsp. of the oil in a large skillet over medium-high. Once hot, add broccoli; cover and cook 5 minutes,
-                                     uncovering occasionally to stir, under crisp-tender. Add green onion
-                                      and season with a pinch of salt; cook 1 to 2 more minutes, 
-                                    uncovered, until soft. Transfer veggies to a bowl.
+                                As soon as the coconut pieces start to turn golden on the edges, add the chopped pearl onions,
+                                chopped garlic and ginger, green chilies, and a pinch of salt.
                                 </li>
                                 <li>
                                     <span>03.</span>
-                                    Heat remaining 1 Tbsp. oil in pan. Pour in whisked eggs and cook, stirring constantly, 
-                                    with a rubber spatula for 30 to 45 seconds, until just cooked through. 
-                                    Add cooked rice and soy sauce mixture; stir well to combine. Cook, undisturbed, 
-                                    until rice is slightly crisped on one side, about 3 minutes.
+                                    Cook until the pearl onions turn golden and the ginger and garlic are cooked.
                                 </li>
                                 <li>
                                     <span>04.</span>
-                                    Return broccoli and green onion to pan, and stir in edamame. Toss well to combine; turn off heat.
+                                    Next, add the cooked beef and all its masala to the pan and mix well. 
+                                    As the beef should have almost no gravy, add a cup of water to it and mix well.
                                 </li>
                                 <li>
                                     <span>05.</span>
-                                    Prepare Turmeric-Tahini Sauce by combining tahini, vinegar, sugar, turmeric, sesame oil, ginger,
-                                     and salt in a bowl; stir with a whisk. Gradually whisk in up to 2 ½ Tbsp. 
-                                    warm water to reach desired consistency
+                                    This step may be the longest hands-on one. Keep the pan on medium high heat,
+                                     and mix the curry well. The water will start to evaporate, 
+                                     the gravy will thicken and the curry will turn darker. This is the part where you roast the beef Ularthiyathu,
+                                     and the whole dish will turn a warm red brown color.
                                 </li>
                                 <li>
                                     <span>06.</span>
-                                    Divide fried rice evenly into 4 bowls and drizzle with Turmeric-Tahini Sauce. F
-                                    inely chop the leftover whites of the green onion and sprinkle overtop as garnish, if desired.
-                                     Top with toasted sesame seeds and/or chili oil.
+                                    Once the curry is semi-dry [it will take about 10 minutes], add the black pepper, vinegar and curry leaves to the pan.
+                                     Mix well and cook for a further 2-3 minutes, stirring frequently.
                                 </li>
-                            
+                                <li>
+                                    <span>07.</span>
+                                    Lastly, once you are happy with the consistency of the gravy,
+                                      add a last teaspoon of coconut oil, mix well and the beef 
+                                    fry is ready to be served with rice, parottas.
+                                </li>
                             </ul>
                         </div>
                         </div>
@@ -169,6 +171,7 @@
                 </div>
             </div>
         </div>
+          </div>
     </section>
     <!-- Single Recipe Section End -->
 
@@ -292,5 +295,18 @@
          
       </footer>
       <!-- footer end -->
+
+      <script>
+function download_pdf()
+{
+const pdf= document.getElementById("reipepackage");
+html2pdf().from(pdf).save();
+
+     function addrecipe()
+{
+document.getElementById("recipecard");    
+}
+}
+</script>
 </body>
 </html>

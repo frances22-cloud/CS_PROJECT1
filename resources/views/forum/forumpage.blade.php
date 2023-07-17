@@ -66,6 +66,7 @@
         <div class="container mb-5">
             <div class="col" style="float: right; padding: 30px; width: 30%">
                 <ul class="list-group">
+                    <!--
                     <li class="list-group-item d-flex justify-content-between">
                         <div class="col text-center border-end hover-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
@@ -92,7 +93,12 @@
                             </svg>
                             <span><a href="{{('chats') }}" style="text-decoration: none; color: black;">Post</a></span>
                         </div>
+<<<<<<< HEAD
+                    </li>
+-->
+=======
                     </li>-->
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
                     <li class="list-group-item d-flex justify-content-between">
                         <div class="col text-center border-end hover-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
@@ -107,7 +113,18 @@
             <div class="row" style="grid-template-columns: auto;">
 
                 <div class="col-7" style="float: left; width: 100%">
+<<<<<<< HEAD
+                    <div class="bg-white border-gray">
+                        <div class="row">
+                            <div class="col">
+                                <input class="w-75 rounded-circle border-gray text-gray-dark rounded-pill bg-light ps-3 text-start" type="button" value="What do you want to ask or share?">
+                            </div>
+                        </div>
+                    </div>
+                  
+=======
 
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
                     @foreach($data as $data)
                     <div class="bg-white border-gray mt-4">
                         <div class="d-flex pt-2">
@@ -150,8 +167,12 @@
                                     <img src="forum/mainpage/src/down.png" width="20" class="me-2">
                                     <a href="">0</a>
                                 </button>
+<<<<<<< HEAD
+                            </div>
+=======
                             </div>-->
 
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
 
                             <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
                                 <a href="{{('comments') }}" style="text-decoration: none; color: black;">
@@ -163,7 +184,6 @@
                     @endforeach
 
                 </div>
-
             </div>
         </div>
     </div>

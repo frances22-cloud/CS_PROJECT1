@@ -69,15 +69,16 @@
                 <div class="col-lg-6">
                     <div class="fr-item">
                         <div class="fr-item-img">
-                            <img src="home/img/img7.jpg" alt="">
+                            <img src="home/img/beef.webp" alt="">
                         </div>
                         <div class="fr-item-text">
-                            <h5>Broccoli Fried Rice with Turmeric-Tahini Sauce</h5>
-                            <p>One cup has close to 100% the daily value of Vitamin C, plus fiber, Vitamin K, protein and potassium.</p>
+                            <h5>Coconut beef stew</h5>
+                            <p>This Kenyan stew made with beef is the ultimate comfort food. It consists of meltingly tender 
+                                chunks of beef braised in a tomato-coconut broth with garlic, onions, potatoes, carrots, herbs,and spices.</p>
                                 <div class="options">
-                          <a href="" class="option1">
+                          <!-- <a href="" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe_cat2')}}" class="option2">
                            View Recipe
                            </a>
@@ -94,9 +95,9 @@
                             <h5>Healthy Broccoli Slaw</h5>
                             <p>A short or no cook time for broccoli best preserves the amount of vitamin C.</p>
                                 <div class="options">
-                          <a href="" class="option1">
+                          <!-- <a href="" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe21')}}" class="option2">
                            View Recipe
                            </a>
@@ -122,9 +123,9 @@
                             <h5>Creamy Avocado Board</h5>
                             <p>Avocados are rich in Vitamin A, as well as an antioxidant.</p>
                                 <div class="options">
-                           <a href="" class="option1">
+                           <!-- <a href="" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe2c')}}" class="option2">
                            View Recipe
                            </a>
@@ -141,9 +142,9 @@
                             <h5>Spicy Peanut Cauliflower Stir-Fry</h5>
                             <p>Easy stir-fry is packed with immune supporting ingredients including vitamin C-rich red bell peppers.</p>
                                 <div class="options">
-                           <a href="" class="option1">
+                           <!-- <a href="" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe2d')}}" class="option2">
                            View Recipe
                            </a>

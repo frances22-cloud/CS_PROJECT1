@@ -17,10 +17,17 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/userprofile', 'userProfile');
     Route::get('/about', 'About');
     Route::get('/contact', 'Contact');
+<<<<<<< HEAD
+    Route::get('/more', 'searchRecipes');
+   // Route:get('/dashboard', 'Recipe');
+   
+    
+=======
     Route::get('/searchRecipes', 'searchRecipes');
     // Route:get('/dashboard', 'Recipe');
 
 
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
 
 });
 Route::controller(AdminController::class)->group(function () {
@@ -71,6 +78,26 @@ Route::controller(CategoryController::class)->group(function () {
     Route::get('/recipe_cat3', 'Cat3');
     Route::get('/recipe_cat4', 'Cat4');
     //Controller to return view recipes
+<<<<<<< HEAD
+    Route::get('/view_recipe_cat1','ViewCat1');
+    Route::get('/view_recipe_cat2','ViewCat2');
+    Route::get('/view_recipe12','View_recipe12');
+    Route::get('/view_recipe22','View_recipe22');
+    Route::get('/view_recipe23','View_recipe23');
+    Route::get('/view_recipe21','View_recipe21');
+    Route::get('/view_recipe2c','View_recipe2c');
+    Route::get('/view_recipe2d','View_recipe2d');
+    Route::get('/downloadRecipe{file}','downloadRecipe');
+    Route::get('/useraddrecipe','useraddrecipe');
+
+    // Route::get('/view_recipe31','View_recipe31');
+    // Route::get('/view_recipe32','View_recipe32');
+    // Route::get('/view_recipe33','View_recipe33');
+    // Route::get('/view_recipe34','View_recipe34');
+    Route::get('/recipe_cat1/{view_recipe_cat1}','downloadRecipe');
+    Route::post('/add_comment','add_comment');
+    Route::post('/add_reply','add_reply');
+=======
     Route::get('/view_recipe_cat1', 'ViewCat1');
     Route::get('/view_recipe_cat2', 'ViewCat2');
 
@@ -87,6 +114,7 @@ Route::controller(CategoryController::class)->group(function () {
 
     Route::post('/addcomment', 'addcomment');
     Route::post('/add_reply', 'add_reply');
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
     //Route::get('/useradd', 'useradd');
     Route::post('/useradd', 'useradd');
 });

@@ -2,7 +2,7 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-
+      <h1 style="color:blue; text-align:center; font-size:30px;">WELCOME TO LOGIN</h1>
     <form method="POST" action="{{ route('login') }}">
         @csrf
 

@@ -28,14 +28,14 @@
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li class="active"><a href="{{('userpage')}}">Home</a></li>
-                        <li><a href="#">categories</a>
+                        <!-- <li><a href="#">categories</a>
                             <ul class="sub-menu">
                                 <li><a href="{{('recipe_cat1')}}">Quick and Easy</a></li>
                                 <li><a href="{{('recipe_cat2')}}">Immune Boosting</a></li>
                                 <li><a href="{{('recipe_cat3')}}">Postnatal Recovery</a></li>
                                 <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
                                 <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li><a href="{{('addrecipe')}}">Add Recipes</a></li>
                         <li><a href="">Forum</a></li>
@@ -58,8 +58,8 @@
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                        <img src="home/img/p3.jpg" alt="">
-                            <h2>Easy Blackend Tilapia</h2>
+                        <img src="home/img/sukuma.webp" alt="">
+                            <h2>Sukuma wiki veges</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -70,9 +70,9 @@
                             <div class="reviews">4.9 from 25 reviews</div>
                             <div class="recipe-time">
                                 <ul>
-                                    <li>Prep time: <span>10 min</span></li>
-                                    <li>Cook time: <span>10 min</span></li>
-                                    <li>Yield: <span>5</span></li>
+                                    <li>Prep time: <span>5 mins</span></li>
+                                    <li>Cook time: <span>5 mins</span></li>
+                                    <li>Yield: <span>2</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -86,14 +86,11 @@
                                 
                                 <div class="dressing-list">
                                     <ul>
-                                        <li>1½ teaspoons paprika</li>
-                                        <li>1½ teaspoons light brown sugar</li>
-                                        <li>¾ teaspoon garlic powder</li>
-                                        <li>½ teaspoon cumin</li>
-                                        <li>1 teaspoon salt</li>
-                                        <li>4 six-ounce tilapia fillets</li>
-                                        <li>1 lime, cut into wedges (optional, for serving)</li>
-                                        <li>2 tablespoons olive oil, for cooking</li>
+                                        <li>1 bunch sukuma wiki (collard greens) leaves (about 11/2 pounds or 700 grams)</li>
+                                        <li>2 medium-sized red tomatoes</li>
+                                        <li>½ small onion (white or red)</li>
+                                        <li>¼ cup olive oil (or preferred cooking oil)</li>
+                                        <li>salt to taste (you can also add some pepper but this is absolutely optional)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -105,7 +102,7 @@
                             
                         </div>
                         <ul>
-                            <li>Total Fat : 10g Chalories: 236 Sugar:2g Sodium:672g  </li>
+                            <li>Total Fat : 10g Chalories:251kcal Sugar:2g Sodium:672g  </li>
                             <li>Cholesterol :85mg Fiber:1g Protein:34g Carbohydrates:3g </li>
                             <li></li>
                         </ul>
@@ -126,18 +123,32 @@
                             <ul>
                                 <li>
                                     <span>01.</span>
-                                    Combine the paprika, brown sugar, oregano, garlic powder, cumin, cayenne pepper and salt in a small bowl; 
-                                    mix until well combined (use your fingers to break up the lumps of brown sugar). 
-                                    Sprinkle the spice rub evenly over both sides of the tilapia fillets.
+                                    Wash the vegetables. Peel and slice the onion and chop the tomatoes.
+                                     Next, heat your cooking pot on the stovetop and allow it to heat, 
+                                    under medium heat. Add the olive oil and heat for approximately 1-2 minutes.
                                 </li>
                                 <li>
                                     <span>02.</span>
-                                    Heat the olive oil over medium-high heat in a large non-stick pan. Cook the fillets for 2-3 
-                                    minutes on each side until reddish-brown on the outside and flaky on the inside.
-                                     Serve immediately with lime wedges.
+                                    Fry the onion until golden brown and stir in the tomatoes then allow them to cook. The tomatoes should be totally soft.
+                                     Add a tablespoon or two of oil, if the tomatoes are sticking to the pot.
                                 </li>
-                               
-                               
+                                <li>
+                                    <span>03.</span>
+                                    Once the tomatoes are totally cooked through, add the sukuma 
+                                    wiki leaves and the salt. Cover and allow the to reduce for 
+                                    about one minute then stir. Cover again and allow to cook for a further 5 minutes.
+                                     Cook it longer, if you do not prefer your vegetables crunchy.
+                                </li>
+                                <li>
+                                    <span>04.</span>
+                                    Uncover the pot and add the spinach leaves. 
+                                    Stir and allow to cook for 1-2 minutes (cook longer if you prefer, but not longer than 5 minutes)..
+                                </li>
+                                <li>
+                                    <span>05.</span>
+                                    Uncover the pot and add the spinach leaves. 
+                                    Stir and allow to cook for 1-2 minutes (cook longer if you prefer, but not longer than 5 minutes)..
+                                </li>
                             </ul>
                         </div>
                         </div>

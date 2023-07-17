@@ -59,7 +59,7 @@
                     <div class="ingredients-item">
                         <div class="intro-item">
                         <img src="home/img/img4.jpg" alt="">
-                            <h2>White beans and potato salad</h2>
+                            <h2>Spinach Vegetable</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -86,16 +86,11 @@
                                 
                                 <div class="dressing-list">
                                     <ul>
-                                        <li>1 ½ pounds small yellow potatoes, unpeeled</li>
-                                        <li>1 (15-ounce) can beans (i.e. garbanzo, kidney, cannellini, red), rinsed, drained</li>
-                                        <li>½ cup olives, pitted, drained</li>
-                                        <li>½ cup sun-dried tomatoes, sliced</li>
-                                        <li>2 tablespoon capers, rinsed, drained</li>
-                                        <li>2 cloves garlic, minced</li>
-                                        <li>½ small red onion, sliced thinly</li>
-                                        <li>2 tablespoon extra virgin olive oil </li>
-                                        <li>½ teaspoon black pepper </li>
-                                    </ul>
+                                        <li>10 oz (280g) fresh spinach, thoroughly rinsed</li>
+                                        <li>4 cloves garlic, thinly sliced</li>
+                                        <li>2 tablespoons melted butter</li>
+                                        <li>1 teaspoon lemon juice</li>
+                                        <li>Kosher salt and fresh cracked pepper, to taste</li>
                                 </div>
                             </div>
                         </div>
@@ -106,9 +101,8 @@
             
                         </div>
                         <ul>
-                            <li>Serving Size: 1 serving Calories: 189 Sugar: 5g Sodium: 282mg</li>
-                            <li>Fat: 6 gSaturated Fat: 1 gCarbohydrates: 29 gFiber: 6 gProtein: 6g</li>
-                            <li>Chalories: 345</li>
+                            <li>Serving Size: 1 serving Calories: 189 Sugar: 5g Sodium:382.02 mg</li>
+                            <li>Fat: 6 gSaturated Fat: 1g Carbohydrates:15.1g Fiber:6g Protein: 9.6g</li>
                         </ul>
                     </div>
                 </div>
@@ -116,9 +110,7 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>This simple, easy Mediterranean salad is based on the classic ingredients of potatoes,<br>
-                             beans, olives, sun-dried tomatoes, capers, garlic, onions, herbs, and a light olive oil vinaigrette.<br> 
-                                It’s like a touch of sunshine, yet the ingredients are seasonally available year-round.</p>
+                            <p>Easy Spinach Recipe - This garlic butter sauteed spinach is a super easy and healthy recipe for a side everyone will love</p>
                             
                         </div>
                         <div class="instruction-list">
@@ -126,15 +118,12 @@
                             <ul>
                                 <li>
                                     <span>01.</span>
-                                    Fill a medium pot half full with water and bring to a boil. Add unpeeled, whole small yellow potatoes, cover,
-                                     and boil just until tender,
-                                     but firm (about 15-20 minutes). Drain off water, and chill for several minutes. 
-                                    When cool enough to handle, peel and slice into cubes.
+                                    To make the garlic butter sauteed spinach: Heat butter in a large sauté pan or skillet. Sauté garlic until aromatic,
+                                     then add spinach. Drizzle with lemon juice, and stir to combine well.
                                 </li>
                                 <li>
                                     <span>02.</span>
-                                    While potatoes are cooking, prepare the salad ingredients. Add beans, olives, sun-dried tomatoes, capers, garlic, 
-                                    red onion to a large bowl and toss together. Add cubed potatoes.
+                                    Continue to sauté until the spinach starts to wilt and garlic has released its smell. Season with salt and pepper.
                                 </li>
                                 <li>
                                     <span>03.</span>

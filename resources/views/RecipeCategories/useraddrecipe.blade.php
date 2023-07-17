@@ -33,7 +33,9 @@
   @csrf
 
   <label for="title">Recipe Title:</label>
-  <input type="text" id="title" name="title" required>
+  <input type="text" id="title" name="recipeName" required>
+  <label for="uName">Username:</label>
+  <input type="text" id="uName" name="userName" required>
 
   <label for="description">Description:</label>
   <textarea id="description" name="description" required></textarea>
@@ -44,16 +46,17 @@
   <label for="instructions">IInstructions:</label>
   <textarea id="instructions" name="instructions" required></textarea>
 
-  <label for="prepTime">Prep Time:</label>
+  <label for="prepTime">Prep Time (In Minutes):</label>
   <input type="number" id="prepTime" name="prepTime" required></input>
 
-  <label for="cookTime">Cook Time:</label>
+  <label for="cookTime">Cook Time (In Minutes):</label>
   <input type="number" id="cookTime" name="cookTime" required></input>
 
-  <label for="totalTime">Total Time:</label>
-  <textarea id="totalTime" name="totalTime" required></textarea>
+  <label for="totalTime">Total Time (In Minutes):</label>
+  <input id="totalTime" name="totalTime" required></input>
+
   <label for="ingredients">Nutritional Info:</label>
-  <textarea id="nutritional_fact" name="nutritional_fact" required></textarea>
+  <input id="nutritional_fact" name="nutritional_fact" required></input>
 
   <label for="image">Recipe Image:</label>
   <input type="file" id="image" name="image" accept="image/*">
