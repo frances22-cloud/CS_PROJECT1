@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project1</title>
-
+<!-- html2.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
@@ -42,8 +45,8 @@
                             </ul>
                         </li>
                         <li><a href="{{('useraddrecipe')}}">Add Recipes</a></li>
-                        <li><a href="{{('forumpage')}}">Forum</a></li>
-                        <li><a href="{{('contact')}}}">Contact</a></li>
+                        <!-- <li><a href="{{('forumpage')}}">Forum</a></li>
+                        <li><a href="{{('contact')}}}">Contact</a></li> -->
                         <li><a href="{{('logout') }}">Logout</a></li>
                     </ul>
                 </nav>
@@ -57,14 +60,15 @@
     <!-- Header End -->
 
     <!-- Single Recipe Section Begin -->
+    <div id="reipepackage">
     <section class="single-page-recipe spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                            < <img src="home/img/img1.jpg" alt="">
-                                <h2>Instant Port Chicken Wings</h2>
+                            < <img src="home/img/th.jpg" alt="">
+                                <h2>Pumpkin leaves</h2>
                                 <div class="rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -76,31 +80,29 @@
                                 <div class="recipe-time">
                                     <ul>
                                         <li>Prep time: <span>10 min</span></li>
-                                        <li>Cook time: <span>10 min</span></li>
-                                        <li>Yield: <span>5</span></li>
+                                        <li>Cook time: <span>15 min</span></li>
+                                        <li>Total time: <span>25 min</span></li>
+                                        <li>Yield: <span>4</span></li>
                                     </ul>
                                 </div>
                         </div>
                         <div class="ingredient-list">
                         <div class="recipe-btn">
                             <h3></h3>
-                            
-                        <a href="{{url('print_pdf')}}">Print Recipe</a>
-                        <a  href="#" class="black-btn">Favourite </a>
+                      <a onclick="download_pdf()" href="#">Download</a>
+                        <a onclick="addrecipe()" href="#" class="black-btn" id="recipecard">Favourite </a>
                         </div>
                             
                             <div class="list-item">
                                 <h5>Ingredients</h5>
                                 <div class="dressing-list">
                                     <ul>
-                                        <li>2 teaspoons Italian seasoning</li>
-                                        <li>1 teaspoon garlic powder</li>
-                                        <li>1 teaspoon smoked paprika</li>
-                                        <li>½ teaspoon salt (or to taste)</li>
-                                        <li>¼ teaspoon pepper (or to taste)</li>
-                                        <li>2 pound chicken breasts</li>
-                                        <li>2 tablespoons olive oil</li>
-                                        <li>1 cup chicken broth </li>
+                                        <li>About 30 pieces of pumpkin leaves</li>
+                                        <li>1 Onion (chopped)</li>
+                                        <li>1 Tomato (diced)</li>
+                                        <li>Add Salt And Pepper</li>
+                                        <li>1 tablespoon of vegetable oil</li>
+                                        <li>2 tablespoons of Fresh Cream</li>
                                     </ul>
                                 </div>
                             </div>
@@ -111,9 +113,9 @@
                             <h6>Nutritional Facts</h6>
                         </div>
                         <ul>
-                            <li>Total Fat : 20.4g</li>
-                            <li>Cholesterol : 2%</li>
-                            <li>Chalories: 345</li>
+                            <li>Iron : 0.7g</li>
+                            <li>Vitamin B6 : 2% Calcium:40 mg  Vitamin C: 4.8mg</li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
@@ -121,9 +123,7 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Juicy, flavorful Instant Pot Chicken Breasts, ready in just 30 minutes and are perfect for lunch or dinner!
-                                Cook from fresh or frozen! They are so versatile and can be incorporated into your favourite dish or served as is,
-                                paired with your favourite sides you can't go wrong!.</p>
+                            <p>Pumpkin Leaves have a dense network of nutrients which are essential for the mother</p>
 
                         </div>
                         <div class="instruction-list">
@@ -131,23 +131,20 @@
                             <ul>
                                 <li>
                                     <span>01.</span>
-                                    In a small bowl combine the Italian seasoning, garlic powder, smoked paprika, salt and pepper..
+                                    Pluck the leaves from towards the bud of the plant. Skip one leaf as you pluck the leaves and select young soft leaves.
+                                     Do not pluck the bud of the plant!(If buying the leaves skip this step).
                                 </li>
                                 <li>
                                     <span>02.</span>
-                                    Rub the spice mix generously over each chicken breast..
-                                </li>
+                                    Run the leaves under water as they may collect dirt and or soil during irrigation or rainfall.
                                 <li>
                                     <span>03.</span>
-                                    Set the Instant Pot to the Saute setting and add the olive oil to heat.Set the Instant
-                                    Pot to the Sauté setting and add the olive oil to heat. When the olive
-                                    oil is hot add the chicken breasts and sear on all sides.
-                                    You might have to do this in 2 batches. Remove the chicken from the Instant Pot and set aside..
+                                    Remove the bark, start at the stalk of the leaf. Break the stalk away from the leaf in such a way 
+                                    that you also remove bark from the inner leaf. This video shows how to do it
                                 </li>
                                 <li>
                                     <span>04.</span>
-                                    Pour the chicken broth into the Instant Pot, then place the trivet inside.
-                                    Place the chicken on top of the trivet and close the Instant Pot lid.
+                                Saute the onion in the oil and the tomato. Add salt and pepper to taste. Add back the pumpkin leaves,blend well.
                                 </li>
                                 <li>
                                     <span>05.</span>
@@ -155,13 +152,9 @@
                                 </li>
                                 <li>
                                     <span>06.</span>
-                                    When the time is up, let the Instant Pot release naturally for 10 minutes then quick release remaining pressure.
+                                    Serve with Ugali or rice
                                 </li>
-                                <li>
-                                    <span>07.</span>
-                                    Open the lid and transfer the chicken to a cutting board or serving platter.
-                                    Let the chicken rest for 5 minutes before slicing it or serving.
-                                </li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -169,6 +162,7 @@
             </div>
         </div>
         </div>
+       </div>
     </section>
     <!-- Single Recipe Section End -->
 
@@ -177,7 +171,7 @@
         <h1 style="font-size:30px; text-align:center; padding-top:20px; padding-bottom:20px;">Leave Comments</h1>
         <form action="{{url('add_comment')}}" method="post" style="text-align:center;">
             @csrf
-            <textarea style="height:150px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
+            <textarea style="height:100px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
             <br>
             <input type="submit" class="btn btn-primary" value="comment">
         </form>
@@ -331,7 +325,7 @@
       
 <script text="text/javascript">
     function reply(caller){
-        document.getElementById('commentId').value=$(caller).attr('data-Commentid');
+document.getElementById('commentId').value=$(caller).attr('data-Commentid');
     $('.replyDiv').insertAfter($(caller));
     $('.replyDiv').show();
 }
@@ -339,29 +333,18 @@ function reply_close(caller){
     $('.replyDiv').hide();
 }
 </script>
+
 <script>
-$(document).ready(function() {
-    $('.favorites-button').click(function() {
-    var recipeId = $(this).data('recipe-id');
-    favourites(recipeId);
-    });
-    function favouriesavorites(recipeId) {
-    $.ajax({
-    url: '/view_recipe_cat1/' + recipeId + '/favorites',
-    type: 'POST',
-    dataType: 'json',
-    headers: {
-    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    },
-    success: function(response) {
-    // Handle success response, such as updating UI or displaying a success message
-    },
-    error: function(xhr, status, error) {
-    // Handle error response, such as displaying an error message
-    }
-    });
-    }
-});
+function download_pdf()
+{
+const pdf= document.getElementById("reipepackage");
+html2pdf().from(pdf).save();
+
+     function addrecipe()
+{
+document.getElementById("recipecard");    
+}
+}
 </script>
 
 <script src="home/js/app.js"></script>

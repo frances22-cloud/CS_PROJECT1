@@ -58,8 +58,8 @@
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                        <img src="home/img/img2.jpg" alt="">
-                            <h2>Pan Fried Eggs With Lenticels And Tomatoes</h2>
+                        <img src="home/img/seeds.webp" alt="">
+                            <h2>Pumpkin Seeds</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -72,6 +72,7 @@
                                 <ul>
                                     <li>Prep time: <span>10 min</span></li>
                                     <li>Cook time: <span>10 min</span></li>
+                                    <li>Cook time: <span>20 mins</span></li>
                                     <li>Yield: <span>5</span></li>
                                 </ul>
                             </div>
@@ -86,15 +87,12 @@
                                 
                                 <div class="dressing-list">
                                     <ul>
-                                        <li>3 large eggs</li>
-                                        <li>1/4 teaspoon salt</li>
-                                        <li>1/4 teaspoon black pepper</li>
-                                        <li>1/2 teaspoon fish sauce </li>
-                                        <li>2-3 scallion stalks, cut into 2-inch long pieces</li>
-                                        <li>1 small onion, thinly sliced (or half a medium onion)</li>
-                                        <li>2 medium tomatoes, cut into wedges (or 3 large tomatoes)</li>
-                                        <li>cooking oil</li>
-                                        <li>Leafy Lenticels</li>
+                                        <li>¼ cup butter</li>
+                                        <li>2 cups raw whole pumpkin seeds, washed and dried</li>
+                                        <li>1 teaspoon ground cinnamon</li>
+                                        <li>¼ teaspoon ground nutmeg </li>
+                                        <li>2 tablespoons maple syrup</li>
+                                       
                                     </ul>
                                 </div>
                             </div>
@@ -106,9 +104,10 @@
                             <span>Serves 4</span>
                         </div>
                         <ul>
-                            <li>Total Fat : 20.4g</li>
-                            <li>Cholesterol : 2%</li>
-                            <li>Chalories: 345</li>
+                            <li>Total Fat : 20.4g Carbohydrates: 16g </li>
+                            <li>Proteins: 4g calcium 22mg </li>
+                            <li>Calories: 181 iron 1mg  potassium 214mg</li>
+                         
                         </ul>
                     </div>
                 </div>
@@ -116,9 +115,9 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>This omelet with tomatoes and onions is made with simple ingredients,
-                            but you will be surprised at how good it tastes.Eggs are fried into an omelet with<br>
-                             browned spots to enhance the flavors.The recipe is vegetarian adaptable.!.</p>
+                            <p>Use brown sugar and other spices instead of maple syrup, cinnamon, and nutmeg if preferred.
+                            For a savory version, try a combination of brewer's yeast and salt.Some people like their pumpkin seeds extra crispy, 
+                            while others prefer them lightly toasted. Cooking time will vary depending on your preference.</p>
                             
                         </div>
                         <div class="instruction-list">
@@ -126,38 +125,22 @@
                             <ul>
                                 <li>
                                     <span>01.</span>
-                                    In a bowl, add eggs, salt, pepper and fish sauce. Beat well.
+                                    Preheat the oven to 350 degrees F (175 degrees C). Line a large baking sheet with parchment paper.
                                 </li>
                                 <li>
                                     <span>02.</span>
-                                    Place a pan over medium heat and add oil. Once the oil is hot, add onions.
-                                     Stir and cook until fragrant (about 40-60 seconds).
-                                </li>
+                                    Melt butter in a large skillet over medium-low heat. Stir in seeds and cook, stirring constantly, until seeds turn slightly brown in color, about 10 minutes.
+                                     Remove from the heat and drain off any excess butter.
                                 <li>
                                     <span>03.</span>
-                                    Add tomato wedges, stir to distribute evenly in the pan and cook 
-                                    for a minute until onions start to brown lightly and tomatoes just start to soften.
+                                    Stir in cinnamon, nutmeg, and maple syrup until seeds are thoroughly 
+                                    coated with spices. Spread seeds out onto the prepared baking sheet.
                                 </li>
                                 <li>
                                     <span>04.</span>
-                                    Add scallions and give everything in the pan a stir to distribute evenly. Then pour beaten eggs into the pan.
+                                Bake in the preheated oven, stirring every 10 minutes, until crisp and golden brown, 30 to 45 minutes total.
                                 </li>
-                                <li>
-                                    <span>05.</span>
-                                    Let the omelet cook for about 10-15 seconds and then push the edges slightly 
-                                    towards the center to let the uncooked eggs flow out.
-                                     Drizzle a bit more oil around the edges if needed.
-                                </li>
-                                <li>
-                                    <span>06.</span>
-                                    Cook for about 2 minutes until the bottom of the omelet has browned spots.
-                                     Don't let it brown too much or the omelet will be dry. Flip (you can divide into quarters so that it will be easy to flip) 
-                                    and cook the other side briefly (about 30 seconds or so). Remove from the heat.
-                                </li>
-                                <li>
-                                    <span>07.</span>
-                                    Transfer to a serving plate and serve hot with steamed rice and some fish sauce (or soy sauce) on the side.
-                                </li>
+                               
                             </ul>
                         </div>
                         </div>

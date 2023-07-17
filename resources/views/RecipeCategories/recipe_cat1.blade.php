@@ -62,23 +62,23 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-               Quick and Easy recipes <span> category</span>
+               Vegetable recipes <span> category</span>
                </h2>
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="fr-item">
                         <div class="fr-item-img">
-                            <img src="home/img/img1.jpg" alt="">
+                            <img src="home/img/th.jpg" alt="">
                         </div>
                         <div class="fr-item-text">
-                            <h5>Instant port chicken wings</h5>
-                            <p>Tender chicken, pillowy dumplings and a richly flavored broth combine to create a hearty soup that comes 
-                            together in less than an hour, but tastes like it took all day to make.</p>
+                            <h5>Pumpkin leaves</h5>
+                            <p>Pumpkin leaves have a dense nutrients that help replicate worn out tissues, They are also rich in blood
+                            supplies for the body of a postantal mother.</p>
                                 <div class="options">
-                          <a href="{{('')}}" class="option1">
+                          <!-- <a href="{{('')}}" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe_cat1')}}" class="option2">
                            View Recipe
                            </a>
@@ -89,15 +89,16 @@
                 <div class="col-lg-6">
                     <div class="fr-item">
                         <div class="fr-item-img">
-                            <img src="home/img/img2.jpg" alt="">
+                            <img src="home/img/seeds.webp" alt="">
                         </div>
                         <div class="fr-item-text">
-                            <h5>Pan fried eggs with lenticels and tomatoes</h5>
-                            <p>In case you needed more proof that runny eggs make pretty much everything more delicious.</p>
+                    <h5>Fried pumpkin seeds</h5>
+                    <p>These roasted maple pumpkin seeds are made with maple
+                             syrup and spices for a deep, rich flavor. A great snack!</p>
                                 <div class="options">
-                          <a href="" class="option1">
+                          <!-- <a href="" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe12')}}" class="option2">
                            View Recipe
                            </a>
@@ -117,15 +118,16 @@
                 <div class="col-lg-6">
                     <div class="fr-item">
                         <div class="fr-item-img">
-                            <img src="home/img/img4.jpg" alt="">
+                            <img src="home/img/spinach.jpg" alt="">
                         </div>
                         <div class="fr-item-text">
-                            <h5>White beans and potato salad</h5>
-                            <p>This mouthwatering summer salad takes only five minutes to before its ready for consumption.</p>
+                            <h5>Spinach vegetable</h5>
+                            <p> A super easy and healthy spinach recipe. Fresh spinach sautéed with garlic and butter; 
+                                then lightly seasoned with salt and pepper. It takes 8 minutes to make and requires only 5 ingredients!</p>
                                 <div class="options">
-                           <a href="" class="option1">
+                           <!-- <a href="" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe22')}}" class="option2">
                            View Recipe
                            </a>
@@ -136,16 +138,16 @@
                 <div class="col-lg-6">
                     <div class="fr-item">
                         <div class="fr-item-img">
-                            <img src="home/img/p3.jpg" alt="">
+                            <img src="home/img/sukuma.webp" alt="">
                         </div>
                         <div class="fr-item-text">
                             <h5>Easy blackend tilapia</h5>
                             <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                                 <div class="options">
-                           <a href="" class="option1">
+                           <!-- <a href="" class="option1">
                           Add To Favourites
-                           </a>
+                           </a> -->
                            <a href="{{('view_recipe23')}}" class="option2">
                            View Recipe
                            </a>

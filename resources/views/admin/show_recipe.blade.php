@@ -67,7 +67,7 @@
            @endif
            <!-- Recipes table -->
        <h2 class="font_size">All recipes</h2>
-        <table class="center">
+        <table class="center" style= "border:1px">
        <tr class="th_color">
 	     <th class="th_design" >S/N</th>
         <th class="th_design">Title</th>

@@ -76,7 +76,7 @@ class ForumController extends Controller
    {
       $comment = forum_comment::all();
 
-      return view('forum.comments', compact('comment', 'reply'));
+      return view('forum.comments', compact('comment'));
    }
 
    public function add_comment(Request $request)

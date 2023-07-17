@@ -49,6 +49,7 @@
         <div class="container mb-5">
             <div class="col" style="float: right; padding: 30px; width: 30%">
                 <ul class="list-group">
+                    <!--
                     <li class="list-group-item d-flex justify-content-between">
                         <div class="col text-center border-end hover-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
@@ -76,6 +77,7 @@
                             <span><a href="{{('chats') }}" style="text-decoration: none; color: black;">Post</a></span>
                         </div>
                     </li>
+-->
                     <li class="list-group-item d-flex justify-content-between">
                         <div class="col text-center border-end hover-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
@@ -97,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-
+                  
                     @foreach($data as $data)
                     <div class="bg-white border-gray mt-4">
                         <div class="d-flex pt-2">
@@ -141,8 +143,6 @@
                                     <a href="">0</a>
                                 </button>
                             </div>
-                            
-
 
                             <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
                                 <img src="forum/mainpage/src/refresh.png" width="20" class="">
@@ -158,7 +158,6 @@
                     @endforeach
 
                 </div>
-
             </div>
         </div>
     </div>

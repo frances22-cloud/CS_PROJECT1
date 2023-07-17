@@ -16,7 +16,7 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/userpage','Index');
     Route::get('/about', 'About');
     Route::get('/contact', 'Contact');
-    Route::get('/searchRecipes', 'searchRecipes');
+    Route::get('/more', 'searchRecipes');
    // Route:get('/dashboard', 'Recipe');
    
     
@@ -81,10 +81,14 @@ Route::controller(CategoryController::class)->group(function(){
     Route::get('/view_recipe21','View_recipe21');
     Route::get('/view_recipe2c','View_recipe2c');
     Route::get('/view_recipe2d','View_recipe2d');
-    Route::get('/view_recipe31','View_recipe31');
-    Route::get('/view_recipe32','View_recipe32');
-    Route::get('/view_recipe33','View_recipe33');
-    Route::get('/view_recipe34','View_recipe34');
+    Route::get('/downloadRecipe{file}','downloadRecipe');
+    Route::get('/useraddrecipe','useraddrecipe');
+
+    // Route::get('/view_recipe31','View_recipe31');
+    // Route::get('/view_recipe32','View_recipe32');
+    // Route::get('/view_recipe33','View_recipe33');
+    // Route::get('/view_recipe34','View_recipe34');
+    Route::get('/recipe_cat1/{view_recipe_cat1}','downloadRecipe');
     Route::post('/add_comment','add_comment');
     Route::post('/add_reply','add_reply');
     //Route::get('/useradd', 'useradd');

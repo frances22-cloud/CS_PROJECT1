@@ -132,11 +132,16 @@ public function add_reply(Request $request)
 {
         $imagename=time().'.'.$image->getClientOriginalExtension();
         $request->image->move('addrecipes',$imagename);
-        $tbl_recipes->image= $imagename;
+        $addrecipe->image= $imagename;
     }
 
      $addrecipe->save();
-     return redirect()->back('message','Recipe added successfully');
-     //return view('home.useraddrecipe');
+     return redirect()->back()->with('message','Recipe added succefully');
    }
+  
+//function to view add recipe form
+public function useraddrecipe()
+{
+    return view('RecipeCategories.useraddrecipe');
 }
+   }
