@@ -82,13 +82,13 @@
                                 </div>
                         </div>
                         <div class="ingredient-list">
-                            <div class="recipe-btn">
-                                <h3></h3>
-
-                                <a href="#">Print Recipe</a>
-                                <a href="#" class="black-btn">Favourite </a>
-                            </div>
-
+                        <div class="recipe-btn">
+                            <h3></h3>
+                            
+                        <a href="{{url('print_pdf')}}">Print Recipe</a>
+                        <a  href="#" class="black-btn">Favourite </a>
+                        </div>
+                            
                             <div class="list-item">
                                 <h5>Ingredients</h5>
                                 <div class="dressing-list">
