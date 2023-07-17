@@ -24,6 +24,19 @@
     <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="home/css/style.css" type="text/css">
     <link rel="stylesheet" href="home/css/style2.css" type="text/css">
+
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function() {
+            null
+        };
+    </script>
+
 </head>
 
 <body>
@@ -42,13 +55,12 @@
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li class="active"><a href="{{('userpage')}}">Home</a></li>
-                      
-                                <li><a href="{{('about')}}">About us</a></li>
-                                <li><a href="{{('')}}">Categories</a></li>
-                                <li><a href="{{('recipes')}}}">Recipes</a></li>
-                                <li><a href="{{('contact')}}">Contact</a></li>
+
+                        <li><a href="{{('about')}}">About us</a></li>
+                        <li><a href="{{('recipes')}}}">Recipes</a></li>
+                        <li><a href="{{('contact')}}">Contact</a></li>
                         </li>
-        
+
                     </ul>
                 </nav>
                 <div class="nav-right search-switch">
@@ -63,7 +75,7 @@
     <!-- Hero Search Section Begin -->
     <div class="hero-search set-bg" data-setbg="home/img/search-bg.jpg">
         <div class="container">
-          <!--  <div class="filter-table">
+            <!--  <div class="filter-table">
                 <form action="#" class="filter-search">
                     <input type="text" placeholder="Search recipe">
                     <select id="category">
@@ -85,70 +97,15 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="about-left">
-                        <img src="home/img/about-me.jpg" alt="">
+                        <img src="home/img/about.jpg" alt="">
                         <div class="about-title">
-                
+
                             <h4>FranDen Dietriesis a web based application that caters for postantal mothers <br>
-                            It has a wide range of recipe categories with a variety of nutrients<br> 
-                             that support the postnatal journey of these moms. Within the website is a community forum that is help mothers to 
-                            <br> interact with others who share experiences about their postnatal journey.</h4>
+                                It has a wide range of recipe categories with a variety of nutrients<br>
+                                that support the postnatal journey of these moms. Within the website is a community forum that is help mothers to
+                                <br> interact with others who share experiences about their postnatal journey.
+                            </h4>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="about-right">
-                        <div class="sidebar">
-                            <div class="sidebar-item">
-                                <a href="#"><img src="home/img/cat-feature/small-1.jpg" alt=""></a>
-                                <div class="sidebar-item-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <h6>One Pot Weeknight Lasagna Soup Recipe</h6>
-                                </div>
-                            </div>
-                            <div class="sidebar-item">
-                                <a href="#"><img src="home/img/cat-feature/small-2.jpg" alt=""></a>
-                                <div class="sidebar-item-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <h6>Lava Cake with a Tone of Chocolate</h6>
-                                </div>
-                            </div>
-                            <div class="sidebar-item">
-                                <a href="#"><img src="home/img/cat-feature/small-3.jpg" alt=""></a>
-                                <div class="sidebar-item-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <h6>One Pot Weeknight Lasagna Soup Recipe</h6>
-                                </div>
-                            </div>
-                            <div class="sidebar-item">
-                                <a href="#"><img src="home/img/cat-feature/small-4.jpg" alt=""></a>
-                                <div class="sidebar-item-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <h6>Smoked Salmon mini Sandwiches with Onion</h6>
-                                </div>
-                            </div>
-                            <div class="sidebar-item">
-                                <a href="#"><img src="home/img/cat-feature/small-5.jpg" alt=""></a>
-                                <div class="sidebar-item-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <h6>Asparagus with Pork Loin and Vegetables</h6>
-                                </div>
-                            </div>
-                            <div class="sidebar-item">
-                                <a href="#"><img src="home/img/cat-feature/small-6.jpg" alt=""></a>
-                                <div class="sidebar-item-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <h6>Dry Cookies with Corn</h6>
-                                </div>
-                            </div>
-                            <div class="sidebar-item">
-                                <a href="#"><img src="home/img/cat-feature/small-7.jpg" alt=""></a>
-                                <div class="sidebar-item-text">
-                                    <div class="cat-name">Vegan</div>
-                                    <h6>Italian Tiramisu with Coffe</h6>
-                                </div>
-                            </div>
-                        </div>
-    
                     </div>
                 </div>
             </div>
@@ -156,136 +113,76 @@
     </section>
     <!-- About Me Section End -->
 
-    <!-- Similar Recipe Section Begin -->
-    <section class="similar-recipe spad">
+
+    <!-- Footer Section Begin -->
+    <!-- footer start -->
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="similar-item">
-                        <a href="#"><img src="home/img/cat-feature/small-7.jpg" alt=""></a>
-                        <div class="similar-text">
-                            <div class="cat-name">Vegan</div>
-                            <h6>Italian Tiramisu with Coffe</h6>
+                <div class="col-md-4">
+                    <div class="full">
+                        <div class="logo_footer">
+                            <a href="#">
+                                <h2>FranDen Dietries</h2>
+                            </a>
+                        </div>
+                        <div class="information_f">
+                            <p><strong>ADDRESS:</strong> FranDen Dietries, CS_project1, Computer Science</p>
+                            <p><strong>TELEPHONE:</strong> +254-707637187</p>
+                            <p><strong>EMAIL:</strong> FranDen@gmail.com</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="similar-item">
-                        <a href="#"><img src="home/img/cat-feature/small-6.jpg" alt=""></a>
-                        <div class="similar-text">
-                            <div class="cat-name">Vegan</div>
-                            <h6>Dry Cookies with Corn</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="similar-item">
-                        <a href="#"><img src="home/img/cat-feature/small-5.jpg" alt=""></a>
-                        <div class="similar-text">
-                            <div class="cat-name">Vegan</div>
-                            <h6>Asparagus with Pork Loin and Vegetables</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="similar-item">
-                        <a href="#"><img src="home/img/cat-feature/small-4.jpg" alt=""></a>
-                        <div class="similar-text">
-                            <div class="cat-name">Vegan</div>
-                            <h6>Smoked Salmon mini Sandwiches with Onion</h6>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="widget_menu">
+                                        <h3>Menu</h3>
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Recipes</a></li>
+                                            <li><a href="#">Forum</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="widget_menu">
+                                        <h3>Account</h3>
+                                        <ul>
+                                            <li><a href="#">Featured Recipes</a></li>
+                                            <li><a href="#">Popular</a></li>
+                                            <li><a href="#">Favourites</a></li>
+                                            <li><a href="#">Testimonials</a></li>
+                                            <li><a href="{{('login')}}">Login</a></li>
+                                            <li><a href="{{('register')}}">Register</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Similar Recipe Section End -->
-
-    <!-- Footer Section Begin -->
-         <!-- footer start -->
-         <footer>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4">
-                   <div class="full">
-                      <div class="logo_footer">
-                        <a href="#"><h2>FranDen Dietries</h2></a>
-                      </div>
-                      <div class="information_f">
-                        <p><strong>ADDRESS:</strong> FranDen Dietries, CS_project1, Computer Science</p>
-                        <p><strong>TELEPHONE:</strong> +254-707637187</p>
-                        <p><strong>EMAIL:</strong> FranDen@gmail.com</p>
-                      </div>
-                   </div>
-               </div>
-               <div class="col-md-8">
-                  <div class="row">
-                  <div class="col-md-7">
-                     <div class="row">
-                        <div class="col-md-6">
-                     <div class="widget_menu">
-                        <h3>Menu</h3>
-                        <ul>
-                           <li><a href="#">Home</a></li>
-                           <li><a href="#">About</a></li>
-                           <li><a href="#">Recipes</a></li>
-                           <li><a href="#">Forum</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Contact</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="widget_menu">
-                        <h3>Account</h3>
-                        <ul>
-                           <li><a href="#">Featured Recipes</a></li>
-                           <li><a href="#">Popular</a></li>
-                           <li><a href="#">Favourites</a></li>
-                           <li><a href="#">Testimonials</a></li>
-                           <li><a href="{{('login')}}">Login</a></li>
-                           <li><a href="{{('register')}}">Register</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                     </div>
-                  </div>     
-                  <div class="col-md-5">
-                     <div class="widget_menu">
-                        <h3>Newsletter</h3>
-                        <div class="information_f">
-                          <p>Subscribe by our newsletter and get update protidin.</p>
-                        </div>
-                        <div class="form_sub">
-                           <form>
-                              <fieldset>
-                                 <div class="field">
-                                    <input type="email" placeholder="Enter Your Mail" name="email" />
-                                    <input type="submit" value="Subscribe" />
-                                 </div>
-                              </fieldset>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- footer end -->
+    </footer>
+    <!-- footer end -->
     <!-- Footer Section End -->
 
     <!-- Search model -->
-	<div class="search-model">
-		<div class="h-100 d-flex align-items-center justify-content-center">
-			<div class="search-close-switch">+</div>
-			<form class="search-model-form">
-				<input type="text" id="search-input" placeholder="Search here.....">
-			</form>
-		</div>
-	</div>
-	<!-- Search model end -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
 
     <!-- Js Plugins -->
     <script src="home/js/jquery-3.3.1.min.js"></script>

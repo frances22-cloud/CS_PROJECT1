@@ -53,11 +53,6 @@
                             @csrf
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
                                         <input type="text" class="form-control" name="topic_title" id="subject" placeholder="Topic title">
                                     </div>
                                 </div>

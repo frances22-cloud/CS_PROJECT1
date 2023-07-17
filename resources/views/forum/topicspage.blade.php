@@ -19,6 +19,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function() {
+            null
+        };
+    </script>
+
     <title>Forums</title>
 </head>
 
@@ -49,16 +61,14 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @foreach($tdata as $data)
                         <tr scope="row">
-                            @foreach($data as $data)
                             <td>{{$data->id}}</td>
                             <td>{{$data->name}}</td>
                             <td>{{$data->topic_title}}</td>
                             <td>{{$data->topic_message}}</td>
-                            @endforeach
-                            
                         </tr>
-                        
+                        @endforeach
                     </tbody>
                 </table>
             </div>
