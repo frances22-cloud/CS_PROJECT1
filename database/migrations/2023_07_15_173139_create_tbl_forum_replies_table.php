@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tbl_forum_reply', function (Blueprint $table) {
+        Schema::create('tbl_forum_replies', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
             $table->string('comment_id')->nullable();
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tbl_forum_reply');
+        Schema::dropIfExists('tbl_forum_replies');
     }
 };

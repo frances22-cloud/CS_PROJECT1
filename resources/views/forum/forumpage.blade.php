@@ -11,6 +11,20 @@
     <link href="forum/mainpage/css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function() {
+            null
+        };
+    </script>
+
+    <script src="https://kit.fontawesome.com/e1edd9a381.js" crossorigin="anonymous"></script>
+
     <title>Forum</title>
 </head>
 
@@ -18,6 +32,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-md navbar-light border-bottom p-0 ps-5">
+        <h6 style="float: left;"><i class="fa-solid fa-user"></i> {{Auth::user()->name}}</h6>
         <div class="container">
             <a class="navbar-brand" href="#">
                 <span class="text-main-color fw-bold fs-3">FranDen Dietries Community Forum</span>
@@ -28,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
                     <li class="nav-item border-main-color">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{('dashboard') }}">
                             <svg class="text-main-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M0 0h24v24H0z" fill="none" />
                                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
@@ -38,11 +53,13 @@
 
                 </ul>
 
-                <form class="d-flex">
-                    <input class="form-control me-2 search-icon" type="search" placeholder="Search" aria-label="Search">
-                </form>
             </div>
-
+            <!--
+            <form action="{{url('/search')}}" class="d-flex" style="float: right;">
+                <input class="form-control me-2 search-icon" type="search" name="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary">Search</button>
+            </form>
+    -->
         </div>
     </nav>
     <div class="bg-light pt-4">
@@ -56,10 +73,10 @@
                                 <path d="M0 0h24v24H0V0z" fill="none" />
                                 <path d="M19 2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 16h-4.83l-.59.59L12 20.17l-1.59-1.59-.58-.58H5V4h14v14zm-8-3h2v2h-2zm1-8c1.1 0 2 .9 2 2 0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4S8 6.79 8 9h2c0-1.1.9-2 2-2z" />
                             </svg>
-                            <span><a href="{{('chats') }}" style="text-decoration: none; color: black;">Ask</a></span>
+                            <span><a href="{{('addtopic') }}" style="text-decoration: none; color: black;">Ask</a></span>
                         </div>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between">
+                    <!--<li class="list-group-item d-flex justify-content-between">
                         <div class="col text-center border-end hover-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
                                 <rect fill="none" height="24" width="24" />
@@ -76,8 +93,12 @@
                             </svg>
                             <span><a href="{{('chats') }}" style="text-decoration: none; color: black;">Post</a></span>
                         </div>
+<<<<<<< HEAD
                     </li>
 -->
+=======
+                    </li>-->
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
                     <li class="list-group-item d-flex justify-content-between">
                         <div class="col text-center border-end hover-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
@@ -92,6 +113,7 @@
             <div class="row" style="grid-template-columns: auto;">
 
                 <div class="col-7" style="float: left; width: 100%">
+<<<<<<< HEAD
                     <div class="bg-white border-gray">
                         <div class="row">
                             <div class="col">
@@ -100,22 +122,25 @@
                         </div>
                     </div>
                   
+=======
+
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
                     @foreach($data as $data)
                     <div class="bg-white border-gray mt-4">
                         <div class="d-flex pt-2">
                             <div class="col d-flex">
                                 <div class="d-flex flex-column">
-                                    <p style="font-weight: bold; font-size: 6; position: 3;">{{$data->name}}</p>
+                                    <p style="font-weight:bold; font-size:6; position:5;">{{$data->name}}</p>
                                 </div>
                             </div>
-                            <div class="p-2 text-gray-darker">
+                            <!--<div class="p-2 text-gray-darker">
                                 <button class="btn rounded-circle hover-dark p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
                                         <path d="M0 0h24v24H0V0z" fill="none" />
                                         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
                                     </svg>
                                 </button>
-                            </div>
+                            </div>-->
                         </div>
 
 
@@ -129,11 +154,11 @@
                                 {{$data->topic_message}}
                             </div>
                         </div>
-                        
+
 
                         <div class="post-footer p-2">
 
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <!--<div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="left-button post-button bg-second-color border-0 text-black p-1">
                                     <img src="forum/mainpage/src/up.png" width="20" class="ms-2">
                                     <a href="">0</a>
@@ -142,16 +167,17 @@
                                     <img src="forum/mainpage/src/down.png" width="20" class="me-2">
                                     <a href="">0</a>
                                 </button>
+<<<<<<< HEAD
                             </div>
+=======
+                            </div>-->
+
+>>>>>>> 61d61d6de3dec714eeb9b4a78c0e8e3c7f40a476
 
                             <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
-                                <img src="forum/mainpage/src/refresh.png" width="20" class="">
-                                1
-                            </button>
-                            <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
                                 <a href="{{('comments') }}" style="text-decoration: none; color: black;">
-                                <img src="forum/mainpage/src/comment.png" width="25" class="p-1">
-                                0</a>
+                                    <img src="forum/mainpage/src/comment.png" width="25" class="p-1"> comments
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -161,6 +187,37 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).on('click', '#saveLikeDislike', function() {
+            var _post = $(this).data('post');
+            var _type = $(this).data('type');
+            var vm = $(this);
+            // Run Ajax
+            $.ajax({
+                url: "{{ url('save-likedislike') }}",
+                type: "post",
+                dataType: 'json',
+                data: {
+                    post: _post,
+                    type: _type,
+                    _token: "{{ csrf_token() }}"
+                },
+                beforeSend: function() {
+                    vm.addClass('disabled');
+                },
+                success: function(res) {
+                    if (res.bool == true) {
+                        vm.removeClass('disabled').addClass('active');
+                        vm.removeAttr('id');
+                        var _prevCount = $("." + _type + "-count").text();
+                        _prevCount++;
+                        $("." + _type + "-count").text(_prevCount);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
