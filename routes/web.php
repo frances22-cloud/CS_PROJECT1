@@ -14,6 +14,7 @@ use App\Http\Controllers\ForumController;
 
 Route::controller(HomeController::class)->group(function () {
     Route::get('/userpage', 'Index');
+    Route::get('/userprofile', 'userProfile');
     Route::get('/about', 'About');
     Route::get('/contact', 'Contact');
     Route::get('/searchRecipes', 'searchRecipes');
@@ -72,6 +73,7 @@ Route::controller(CategoryController::class)->group(function () {
     //Controller to return view recipes
     Route::get('/view_recipe_cat1', 'ViewCat1');
     Route::get('/view_recipe_cat2', 'ViewCat2');
+
     Route::get('/view_recipe12', 'View_recipe12');
     Route::get('/view_recipe22', 'View_recipe22');
     Route::get('/view_recipe23', 'View_recipe23');
@@ -82,7 +84,8 @@ Route::controller(CategoryController::class)->group(function () {
     Route::get('/view_recipe32', 'View_recipe32');
     Route::get('/view_recipe33', 'View_recipe33');
     Route::get('/view_recipe34', 'View_recipe34');
-    Route::post('/add_comment', 'add_comment');
+
+    Route::post('/addcomment', 'addcomment');
     Route::post('/add_reply', 'add_reply');
     //Route::get('/useradd', 'useradd');
     Route::post('/useradd', 'useradd');
