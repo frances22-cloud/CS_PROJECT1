@@ -10,7 +10,7 @@
          <div class="nav-menu">
              <nav class="main-menu mobile-menu">
                  <ul class="nav-links">
-                 <h5 style="float: left;"><i class="fa-solid fa-user"></i> {{Auth::user()->name}}</h5>
+                 <h5 style="float: left;"><a href="{{('userprofile')}}"><i class="fa-solid fa-user"></i> {{Auth::user()->name}}</a></h5>
                      <li class="active"><a href="{{('userpage')}}">Home</a></li>
                      <li><a href="#">Categories</a>
                          <ul class="sub-menu">

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\tbl_recipes;
@@ -12,9 +13,10 @@ use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 
 {
-   public function Index(){
-     
-    return view('home.userpage');
+   public function Index()
+   {
+
+      return view('home.userpage');
    }
    
    public function Recipe(){
@@ -25,18 +27,20 @@ class HomeController extends Controller
    // public function AddRecipe(){
    //    return view('home.addrecipe');
    //   }
-     public function About(){
+   public function About()
+   {
       return view('home.about');
-     }
-     public function Contact(){
+   }
+   public function Contact()
+   {
       return view('home.contact');
-     }
+   }
 
-   public function redirect(){
+   public function redirect()
+   {
 
-      $usertype=Auth::user()->usertype;
-      if($usertype=='1')
-      {
+      $usertype = Auth::user()->usertype;
+      if ($usertype == '1') {
 
          // $total_recipes=tbl_recipes::all()->Count();
          // $total_users=User::all()->Count();
@@ -44,27 +48,31 @@ class HomeController extends Controller
          // // $total_comments=comment::all()->count();
          // // $total_favourites=favourites::all()->count();
          // // $added_recipes=addrecipe::all()->count();
-       
+
          return view('admin.home');
-      }
-      else if ($usertype=='0')
-      {
+      } else if ($usertype == '0') {
          return view('dashboard');
-      }
-      else
-      {
-         return redirect ()->back();
+      } else {
+         return redirect()->back();
       }
    }
 
    public function perform()
-    {
-        Auth::logout();
+   {
+      Auth::logout();
 
-        return redirect('userpage');
-    }
-    //search recipes section
-   public function searchRecipes(){
+      return redirect('userpage');
+   }
+   //search recipes section
+   public function searchRecipes()
+   {
       return view('home.more');
-    }
+   }
+
+   public function userProfile()
+   {
+
+      return view('home.userprofile');
+   }
+
 }

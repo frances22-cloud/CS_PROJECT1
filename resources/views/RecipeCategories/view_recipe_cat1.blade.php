@@ -169,7 +169,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Comments and reply  section starts-->
     <div style="text-align:cnter; padding-bottom:30px;">
         <h1 style="font-size:30px; text-align:center; padding-top:20px; padding-bottom:20px;">Leave Comments</h1>
-        <form action="{{url('add_comment')}}" method="post" style="text-align:center;">
+        <form action="{{url('addcomment')}}" method="post" style="text-align:center;">
             @csrf
             <textarea style="height:100px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
             <br>
@@ -178,7 +178,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </div>
     <div style="padding-left:20%;">
         <h1 style="font-size:20px; padding-bottom:20px;">All comments</h1>
-        @foreach($comment as $comment)
+        @foreach($rcomment as $comment)
         <div>
             <b>{{$comment->name}}</b>
             <p>{{$comment->comment}}</p>
@@ -186,15 +186,17 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         </div>
         @endforeach
         <!--Reply text-box-->
-        <form action="{{url('add_reply')}}" method="post">
-            @csrf
-            <div style="display:none;" class="replyDiv">
-                <input type="text" id="commentId" name="commentId" hidden="">
-                <textarea style="height:100px; width:500px;" name="reply" placeholder="Write your reply here"></textarea>
-                <br>
-                <button type="submit" class="btn btn-warning">Reply</button>
-                <a href="javascript::void(0);" class="btn" onClick="reply_close(this)">close</a>
-        </form>
+        <div>
+            <form action="{{url('add_reply')}}" method="post">
+                @csrf
+                <div style="display:none;" class="replyDiv">
+                    <input type="text" id="commentId" name="commentId" hidden="">
+                    <textarea style="height:100px; width:500px;" name="reply" placeholder="Write your reply here"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Reply</button>
+                    <a href="javascript::void(0);" class="btn" onClick="reply_close(this)">close</a>
+            </form>
+        </div>
     </div>
 
     </div>
@@ -347,7 +349,7 @@ document.getElementById("recipecard");
 }
 </script>
 
-<script src="home/js/app.js"></script>
+    <script src="home/js/app.js"></script>
     <script src="home/js/jquery-3.3.1.min.js"></script>
     <script src="home/js/bootstrap.min.js"></script>
     <script src="home/js/jquery.slicknav.js"></script>
