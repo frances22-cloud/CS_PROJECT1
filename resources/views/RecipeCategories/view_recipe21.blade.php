@@ -9,6 +9,10 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <!-- Css Styles -->
 <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
@@ -52,14 +56,15 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
+ <div id="reipepackage">
  <section class="single-page-recipe spad">            
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="ingredients-item">
                         <div class="intro-item">
-                        <img src="home/img/img8.png" alt="">
-                            <h2>Healthy Broccoli Slaw</h2>
+                        <img src="home/img/kuku.jpg" alt="">
+                            <h2>KUKU PAKA - KENYAN COCONUT MILK CHICKEN</h2>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -79,7 +84,7 @@
                         </div>
                         <div class="ingredient-list">
                             <div class="recipe-btn">
-                                <a href="#">Print Recipe</a>
+                            <a onclick="download_pdf()" href="#">Download</a>
                                 <a href="#" class="black-btn">Save</a>
                             </div>
                             <div class="list-item">
@@ -87,14 +92,16 @@
                                 
                                 <div class="dressing-list">
                                     <ul>
-                                        <li>2-3 large heads of broccoli washed and cut into chunks</li>
-                                        <li>A generous pinch of sea salt up to 2 teaspoons</li>
-                                        <li>water</li>
-                                        <li>Grated cheddar cheese optional</li>
-                                        <li>Freshly cracked black pepper</li>
-                                        <li>Goat cheese creme fraiche, sour cream, or coconut cream</li>
-                                        <li>chopped walnuts</li>
-                                        <li>olive oil for drizzling</li>
+                                        <li> 3-4 lb chicken</li>
+                                        <li>2 Tbsp coriander seed and 1 tblspoon of Rose Mary</li>
+                                        <li>1 Tbsp black pepper</li>
+                                        <li>1 onion, chopped</li>
+                                        <li>4 cloves garlic, chopped</li>
+                                        <li>2 inches ginger, chopped</li>
+                                        <li>2 tsp salt</li>
+                                        <li>2 tomatoes</li>
+                                        <li>3 cups coconut milk</li>
+                                        <li>6 Tbsp coconut oil </li>
                                     </ul>
                                 </div>
                             </div>
@@ -124,26 +131,36 @@
                             <ul>
                                 <li>
                                     <span>01.</span>
-                                    Boil a large pot of water and add the sea salt to the water.
+                 Chop chicken into large pieces and remove as much skin and fat as possible. Place in a bowl
                                 </li>
                                 <li>
                                     <span>02.</span>
-                                    Add the broccoli chunks into the water for about 3 minutes, just enough time for them to become slightly soft.
+                Grind spices and place in a food processor with onion, garlic, ginger, chile, salt, and tomatoe Purée.
+               Incorporate coconut milk and lime juice or tamarind.
                                 </li>
                                 <li>
                                     <span>03.</span>
-                                    Remove the broccoli from the water with a slotted spoon and add it to your blender. Keep the broccoli water.
+                                    Pour the mixture into the bowl with the chicken, stir well and marinate in 
+                                    the fridge for at least 1 hour, or up to 6 if you have the time.
                                 </li>
                                 <li>
                                     <span>04.</span>
-                                    Add enough of the broccoli water to the blender to fill it up to about the half-way mark, or slightly less.
+                                    To oven roast: pour 2 Tbsp coconut oil onto a roasting tray. 
+                                    Drain chicken and set marinade aside. Place drained chicken on the tray,
+                                    ensuring no pieces are touching each other. Roast 25-30 minutes.
                                 <li>
                                     <span>05.</span>
-                                    Blend on high speed until smooth, adding more water to loosen the soup if necessary.
+                                 To barbecue: drain chicken, reserve marinade, and grill gently for 25-30 minutes until cooked.
                                 </li>
                                 <li>
                                     <span>06.</span>
-                             Serve with whatever toppings you wish, a drizzle of olive oil, chopped walnuts and goat cheese, cheddar cheese, etc.
+                                    Meanwhile, heat a pot on medium. Add remaining oil then the reserved marinade. Stir regularly as you cook to ensure the sauce does not stick.
+                                     Cook until the sauce has thickened and oil is floating on the surface.
+                                </li>
+                                <li>
+                                    <span>06.</span>
+                                  
+                     Add cooked chicken to the sauce and simmer 5 minutes, coating each piece with the sauce.
                                 </li>
                                
                         </div>
@@ -151,6 +168,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Single Recipe Section End -->
@@ -275,5 +293,17 @@
          
       </footer>
       <!-- footer end -->
+<script>
+function download_pdf()
+{
+const pdf= document.getElementById("reipepackage");
+html2pdf().from(pdf).save();
+
+     function addrecipe()
+{
+document.getElementById("recipecard");    
+}
+}
+</script>
 </body>
 </html>

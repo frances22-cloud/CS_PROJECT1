@@ -123,7 +123,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Pumpkin Leaves have a dense network of nutrients which are essential for the mother</p>
+                            <p>Pumpkin Leaves have a dense network of nutrients which are 
+                            essential for the mother especially during beast feeding</p>
 
                         </div>
                         <div class="instruction-list">
@@ -169,19 +170,20 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Comments and reply  section starts-->
     <div style="text-align:cnter; padding-bottom:30px;">
         <h1 style="font-size:30px; text-align:center; padding-top:20px; padding-bottom:20px;">Leave Comments</h1>
-        <form action="{{url('add_comment')}}" method="post" style="text-align:center;">
+        <form action="{{url('addcomment')}}" method="post" style="text-align:center;">
             @csrf
-            <textarea style="height:100px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
+            <textarea style="height:150px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
             <br>
             <input type="submit" class="btn btn-primary" value="comment">
         </form>
     </div>
     <div style="padding-left:20%;">
         <h1 style="font-size:20px; padding-bottom:20px;">All comments</h1>
-        @foreach($comment as $comment)
+        @foreach($rcomment as $comment)
         <div>
             <b>{{$comment->name}}</b>
             <p>{{$comment->comment}}</p>
+            <p>{{$comment->created_at}}</p>
             <a href="javascript::void(0);" onClick="reply(this)" data-Commentid="{{$comment->id}}">Reply</a>
         </div>
         @endforeach
@@ -201,7 +203,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--Comments and reply section ends-->
 
-    <!-- Similar Recipe Section Begin -->
+    <!-- Similar Recipe Section Begin
     <section class="similar-recipe spad">
         <div class="container">
             <div class="row">
@@ -243,7 +245,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Similar Recipe Section End -->
 
 

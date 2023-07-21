@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <title>Project1</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
@@ -33,12 +36,12 @@
                                 <li><a href="{{('recipe_cat1')}}">Quick and Easy</a></li>
                                 <li><a href="{{('recipe_cat2')}}">Immune Boosting</a></li>
                                 <li><a href="{{('recipe_cat3')}}">Postnatal Recovery</a></li>
-                                <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
-                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
+                                <!-- <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
+                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li> -->
                             </ul>
                         </li>
-                        <li><a href="{{('addrecipe')}}">Add Recipes</a></li>
-                        <li><a href="">Forum</a></li>
+                        <li><a href="{{('useraddrecipe')}}">Add Recipes</a></li>
+                        <li><a href="{{{'forumpage'}}}">Forum</a></li>
                         <li><a href="{{('contact')}}}">Contact</a></li>
                     </ul>
                 </nav>
@@ -52,8 +55,9 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
- <section class="single-page-recipe spad">            
-        <div class="container">
+ <div id="reipepackage">
+           <section class="single-page-recipe spad">            
+            <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="ingredients-item">
@@ -79,7 +83,7 @@
                         </div>
                         <div class="ingredient-list">
                             <div class="recipe-btn">
-                                <a href="#">Print Recipe</a>
+                            <a onclick="download_pdf()" href="#">Download</a>
                                 <a href="#" class="black-btn">Save</a>
                             </div>
                             <div class="list-item">
@@ -115,9 +119,7 @@
                     <div class="recipe-right">
                         <div class="recipe-desc">
                             <h3>Description</h3>
-                            <p>Use brown sugar and other spices instead of maple syrup, cinnamon, and nutmeg if preferred.
-                            For a savory version, try a combination of brewer's yeast and salt.Some people like their pumpkin seeds extra crispy, 
-                            while others prefer them lightly toasted. Cooking time will vary depending on your preference.</p>
+                            <p>This is easy recipe which is rich in nutrients and locally available ingredients in mamny households. This recipe is recommended for most breast feeding moms</p>
                             
                         </div>
                         <div class="instruction-list">
@@ -147,6 +149,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Single Recipe Section End -->
@@ -268,8 +271,20 @@
                </div>
             </div>
          </div>
-         
       </footer>
       <!-- footer end -->
+
+      <script>
+function download_pdf()
+{
+const pdf= document.getElementById("reipepackage");
+html2pdf().from(pdf).save();
+
+     function addrecipe()
+{
+document.getElementById("recipecard");    
+}
+}
+</script>
 </body>
 </html>

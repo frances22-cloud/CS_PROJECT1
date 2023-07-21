@@ -41,9 +41,33 @@
     </div>
 
     <!-- Header Section Begin -->
-    @include('home.header2')
-    <!-- Header End -->
+   <!-- Header Section Begin -->
+   <header class="header-section-other">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="./index.html"><img src="home/img/little-logo.png" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="{{('userpage')}}">Home</a></li>
 
+                        <li><a href="{{('about')}}">About us</a></li>
+                        <li><a href="{{('recipes')}}}">Recipes</a></li>
+                        <li><a href="{{('contact')}}">Contact</a></li>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="nav-right search-switch">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+   
     <!-- Hero Search Section Begin -->
     <div class="hero-search set-bg" data-setbg="home/img/search-bg.jpg">
         

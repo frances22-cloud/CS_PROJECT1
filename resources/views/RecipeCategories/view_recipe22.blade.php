@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <title>Project1</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
@@ -33,12 +36,12 @@
                                 <li><a href="{{('recipe_cat1')}}">Quick and Easy</a></li>
                                 <li><a href="{{('recipe_cat2')}}">Immune Boosting</a></li>
                                 <li><a href="{{('recipe_cat3')}}">Postnatal Recovery</a></li>
-                                <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
-                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
+                                <!-- <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
+                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li> -->
                             </ul>
                         </li>
-                        <li><a href="{{('addrecipe')}}">Add Recipes</a></li>
-                        <li><a href="">Forum</a></li>
+                        <li><a href="{{('useraddrecipe')}}">Add Recipes</a></li>
+                        <li><a href="{{('forumpage')}}">Forum</a></li>
                         <li><a href="{{('contact')}}}">Contact</a></li>
                     </ul>
                 </nav>
@@ -52,6 +55,7 @@
     <!-- Header End -->
 
  <!-- Single Recipe Section Begin -->
+ <div id="reipepackage">
  <section class="single-page-recipe spad">            
         <div class="container">
             <div class="row">
@@ -78,7 +82,7 @@
                         </div>
                         <div class="ingredient-list">
                             <div class="recipe-btn">
-                                <a href="#">Print Recipe</a>
+                            <a onclick="download_pdf()" href="#">Download</a>
                                 <a href="#" class="black-btn">Save</a>
                             </div>
                             <div class="list-item">
@@ -86,7 +90,7 @@
                                 
                                 <div class="dressing-list">
                                     <ul>
-                                        <li>10 oz (280g) fresh spinach, thoroughly rinsed</li>
+                                        <li>10 pieces (280g) fresh spinach, thoroughly rinsed</li>
                                         <li>4 cloves garlic, thinly sliced</li>
                                         <li>2 tablespoons melted butter</li>
                                         <li>1 teaspoon lemon juice</li>
@@ -145,6 +149,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Single Recipe Section End -->
@@ -269,5 +274,18 @@
          
       </footer>
       <!-- footer end -->
+      
+<script>
+function download_pdf()
+{
+const pdf= document.getElementById("reipepackage");
+html2pdf().from(pdf).save();
+
+     function addrecipe()
+{
+document.getElementById("recipecard");    
+}
+}
+</script>
 </body>
 </html>

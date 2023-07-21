@@ -89,7 +89,7 @@
                 <div class="col-lg-6">
                     <div class="fr-item">
                         <div class="fr-item-img">
-                            <img src="home/img/img8.png" alt="">
+                            <img src="home/img/kuku.jpg" alt="">
                         </div>
                         <div class="fr-item-text">
                             <h5>Healthy Broccoli Slaw</h5>

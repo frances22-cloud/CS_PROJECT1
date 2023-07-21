@@ -35,13 +35,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                                 <li><a href="{{('recipe_cat1')}}">Quick and Easy</a></li>
                                 <li><a href="{{('recipe_cat2')}}">Immune Boosting</a></li>
                                 <li><a href="{{('recipe_cat3')}}">Postnatal Recovery</a></li>
-                                <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
-                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li>
+                                <!-- <li><a href="{{('recipe_cat4')}}">Breakfast</a></li>
+                                <li><a href="{{('recipe_cat5')}}">Nutrient Dense Meals</a></li> -->
                             </ul>
                         </li>
                         <li><a href="{{('addrecipe')}}">Add Recipes</a></li>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="{{('contact')}}}">Contact</a></li>
+                        <li><a href="{{('forumpage')}}">Forum</a></li>
+                        <!-- <li><a href="{{('contact')}}}">Contact</a></li> -->
                     </ul>
                 </nav>
                 <div class="nav-right search-switch">
@@ -175,7 +175,41 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </section>
     <!-- Single Recipe Section End -->
 
-    <!-- Similar Recipe Section Begin -->
+      <!--Comments and reply  section starts-->
+      <div style="text-align:cnter; padding-bottom:30px;">
+        <h1 style="font-size:30px; text-align:center; padding-top:20px; padding-bottom:20px;">Leave Comments</h1>
+        <form action="{{url('addcomment')}}" method="post" style="text-align:center;">
+            @csrf
+            <textarea style="height:150px; width:500px" name="comment" placeholder="Add your comments here about this recipe"></textarea>
+            <br>
+            <input type="submit" class="btn btn-primary" value="comment">
+        </form>
+    </div>
+    <div style="padding-left:20%;">
+        <h1 style="font-size:20px; padding-bottom:20px;">All comments</h1>
+        @foreach($rcomment as $comment)
+        <div>
+            <b>{{$comment->name}}</b>
+            <p>{{$comment->comment}}</p>
+            <p>{{$comment->created_at}}</p>
+            <a href="javascript::void(0);" onClick="reply(this)" data-Commentid="{{$comment->id}}">Reply</a>
+        </div>
+        @endforeach
+        <!--Reply text-box-->
+        <form action="{{url('add_reply')}}" method="post">
+            @csrf
+            <div style="display:none;" class="replyDiv">
+                <input type="text" id="commentId" name="commentId" hidden="">
+                <textarea style="height:100px; width:500px;" name="reply" placeholder="Write your reply here"></textarea>
+                <br>
+                <button type="submit" class="btn btn-warning">Reply</button>
+                <a href="javascript::void(0);" class="btn" onClick="reply_close(this)">close</a>
+        </form>
+    </div>
+
+    </div>
+
+    <!-- Similar Recipe Section Begin
     <section class="similar-recipe spad">
         <div class="container">
             <div class="row">
@@ -217,7 +251,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Similar Recipe Section End -->
 
 
@@ -295,6 +329,17 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
          
       </footer>
       <!-- footer end -->
+
+      <script text="text/javascript">
+    function reply(caller){
+document.getElementById('commentId').value=$(caller).attr('data-Commentid');
+    $('.replyDiv').insertAfter($(caller));
+    $('.replyDiv').show();
+}
+function reply_close(caller){
+    $('.replyDiv').hide();
+}
+</script>
 
       <script>
 function download_pdf()

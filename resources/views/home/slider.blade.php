@@ -1,7 +1,7 @@
   <!-- slider section -->
   <section class="slider_section ">
             <div class="slider_bg_box">
-               <img src="home/img/p1.jpg" alt="" style>
+               <img src="home/img/africa.jpg" alt="" style>
             </div>
             <div id="customCarousel1" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">

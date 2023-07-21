@@ -63,6 +63,7 @@ class HomeController extends Controller
 
         return redirect('userpage');
     }
+    
     //search recipes section
    public function searchRecipes(){
       return view('home.more');

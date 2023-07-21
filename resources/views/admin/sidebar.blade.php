@@ -102,6 +102,13 @@
               </span>
               <span class="menu-title">Forum Topics</span>
             </a>
+            <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('userrecipes')}}">
+              <span class="menu-icon">
+              <i class="fa-sharp fa-solid fa-blog"></i>
+              </span>
+              <span class="menu-title">User Recipes</span>
+            </a>
           </li>
         </ul>
       </nav>

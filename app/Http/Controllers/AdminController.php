@@ -6,6 +6,7 @@ use App\Models\recipe_category;
 use App\Models\tbl_recipes;
 use App\Models\User;
 use App\Models\Forum_topics;
+use App\Models\addrecipe;
 
 class AdminController extends Controller
 {
@@ -112,5 +113,11 @@ class AdminController extends Controller
         //Auth::logout();
 
         return redirect('userpage');
+    }
+    //Function show user recipes to admin panel
+    public function showrecipes()
+    {
+        $userrecipes = addrecipe::all();
+        return view('admin.userrecipes', compact('userrecipes'));
     }
 }

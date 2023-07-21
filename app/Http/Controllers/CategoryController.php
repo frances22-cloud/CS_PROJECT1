@@ -28,15 +28,20 @@ class CategoryController extends Controller
 }
 
 // Function for view recipe and comment section cat1
-   public function ViewCat1(){
-    $comment=comment::all();
-    $reply=reply::all();
-   return view('RecipeCategories.view_recipe_cat1',compact('comment','comment'));
-   return view('RecipeCategories.view_recipe_cat1',compact('reply','reply'));
+public function ViewCat1()
+{
+    $rcomment = comment::all();
+    $reply = reply::all();
+    return view('RecipeCategories.view_recipe_cat1', compact('rcomment'));
+    return view('RecipeCategories.view_recipe_cat1', compact('reply', 'reply'));
 }
 public function ViewCat2()
 {
-    return view('RecipeCategories.view_recipe_cat2');   
+    $rcomment = comment::all();
+    $reply = reply::all();
+    return view('RecipeCategories.view_recipe_cat2', compact('rcomment'));
+    return view('RecipeCategories.view_recipe_cat2', compact('reply', 'reply'));
+    //return view('RecipeCategories.view_recipe_cat2');   
 }
 public function View_recipe12()
 {
@@ -78,22 +83,20 @@ public function View_recipe34()
 {
     return view('RecipeCategories.View_recipe34'); 
 }
-public function add_comment(Request $request)
-{
-if(Auth::id())
-{
-$comment=new comment();
-$comment->name=Auth::user()->name;
-$comment->user_id=Auth::user()->id;
-$comment->comment=$request->comment;
-$comment->save();
-return redirect()->back();
-
-}
-else{
-    return redirect('login');
-}
-}
+public function addcomment(Request $request)
+    {
+        if (Auth::id()) {
+            $rcomment = new comment();
+            $rcomment->name = Auth::user()->name;
+            $rcomment->user_id = Auth::user()->id;
+            $rcomment->comment = $request->comment;
+            $rcomment->created_at = $request->created_at;
+            $rcomment->save();
+            return redirect()->back();
+        } else {
+            return redirect('login');
+        }
+    }
 public function add_reply(Request $request)
 {
     if(Auth::id())

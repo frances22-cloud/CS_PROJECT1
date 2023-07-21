@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style.css" type="text/css">
+    <link rel="stylesheet" href="home/css/style2.css" type="text/css">
 
     <link rel="stylesheet" href="home/css/more.css">
 
@@ -14,12 +23,16 @@
     <!-- Font Awesome for the icons -->
 </head>
 <body>
+
+        @include('home.header2');
     <div class="container">
         <div class="card">
             <div class="top">
                 <span class="light-dark-mode">
                     <i class="fa-solid fa-sun"></i>
                 </span>
+            
+                
                 <span class="search-container">
                     <input class="search-input" type="text" placeholder="Search meal...">
                     <span class="search-icon">
@@ -138,5 +151,11 @@
             </div>
         </div>
     </div>
+    <script src="home/js/jquery-3.3.1.min.js"></script>
+    <script src="home/js/bootstrap.min.js"></script>
+    <script src="home/js/jquery.slicknav.js"></script>
+    <script src="home/js/jquery.nice-select.min.js"></script>
+    <script src="homejs/mixitup.min.js"></script>
+    <script src="home/js/main.js"></script>
 </body>
 </html>

@@ -141,7 +141,7 @@
                             <img src="home/img/sukuma.webp" alt="">
                         </div>
                         <div class="fr-item-text">
-                            <h5>Easy blackend tilapia</h5>
+                            <h5>Sukuma Wiki veges</h5>
                             <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                                 <div class="options">
