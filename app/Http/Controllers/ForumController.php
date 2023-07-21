@@ -61,6 +61,10 @@ class ForumController extends Controller
       $fcomment = forum_comment::all();
 
       return view('forum.comments', compact('fcomment'));
+<<<<<<< HEAD
+=======
+
+>>>>>>> cad6e26283792874ce414d575595180028fd7e73
    }
 
    public function add_comment(Request $request)

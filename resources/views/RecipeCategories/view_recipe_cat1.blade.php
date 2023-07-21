@@ -188,15 +188,17 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         </div>
         @endforeach
         <!--Reply text-box-->
-        <form action="{{url('add_reply')}}" method="post">
-            @csrf
-            <div style="display:none;" class="replyDiv">
-                <input type="text" id="commentId" name="commentId" hidden="">
-                <textarea style="height:100px; width:500px;" name="reply" placeholder="Write your reply here"></textarea>
-                <br>
-                <button type="submit" class="btn btn-warning">Reply</button>
-                <a href="javascript::void(0);" class="btn" onClick="reply_close(this)">close</a>
-        </form>
+        <div>
+            <form action="{{url('add_reply')}}" method="post">
+                @csrf
+                <div style="display:none;" class="replyDiv">
+                    <input type="text" id="commentId" name="commentId" hidden="">
+                    <textarea style="height:100px; width:500px;" name="reply" placeholder="Write your reply here"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Reply</button>
+                    <a href="javascript::void(0);" class="btn" onClick="reply_close(this)">close</a>
+            </form>
+        </div>
     </div>
 
     </div>
@@ -349,7 +351,7 @@ document.getElementById("recipecard");
 }
 </script>
 
-<script src="home/js/app.js"></script>
+    <script src="home/js/app.js"></script>
     <script src="home/js/jquery-3.3.1.min.js"></script>
     <script src="home/js/bootstrap.min.js"></script>
     <script src="home/js/jquery.slicknav.js"></script>
